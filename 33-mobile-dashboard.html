@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ivorymade Dashboard</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body {
+font-family: 'Inter', sans-serif;
+background-color: #F8F9FB;
+color: #1E293B;
+}
+.custom-scrollbar::-webkit-scrollbar {
+display: none;
+}
+.phone-container {
+box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+}
+</style></head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <!-- Mobile Screen Frame -->
+    <div class="phone-container relative w-full max-w-[390px] h-[844px] bg-white rounded-[2.5rem] overflow-hidden border border-[#E2E8F0] flex flex-col">
+        
+        <!-- Fixed Header Bar -->
+        <header class="sticky top-0 z-20 bg-white h-[56px] border-b border-[#E2E8F0] px-4 flex items-center justify-between">
+            <button class="text-[#1E293B]">
+                <iconify-icon icon="solar:hamburger-menu-linear" width="24" style="stroke-width: 1.5"></iconify-icon>
+            </button>
+            <span class="text-[0.875rem] font-medium text-[#64748B]">March 5, 2026</span>
+            <div class="flex items-center gap-3">
+                <button class="text-[#1E293B]">
+                    <iconify-icon icon="solar:chat-round-dots-linear" width="24" style="stroke-width: 1.5"></iconify-icon>
+                </button>
+                <button class="relative text-[#1E293B]">
+                    <iconify-icon icon="solar:bell-linear" width="24" style="stroke-width: 1.5"></iconify-icon>
+                    <span class="absolute -top-0.5 -right-0.5 w-[14px] h-[14px] bg-[#EF4444] border-2 border-white rounded-full text-[10px] text-white flex items-center justify-center font-bold">3</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Scrollable Content -->
+        <main class="flex-1 overflow-y-auto custom-scrollbar pb-24">
+            
+            <!-- Greeting Section -->
+            <section class="px-4 pt-6">
+                <h1 class="text-[1.5rem] font-semibold text-[#1E293B] tracking-tight leading-tight">Good morning, Dr. Mitchell!</h1>
+                <p class="text-[0.875rem] text-[#64748B] mt-1">Here's your lab activity</p>
+            </section>
+
+            <!-- Order Tracking Summary -->
+            <section class="px-4 mt-8">
+                <div class="flex justify-between items-end mb-3">
+                    <div>
+                        <h2 class="text-[1.125rem] font-semibold tracking-tight">Track your orders</h2>
+                        <p class="text-[0.75rem] text-[#64748B]">12 active orders • Updated now</p>
+                    </div>
+                </div>
+                
+                <div class="flex gap-2 overflow-x-auto custom-scrollbar">
+                    <div class="flex-none px-4 h-8 bg-[#F59E0B]/10 rounded-full flex items-center">
+                        <span class="text-[0.75rem] font-medium text-[#F59E0B]">Pending 4</span>
+                    </div>
+                    <div class="flex-none px-4 h-8 bg-[#3B82F6]/10 rounded-full flex items-center">
+                        <span class="text-[0.75rem] font-medium text-[#3B82F6]">In Production 5</span>
+                    </div>
+                    <div class="flex-none px-4 h-8 bg-[#10B981]/10 rounded-full flex items-center">
+                        <span class="text-[0.75rem] font-medium text-[#10B981]">In Transit 3</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recent Updates -->
+            <section class="px-4 mt-8">
+                <h2 class="text-[1.125rem] font-semibold tracking-tight mb-3">Recent Updates</h2>
+                <div class="flex flex-col gap-2">
+                    <!-- Card 1 -->
+                    <div class="bg-white border border-[#E2E8F0] p-3 rounded-[0.5rem] flex items-center justify-between">
+                        <div class="space-y-1">
+                            <h3 class="text-[0.875rem] font-semibold">Anterior Zirconia Crown</h3>
+                            <div class="flex items-center gap-2">
+                                <span class="text-[0.625rem] font-semibold bg-[#10B981]/10 text-[#10B981] px-1.5 py-0.5 rounded uppercase tracking-wider">Design Ready</span>
+                                <span class="text-[0.75rem] text-[#94A3B8]">2h ago</span>
+                            </div>
+                        </div>
+                        <iconify-icon icon="solar:alt-arrow-right-linear" class="text-[#94A3B8]" width="18"></iconify-icon>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-white border border-[#E2E8F0] p-3 rounded-[0.5rem] flex items-center justify-between">
+                        <div class="space-y-1">
+                            <h3 class="text-[0.875rem] font-semibold">Upper PFM Bridge</h3>
+                            <div class="flex items-center gap-2">
+                                <span class="text-[0.625rem] font-semibold bg-[#3B82F6]/10 text-[#3B82F6] px-1.5 py-0.5 rounded uppercase tracking-wider">Shipped</span>
+                                <span class="text-[0.75rem] text-[#94A3B8]">5h ago</span>
+                            </div>
+                        </div>
+                        <iconify-icon icon="solar:alt-arrow-right-linear" class="text-[#94A3B8]" width="18"></iconify-icon>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-white border border-[#E2E8F0] p-3 rounded-[0.5rem] flex items-center justify-between">
+                        <div class="space-y-1">
+                            <h3 class="text-[0.875rem] font-semibold">Custom Abutment</h3>
+                            <div class="flex items-center gap-2">
+                                <span class="text-[0.625rem] font-semibold bg-[#1E3A5F]/10 text-[#1E3A5F] px-1.5 py-0.5 rounded uppercase tracking-wider">In Production</span>
+                                <span class="text-[0.75rem] text-[#94A3B8]">1d ago</span>
+                            </div>
+                        </div>
+                        <iconify-icon icon="solar:alt-arrow-right-linear" class="text-[#94A3B8]" width="18"></iconify-icon>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="bg-white border border-[#E2E8F0] p-3 rounded-[0.5rem] flex items-center justify-between">
+                        <div class="space-y-1">
+                            <h3 class="text-[0.875rem] font-semibold">E.Max Veneer Set</h3>
+                            <div class="flex items-center gap-2">
+                                <span class="text-[0.625rem] font-semibold bg-[#F59E0B]/10 text-[#F59E0B] px-1.5 py-0.5 rounded uppercase tracking-wider">Payment Due</span>
+                                <span class="text-[0.75rem] text-[#94A3B8]">1d ago</span>
+                            </div>
+                        </div>
+                        <iconify-icon icon="solar:alt-arrow-right-linear" class="text-[#94A3B8]" width="18"></iconify-icon>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Required Actions -->
+            <section class="px-4 mt-8">
+                <div class="flex items-center gap-2 mb-3">
+                    <iconify-icon icon="solar:danger-triangle-linear" class="text-[#F59E0B]" width="20"></iconify-icon>
+                    <h2 class="text-[1.125rem] font-semibold tracking-tight">Action Required</h2>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <!-- Action Card 1 -->
+                    <div class="bg-white border border-[#E2E8F0] border-l-[3px] border-l-[#F59E0B] p-3 rounded-[0.5rem] shadow-sm">
+                        <h3 class="text-[0.875rem] font-semibold">Review Design — Anterior Crown</h3>
+                        <p class="text-[0.75rem] text-[#64748B] mt-1">Approve or request revision for Case #8291</p>
+                    </div>
+                    <!-- Action Card 2 -->
+                    <div class="bg-white border border-[#E2E8F0] p-3 rounded-[0.5rem] shadow-sm">
+                        <h3 class="text-[0.875rem] font-semibold text-[#1E293B]">Make Payment — Upper PFM Bridge</h3>
+                        <p class="text-[0.75rem] text-[#64748B] mt-1">Invoice due in 3 days</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Bottom Tab Bar -->
+        <nav class="absolute bottom-0 left-0 right-0 bg-white border-t border-[#E2E8F0] h-[72px] px-6 flex items-center justify-between z-20">
+            <a href="#" class="flex flex-col items-center gap-1 text-[#1E3A5F]">
+                <iconify-icon icon="solar:home-2-linear" width="24" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-[10px] font-semibold">Home</span>
+            </a>
+            <a href="#" class="flex flex-col items-center gap-1 text-[#94A3B8]">
+                <iconify-icon icon="solar:box-linear" width="24" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-[10px] font-medium">Orders</span>
+            </a>
+            <a href="#" class="flex flex-col items-center gap-1 text-[#94A3B8]">
+                <iconify-icon icon="solar:chat-round-line-linear" width="24" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-[10px] font-medium">Chat</span>
+            </a>
+            <a href="#" class="flex flex-col items-center gap-1 text-[#94A3B8]">
+                <iconify-icon icon="solar:bell-linear" width="24" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-[10px] font-medium">Alerts</span>
+            </a>
+        </nav>
+
+        <!-- Home Indicator Mockup -->
+        <div class="absolute bottom-1.5 left-1/2 -translate-x-1/2 w-32 h-1 bg-[#1E293B]/10 rounded-full z-30"></div>
+    </div>
+
+
+</body></html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IVORYMADE — CMS Editor</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body {
+font-family: 'Inter', sans-serif;
+background-color: #F8F9FB;
+color: #1E293B;
+-webkit-font-smoothing: antialiased;
+}
+.active-tab {
+border-bottom: 2px solid #1E3A5F;
+color: #1E3A5F;
+font-weight: 600;
+}
+.editor-content h1 { font-size: 1.875rem; font-weight: 600; margin-bottom: 1.5rem; color: #1E293B; tracking-tight; }
+.editor-content h2 { font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.75rem; color: #1E293B; }
+.editor-content p { font-size: 1rem; line-height: 1.6; margin-bottom: 1.25rem; color: #1E293B; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+</style></head>
+<body class="min-h-screen flex">
+
+    <!-- Admin Sidebar -->
+    <aside class="w-[240px] flex-shrink-0 bg-[#1E3A5F] text-white flex flex-col fixed inset-y-0 left-0 z-50">
+        <div class="h-20 flex items-center px-8">
+            <span class="text-lg font-semibold tracking-tighter text-[#C9A96E]">IVORYMADE</span>
+        </div>
+
+        <nav class="flex-1 flex flex-col py-2">
+            <a href="#" class="flex items-center h-11 px-6 gap-3 text-white/70 hover:text-white transition-colors group">
+                <iconify-icon icon="solar:widget-linear" width="18" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-sm font-medium">Dashboard</span>
+            </a>
+            <a href="#" class="flex items-center h-11 px-6 gap-3 text-white/70 hover:text-white transition-colors group">
+                <iconify-icon icon="solar:cart-large-minimalistic-linear" width="18" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-sm font-medium">Orders</span>
+            </a>
+            <a href="#" class="flex items-center h-11 px-6 gap-3 text-white/70 hover:text-white transition-colors group">
+                <iconify-icon icon="solar:users-group-two-rounded-linear" width="18" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-sm font-medium">Users</span>
+            </a>
+            <a href="#" class="flex items-center h-11 px-6 gap-3 text-white/70 hover:text-white transition-colors group">
+                <iconify-icon icon="solar:chat-round-dots-linear" width="18" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-sm font-medium">Customer Support</span>
+            </a>
+            <a href="#" class="flex items-center h-11 px-6 gap-3 text-white/70 hover:text-white transition-colors group">
+                <iconify-icon icon="solar:card-2-linear" width="18" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-sm font-medium">Payment</span>
+            </a>
+            <a href="#" class="bg-white/10 border-l-[3px] border-[#C9A96E] flex items-center h-11 px-[21px] gap-3 text-white transition-colors group">
+                <iconify-icon icon="solar:document-text-linear" width="18" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-sm font-medium">CMS</span>
+            </a>
+            <div class="mt-auto pb-6">
+                <a href="#" class="flex items-center h-11 px-6 gap-3 text-white/70 hover:text-white transition-colors group">
+                    <iconify-icon icon="solar:settings-linear" width="18" style="stroke-width: 1.5"></iconify-icon>
+                    <span class="text-sm font-medium">Settings</span>
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 ml-[240px] flex flex-col items-center p-8 lg:p-12 overflow-y-auto">
+        <div class="w-full max-w-[900px]">
+            
+            <!-- Header Section -->
+            <div class="mb-10">
+                <h1 class="text-3xl font-semibold tracking-tight text-[#1E293B]">Static Pages</h1>
+                <p class="text-sm text-[#64748B] mt-1">Manage legal and policy page content</p>
+            </div>
+
+            <!-- Page Selector Tabs -->
+            <div class="flex items-center gap-8 border-b border-[#E2E8F0] mb-8">
+                <button class="pb-3 text-sm active-tab relative">
+                    Terms &amp; Conditions
+                </button>
+                <button class="pb-3 text-sm text-[#64748B] hover:text-[#1E3A5F] hover:underline transition-all">
+                    Privacy Policy
+                </button>
+                <button class="pb-3 text-sm text-[#64748B] hover:text-[#1E3A5F] hover:underline transition-all">
+                    Referral Policy
+                </button>
+            </div>
+
+            <!-- Editor Card -->
+            <div class="bg-white rounded-[12px] border border-[#E2E8F0] shadow-sm overflow-hidden flex flex-col">
+                <!-- Toolbar & Info -->
+                <div class="bg-[#F8F9FB] border-b border-[#E2E8F0] px-4 py-2 flex items-center justify-between">
+                    <div class="flex items-center gap-1">
+                        <button class="w-8 h-8 flex items-center justify-center rounded hover:bg-white hover:shadow-sm text-[#64748B] hover:text-[#1E3A5F] transition-all">
+                            <iconify-icon icon="solar:text-bold-linear" width="18"></iconify-icon>
+                        </button>
+                        <button class="w-8 h-8 flex items-center justify-center rounded hover:bg-white hover:shadow-sm text-[#64748B] hover:text-[#1E3A5F] transition-all">
+                            <iconify-icon icon="solar:text-italic-linear" width="18"></iconify-icon>
+                        </button>
+                        <button class="w-8 h-8 flex items-center justify-center rounded hover:bg-white hover:shadow-sm text-[#64748B] hover:text-[#1E3A5F] transition-all">
+                            <iconify-icon icon="solar:text-underline-linear" width="18"></iconify-icon>
+                        </button>
+                        
+                        <div class="w-[1px] h-4 bg-[#E2E8F0] mx-1"></div>
+                        
+                        <button class="px-2 h-8 flex items-center justify-center rounded hover:bg-white hover:shadow-sm text-[#64748B] hover:text-[#1E3A5F] text-[11px] font-bold transition-all">H1</button>
+                        <button class="px-2 h-8 flex items-center justify-center rounded bg-[#1E3A5F] text-white shadow-sm text-[11px] font-bold transition-all">H2</button>
+                        <button class="px-2 h-8 flex items-center justify-center rounded hover:bg-white hover:shadow-sm text-[#64748B] hover:text-[#1E3A5F] text-[11px] font-bold transition-all">H3</button>
+                        
+                        <div class="w-[1px] h-4 bg-[#E2E8F0] mx-1"></div>
+                        
+                        <button class="w-8 h-8 flex items-center justify-center rounded hover:bg-white hover:shadow-sm text-[#64748B] hover:text-[#1E3A5F] transition-all">
+                            <iconify-icon icon="solar:list-arrow-down-linear" width="18"></iconify-icon>
+                        </button>
+                        <button class="w-8 h-8 flex items-center justify-center rounded hover:bg-white hover:shadow-sm text-[#64748B] hover:text-[#1E3A5F] transition-all">
+                            <iconify-icon icon="solar:list-linear" width="18"></iconify-icon>
+                        </button>
+                        
+                        <div class="w-[1px] h-4 bg-[#E2E8F0] mx-1"></div>
+                        
+                        <button class="w-8 h-8 flex items-center justify-center rounded hover:bg-white hover:shadow-sm text-[#64748B] hover:text-[#1E3A5F] transition-all">
+                            <iconify-icon icon="solar:link-linear" width="18"></iconify-icon>
+                        </button>
+                        <button class="w-8 h-8 flex items-center justify-center rounded hover:bg-white hover:shadow-sm text-[#64748B] hover:text-[#1E3A5F] transition-all">
+                            <iconify-icon icon="solar:gallery-linear" width="18"></iconify-icon>
+                        </button>
+                        <button class="w-8 h-8 flex items-center justify-center rounded hover:bg-white hover:shadow-sm text-[#64748B] hover:text-[#1E3A5F] transition-all">
+                            <iconify-icon icon="solar:table-linear" width="18"></iconify-icon>
+                        </button>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <span class="inline-block w-2 h-2 rounded-full bg-[#10B981]"></span>
+                        <span class="text-xs text-[#64748B]">Auto-saved 2 min ago</span>
+                    </div>
+                </div>
+
+                <!-- Content Area -->
+                <div class="min-h-[500px] p-6 lg:p-10 outline-none editor-content" contenteditable="true">
+                    <h1>Terms and Conditions</h1>
+                    
+                    <h2>1. Acceptance of Terms</h2>
+                    <p>By accessing or using IVORYMADE's dental laboratory services, you agree to be bound by these terms and conditions. These terms govern the relationship between your dental practice and our laboratory facility regarding all custom dental restorations and services provided.</p>
+                    
+                    <h2>2. Services</h2>
+                    <p>IVORYMADE provides high-quality, custom dental restorations including crowns, bridges, veneers, and implant components. All orders are manufactured according to the digital or physical impressions provided. Standard turnaround times vary by product category and will be specified at the time of order placement.</p>
+                    
+                    <h2>3. Payment Terms</h2>
+                    <p>Accounts are eligible for net-30 payment terms upon approval. Statements are issued on the last business day of each month. Payments not received within 30 days of the invoice date may be subject to a late fee of 1.5% per month. IVORYMADE reserves the right to hold new cases for accounts with balances exceeding 60 days.</p>
+                </div>
+
+                <!-- Footer Info -->
+                <div class="border-t border-[#E2E8F0] px-6 py-2 flex justify-end">
+                    <span class="text-xs text-[#64748B]">Word count: 847 | Characters: 5,231</span>
+                </div>
+            </div>
+
+            <!-- Action Bar -->
+            <div class="mt-6 flex items-center gap-3">
+                <button class="h-11 px-6 rounded-lg border border-[#1E3A5F] text-[#1E3A5F] font-semibold text-sm hover:bg-[#1E3A5F]/5 transition-all">
+                    Save Draft
+                </button>
+                <button class="h-11 px-6 rounded-lg bg-[#1E3A5F] text-white font-semibold text-sm hover:bg-[#152a45] transition-all shadow-md shadow-[#1E3A5F]/10">
+                    Publish Changes
+                </button>
+                <div class="ml-auto text-xs text-[#64748B]">
+                    Last published: Feb 15, 2025
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+</body></html>

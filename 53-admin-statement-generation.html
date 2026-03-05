@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IVORYMADE — Statement Generation</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono&amp;display=swap" rel="stylesheet"></head>
+<body class="bg-[#F8F9FB] text-[#1E293B] antialiased min-h-screen flex" style="font-family: 'Inter', sans-serif;">
+
+    <!-- Sidebar -->
+    <aside class="w-[240px] bg-[#1E3A5F] fixed inset-y-0 left-0 flex flex-col z-50">
+        <div class="h-20 flex items-center px-8">
+            <span class="text-lg font-semibold tracking-tighter text-[#C9A96E]">IVORYMADE</span>
+        </div>
+
+        <nav class="flex-1 px-0 py-4">
+            <a href="#" class="flex items-center h-11 px-8 gap-3 text-white/70 hover:text-white transition-colors">
+                <iconify-icon icon="solar:widget-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-sm font-medium">Dashboard</span>
+            </a>
+            <a href="#" class="flex items-center h-11 px-8 gap-3 text-white/70 hover:text-white transition-colors">
+                <iconify-icon icon="solar:cart-large-minimalistic-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-sm font-medium">Orders</span>
+            </a>
+            <a href="#" class="flex items-center h-11 px-8 gap-3 text-white/70 hover:text-white transition-colors">
+                <iconify-icon icon="solar:users-group-two-rounded-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-sm font-medium">Users</span>
+            </a>
+            <a href="#" class="flex items-center h-11 px-8 gap-3 text-white/70 hover:text-white transition-colors">
+                <iconify-icon icon="solar:chat-round-dots-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-sm font-medium">Customer Support</span>
+            </a>
+            <a href="#" class="flex items-center h-11 px-8 gap-3 text-white bg-white/10 border-l-[3px] border-[#C9A96E]">
+                <iconify-icon icon="solar:card-2-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-sm font-medium">Payment</span>
+            </a>
+            <a href="#" class="flex items-center h-11 px-8 gap-3 text-white/70 hover:text-white transition-colors">
+                <iconify-icon icon="solar:document-text-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-sm font-medium">CMS</span>
+            </a>
+            <a href="#" class="flex items-center h-11 px-8 gap-3 text-white/70 hover:text-white transition-colors">
+                <iconify-icon icon="solar:settings-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-sm font-medium">Settings</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 ml-[240px] p-8">
+        
+        <!-- Header -->
+        <header class="mb-8">
+            <h1 class="text-3xl font-semibold tracking-tight text-[#1E293B]">Statement Generation</h1>
+            <p class="text-sm text-[#64748B] mt-1">Generate and send billing statements</p>
+        </header>
+
+        <!-- Balance Overview -->
+        <div class="flex gap-4 mb-8">
+            <div class="flex-1 bg-white p-6 rounded-xl border border-[#E2E8F0] border-l-4 border-l-[#F59E0B] shadow-sm">
+                <p class="text-xs font-medium text-[#64748B] uppercase tracking-wider">Total Outstanding</p>
+                <p class="text-3xl font-semibold mt-2 tracking-tight">$24,850.00</p>
+            </div>
+            <div class="flex-1 bg-white p-6 rounded-xl border border-[#E2E8F0] border-l-4 border-l-[#10B981] shadow-sm">
+                <p class="text-xs font-medium text-[#64748B] uppercase tracking-wider">Total Collected (Period)</p>
+                <p class="text-3xl font-semibold mt-2 tracking-tight">$67,320.00</p>
+            </div>
+            <div class="flex-1 bg-white p-6 rounded-xl border border-[#E2E8F0] border-l-4 border-l-[#3B82F6] shadow-sm">
+                <p class="text-xs font-medium text-[#64748B] uppercase tracking-wider">Credits Issued (Period)</p>
+                <p class="text-3xl font-semibold mt-2 tracking-tight">$3,150.00</p>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="flex items-center gap-3 mb-6">
+            <div class="relative flex-1 max-w-md">
+                <div class="absolute inset-y-0 left-3 flex items-center pointer-events-none text-[#64748B]">
+                    <iconify-icon icon="solar:magnifer-linear" width="18"></iconify-icon>
+                </div>
+                <div class="h-11 pl-10 pr-4 bg-white border border-[#E2E8F0] rounded-lg flex items-center gap-2 overflow-hidden">
+                    <span class="bg-[#F1F5F9] px-2 py-0.5 rounded text-xs border border-[#E2E8F0] flex items-center gap-1">
+                        All Customers
+                        <iconify-icon icon="solar:close-circle-linear" width="12"></iconify-icon>
+                    </span>
+                    <input type="text" placeholder="Select customers..." class="flex-1 outline-none text-sm placeholder:text-[#64748B]">
+                </div>
+            </div>
+
+            <div class="h-11 px-4 bg-white border border-[#E2E8F0] rounded-lg flex items-center gap-3 text-sm min-w-[240px] cursor-pointer hover:border-[#1E3A5F] transition-colors">
+                <iconify-icon icon="solar:calendar-linear" width="18" class="text-[#64748B]"></iconify-icon>
+                <span class="text-[#1E293B]">Jan 1, 2025 — Jan 31, 2025</span>
+            </div>
+
+            <button class="h-11 px-6 bg-[#1E3A5F] text-white text-sm font-semibold rounded-lg hover:bg-[#152a45] transition-all flex items-center gap-2 shadow-sm">
+                Generate Statement
+            </button>
+        </div>
+
+        <!-- Statement Table -->
+        <div class="bg-white border border-[#E2E8F0] rounded-xl overflow-hidden shadow-sm">
+            <table class="w-full text-left border-collapse">
+                <thead class="bg-[#F8F9FB] border-b border-[#E2E8F0]">
+                    <tr>
+                        <th class="py-4 px-6 text-xs font-medium text-[#64748B] uppercase tracking-wider">Date</th>
+                        <th class="py-4 px-6 text-xs font-medium text-[#64748B] uppercase tracking-wider">Order ID</th>
+                        <th class="py-4 px-6 text-xs font-medium text-[#64748B] uppercase tracking-wider">Case Name</th>
+                        <th class="py-4 px-6 text-xs font-medium text-[#64748B] uppercase tracking-wider">Doctor Name</th>
+                        <th class="py-4 px-6 text-xs font-medium text-[#64748B] uppercase tracking-wider text-right">Charges</th>
+                        <th class="py-4 px-6 text-xs font-medium text-[#64748B] uppercase tracking-wider text-right">Credits</th>
+                        <th class="py-4 px-6 text-xs font-medium text-[#64748B] uppercase tracking-wider text-right">Balance</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-[#E2E8F0]">
+                    <tr class="hover:bg-gray-50/50 transition-colors">
+                        <td class="py-4 px-6 text-sm">Jan 28</td>
+                        <td class="py-4 px-6 text-sm font-mono text-[#1E3A5F]">ORD-2025-1847</td>
+                        <td class="py-4 px-6 text-sm">Upper Anterior Bridge</td>
+                        <td class="py-4 px-6 text-sm">Dr. Sarah Chen</td>
+                        <td class="py-4 px-6 text-sm text-right">$1,250.00</td>
+                        <td class="py-4 px-6 text-sm text-right text-[#64748B]">—</td>
+                        <td class="py-4 px-6 text-sm font-semibold text-right">$1,250.00</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50/50 transition-colors">
+                        <td class="py-4 px-6 text-sm">Jan 25</td>
+                        <td class="py-4 px-6 text-sm font-mono text-[#1E3A5F]">ORD-2025-1832</td>
+                        <td class="py-4 px-6 text-sm">Implant Abutment</td>
+                        <td class="py-4 px-6 text-sm">Dr. Michael Torres</td>
+                        <td class="py-4 px-6 text-sm text-right">$890.00</td>
+                        <td class="py-4 px-6 text-sm text-right text-[#64748B]">—</td>
+                        <td class="py-4 px-6 text-sm font-semibold text-right">$2,140.00</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50/50 transition-colors">
+                        <td class="py-4 px-6 text-sm">Jan 22</td>
+                        <td class="py-4 px-6 text-sm font-mono text-[#1E3A5F]">ORD-2025-1819</td>
+                        <td class="py-4 px-6 text-sm">PFM Crown #14</td>
+                        <td class="py-4 px-6 text-sm">Dr. Sarah Chen</td>
+                        <td class="py-4 px-6 text-sm text-right">$425.00</td>
+                        <td class="py-4 px-6 text-sm text-right text-[#10B981]">-$50.00</td>
+                        <td class="py-4 px-6 text-sm font-semibold text-right">$2,515.00</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50/50 transition-colors">
+                        <td class="py-4 px-6 text-sm">Jan 18</td>
+                        <td class="py-4 px-6 text-sm font-mono text-[#1E3A5F]">ORD-2025-1805</td>
+                        <td class="py-4 px-6 text-sm">Zirconia Bridge</td>
+                        <td class="py-4 px-6 text-sm">Dr. James Wilson</td>
+                        <td class="py-4 px-6 text-sm text-right">$1,680.00</td>
+                        <td class="py-4 px-6 text-sm text-right text-[#64748B]">—</td>
+                        <td class="py-4 px-6 text-sm font-semibold text-right">$4,195.00</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50/50 transition-colors">
+                        <td class="py-4 px-6 text-sm">Jan 15</td>
+                        <td class="py-4 px-6 text-sm font-mono text-[#1E3A5F]">ORD-2025-1791</td>
+                        <td class="py-4 px-6 text-sm">E.max Veneer Set</td>
+                        <td class="py-4 px-6 text-sm">Dr. Lisa Park</td>
+                        <td class="py-4 px-6 text-sm text-right">$2,100.00</td>
+                        <td class="py-4 px-6 text-sm text-right text-[#10B981]">-$100.00</td>
+                        <td class="py-4 px-6 text-sm font-semibold text-right">$6,195.00</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50/50 transition-colors group">
+                        <td class="py-4 px-6 text-sm">Jan 10</td>
+                        <td class="py-4 px-6 text-sm font-mono text-[#1E3A5F]">ORD-2025-1778</td>
+                        <td class="py-4 px-6 text-sm">Full Arch Implant</td>
+                        <td class="py-4 px-6 text-sm flex items-center gap-4">
+                            Dr. Michael Torres
+                            <button class="h-9 px-4 border border-[#10B981] text-[#10B981] text-xs font-semibold rounded-lg hover:bg-[#10B981]/5 transition-all opacity-0 group-hover:opacity-100">
+                                Mark as Paid
+                            </button>
+                        </td>
+                        <td class="py-4 px-6 text-sm text-right">$3,450.00</td>
+                        <td class="py-4 px-6 text-sm text-right text-[#64748B]">—</td>
+                        <td class="py-4 px-6 text-sm font-semibold text-right">$9,645.00</td>
+                    </tr>
+                </tbody>
+                <tfoot class="bg-[#F8F9FB] font-semibold">
+                    <tr>
+                        <td colspan="4" class="py-4 px-6 text-sm text-right">Total</td>
+                        <td class="py-4 px-6 text-sm text-right">$9,795.00</td>
+                        <td class="py-4 px-6 text-sm text-right text-[#10B981]">-$150.00</td>
+                        <td class="py-4 px-6 text-sm text-right">$9,645.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <!-- Pagination -->
+            <div class="px-6 py-4 flex items-center justify-between border-t border-[#E2E8F0]">
+                <span class="text-xs text-[#64748B]">Showing 1-6 of 47 items</span>
+                <div class="flex gap-1">
+                    <button class="w-8 h-8 flex items-center justify-center rounded border border-[#E2E8F0] bg-white text-[#64748B] hover:bg-[#F8F9FB]">
+                        <iconify-icon icon="solar:alt-arrow-left-linear" width="16"></iconify-icon>
+                    </button>
+                    <button class="w-8 h-8 flex items-center justify-center rounded border border-[#1E3A5F] bg-[#1E3A5F] text-white text-xs font-semibold">1</button>
+                    <button class="w-8 h-8 flex items-center justify-center rounded border border-[#E2E8F0] bg-white text-[#64748B] text-xs hover:bg-[#F8F9FB]">2</button>
+                    <button class="w-8 h-8 flex items-center justify-center rounded border border-[#E2E8F0] bg-white text-[#64748B] text-xs hover:bg-[#F8F9FB]">3</button>
+                    <button class="w-8 h-8 flex items-center justify-center rounded border border-[#E2E8F0] bg-white text-[#64748B] hover:bg-[#F8F9FB]">
+                        <iconify-icon icon="solar:alt-arrow-right-linear" width="16"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="mt-6 flex items-center gap-3">
+            <button class="h-9 px-5 border border-[#1E3A5F] text-[#1E3A5F] text-sm font-semibold rounded-lg flex items-center gap-2 hover:bg-[#1E3A5F]/5 transition-all">
+                <iconify-icon icon="solar:file-download-linear" width="18"></iconify-icon>
+                Generate PDF
+            </button>
+            <button class="h-9 px-5 bg-[#1E3A5F] text-white text-sm font-semibold rounded-lg flex items-center gap-2 hover:bg-[#152a45] transition-all shadow-sm">
+                <iconify-icon icon="solar:letter-linear" width="18"></iconify-icon>
+                Send Statement
+            </button>
+            <div class="ml-auto text-xs text-[#64748B]">
+                Last generated: today at 09:42 AM
+            </div>
+        </div>
+
+    </main>
+
+
+</body></html>

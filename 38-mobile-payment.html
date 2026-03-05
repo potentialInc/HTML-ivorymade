@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment — Ivorymade</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body {
+font-family: 'Inter', sans-serif;
+background-color: #F8F9FB;
+color: #1E293B;
+-webkit-font-smoothing: antialiased;
+}
+.hide-scrollbar::-webkit-scrollbar {
+display: none;
+}
+.hide-scrollbar {
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+/* Custom Radio Styling */
+.custom-radio {
+appearance: none;
+width: 1.25rem;
+height: 1.25rem;
+border: 2px solid #E2E8F0;
+border-radius: 50%;
+outline: none;
+transition: all 0.2s ease;
+position: relative;
+cursor: pointer;
+}
+.custom-radio:checked {
+border-color: #1E3A5F;
+}
+.custom-radio:checked::after {
+content: '';
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 0.625rem;
+height: 0.625rem;
+background-color: #1E3A5F;
+border-radius: 50%;
+}
+</style></head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <!-- Phone Container -->
+    <div class="relative w-full max-w-[390px] h-[844px] bg-[#F8F9FB] rounded-[2.5rem] overflow-hidden border border-[#E2E8F0] shadow-2xl flex flex-col">
+        
+        <!-- Header -->
+        <header class="h-[56px] min-h-[56px] bg-white border-b border-[#E2E8F0] px-4 flex items-center justify-between z-20">
+            <button class="w-10 h-10 -ml-2 flex items-center justify-center text-[#1E293B] active:scale-95 transition-transform">
+                <iconify-icon icon="solar:alt-arrow-left-linear" width="24" style="stroke-width: 1.5"></iconify-icon>
+            </button>
+            <div class="text-center">
+                <h1 class="text-base font-semibold text-[#1E293B] leading-none">Payment</h1>
+                <span class="text-sm text-[#64748B] font-normal">IB-428-7291</span>
+            </div>
+            <div class="w-10"></div> <!-- Spacer for centering -->
+        </header>
+
+        <!-- Scrollable Content -->
+        <main class="flex-1 overflow-y-auto hide-scrollbar px-4 pb-32">
+            
+            <!-- Invoice Summary Card -->
+            <section class="mt-4 bg-white rounded-xl p-4 shadow-sm border border-[#E2E8F0]/50">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <h3 class="text-base font-semibold text-[#1E293B]">Anterior Zirconia Crown</h3>
+                        <p class="text-sm text-[#64748B]">Dr. Sarah Mitchell</p>
+                    </div>
+                </div>
+
+                <!-- Expandable Items -->
+                <details class="group">
+                    <summary class="flex items-center justify-between py-2 text-sm text-[#64748B] cursor-pointer list-none list-image-none">
+                        <span>3 items</span>
+                        <iconify-icon icon="solar:alt-arrow-down-linear" width="18" class="group-open:rotate-180 transition-transform"></iconify-icon>
+                    </summary>
+                    <div class="space-y-3 py-3 border-t border-[#E2E8F0]">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-[#64748B]">Zirconia Crown</span>
+                            <span class="font-medium text-[#1E293B]">$650.00</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-[#64748B]">Custom Shade</span>
+                            <span class="font-medium text-[#1E293B]">$75.00</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-[#64748B]">Rush Fee</span>
+                            <span class="font-medium text-[#1E293B]">$145.00</span>
+                        </div>
+                    </div>
+                </details>
+
+                <div class="mt-4 pt-4 border-t border-[#E2E8F0] flex justify-end items-center">
+                    <span class="text-xl font-bold text-[#1E3A5F] tracking-tight">$870.00</span>
+                </div>
+            </section>
+
+            <!-- Shipping Section -->
+            <section class="mt-4 bg-white rounded-xl p-4 shadow-sm border border-[#E2E8F0]/50">
+                <div class="flex justify-between items-center mb-2">
+                    <h3 class="text-base font-semibold text-[#1E293B]">Shipping Address</h3>
+                    <button class="text-sm font-medium text-[#1E3A5F] active:opacity-60">Change</button>
+                </div>
+                <p class="text-sm text-[#1E293B] leading-relaxed">
+                    456 Dental Plaza, Suite 200,<br>Miami, FL 33101
+                </p>
+
+                <div class="h-px bg-[#E2E8F0] my-4"></div>
+
+                <h3 class="text-base font-semibold text-[#1E293B] mb-3">Shipping Method</h3>
+                <div class="space-y-1">
+                    <label class="flex items-center justify-between h-12 px-1 cursor-pointer active:bg-slate-50 rounded-lg transition-colors">
+                        <div class="flex items-center gap-3">
+                            <input type="radio" name="shipping" class="custom-radio" checked="">
+                            <span class="text-sm font-medium">Ground (Free)</span>
+                        </div>
+                        <span class="text-sm text-[#64748B]">$0.00</span>
+                    </label>
+                    <label class="flex items-center justify-between h-12 px-1 cursor-pointer active:bg-slate-50 rounded-lg transition-colors">
+                        <div class="flex items-center gap-3">
+                            <input type="radio" name="shipping" class="custom-radio">
+                            <span class="text-sm font-medium text-[#1E293B]">2nd Day</span>
+                        </div>
+                        <span class="text-sm text-[#1E293B]">$15.00</span>
+                    </label>
+                    <label class="flex items-center justify-between h-12 px-1 cursor-pointer active:bg-slate-50 rounded-lg transition-colors">
+                        <div class="flex items-center gap-3">
+                            <input type="radio" name="shipping" class="custom-radio">
+                            <span class="text-sm font-medium text-[#1E293B]">Overnight</span>
+                        </div>
+                        <span class="text-sm text-[#1E293B]">$35.00</span>
+                    </label>
+                </div>
+            </section>
+
+            <!-- Payment Method -->
+            <section class="mt-4 bg-white rounded-xl p-4 shadow-sm border border-[#E2E8F0]/50">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-base font-semibold text-[#1E293B]">Payment</h3>
+                    <button class="text-sm font-medium text-[#1E3A5F] active:opacity-60">Change</button>
+                </div>
+                
+                <div class="flex items-center justify-between p-3 bg-[#F8F9FB] border border-[#E2E8F0] rounded-lg">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-6 bg-[#1E293B] rounded flex items-center justify-center">
+                            <iconify-icon icon="solar:card-2-linear" class="text-white" width="16"></iconify-icon>
+                        </div>
+                        <span class="text-sm font-medium">Visa •••• 1234</span>
+                    </div>
+                    <iconify-icon icon="solar:check-circle-linear" class="text-[#10B981]" width="20"></iconify-icon>
+                </div>
+
+                <div class="mt-6 flex items-center justify-center gap-1.5 opacity-60">
+                    <iconify-icon icon="solar:lock-password-linear" width="14" class="text-[#64748B]"></iconify-icon>
+                    <span class="text-xs font-medium text-[#64748B] uppercase tracking-wider">Secured by Stripe</span>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Sticky Bottom Bar -->
+        <footer class="absolute bottom-0 left-0 right-0 bg-white border-t border-[#E2E8F0] p-4 pb-8 z-30">
+            <button class="w-full h-12 bg-[#1E3A5F] text-white rounded-xl font-semibold text-sm flex items-center justify-center shadow-lg shadow-[#1E3A5F]/10 active:scale-[0.98] transition-all">
+                Pay $870.00
+            </button>
+        </footer>
+
+        <!-- Home Indicator -->
+        <div class="absolute bottom-2 left-1/2 -translate-x-1/2 w-32 h-1 bg-[#1E293B]/10 rounded-full z-40 pointer-events-none"></div>
+    </div>
+
+
+</body></html>

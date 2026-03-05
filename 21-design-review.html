@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design Review | Ivorymade</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body {
+font-family: 'Inter', sans-serif;
+-webkit-font-smoothing: antialiased;
+color: #1E293B;
+}
+.custom-scrollbar::-webkit-scrollbar {
+width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+background: #F8F9FB;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+background: #E2E8F0;
+border-radius: 10px;
+}
+.wireframe-tooth {
+stroke-dasharray: 4;
+animation: rotate-path 20s linear infinite;
+}
+@keyframes rotate-path {
+from { stroke-dashoffset: 100; }
+to { stroke-dashoffset: 0; }
+}
+</style></head>
+<body class="bg-[#F8F9FB] h-screen flex overflow-hidden">
+
+    <!-- Sidebar -->
+    <aside class="w-[280px] bg-white border-r border-[#E2E8F0] shadow-sm flex flex-col z-20">
+        <div class="h-20 px-8 flex items-center">
+            <span class="text-xl font-semibold tracking-tighter text-[#1E3A5F]">IVORYMADE</span>
+        </div>
+        
+        <nav class="flex-1 px-4 py-4 space-y-1">
+            <a href="#" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-all group">
+                <iconify-icon icon="solar:widget-linear" width="20" class="group-hover:text-[#1E3A5F]"></iconify-icon>
+                <span class="text-sm font-medium">Dashboard</span>
+            </a>
+            <a href="#" class="flex items-center h-11 px-4 gap-3 rounded-lg bg-[#1E3A5F]/5 text-[#1E3A5F] transition-all">
+                <iconify-icon icon="solar:box-minimalistic-linear" width="20"></iconify-icon>
+                <span class="text-sm font-semibold">Orders</span>
+            </a>
+            <a href="#" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-all group">
+                <iconify-icon icon="solar:chat-round-line-linear" width="20" class="group-hover:text-[#1E3A5F]"></iconify-icon>
+                <span class="text-sm font-medium">Messages</span>
+            </a>
+            <a href="#" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-all group">
+                <iconify-icon icon="solar:settings-linear" width="20" class="group-hover:text-[#1E3A5F]"></iconify-icon>
+                <span class="text-sm font-medium">Settings</span>
+            </a>
+        </nav>
+
+        <div class="p-6 border-t border-[#E2E8F0]">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-full bg-[#C9A96E]/10 flex items-center justify-center text-[#C9A96E] text-xs font-semibold">JD</div>
+                <div class="flex-1 min-w-0">
+                    <p class="text-xs font-semibold text-[#1E293B] truncate">Dr. Julianne Moore</p>
+                    <p class="text-[10px] text-[#64748B] truncate">Premium Dental Studio</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Workspace -->
+    <main class="flex flex-1 overflow-hidden">
+        
+        <!-- Left Panel: 3D Viewer (60%) -->
+        <section class="w-[60%] bg-[#1E293B] relative flex flex-col items-center justify-center overflow-hidden">
+            <!-- Fullscreen Toggle -->
+            <button class="absolute top-6 right-6 w-10 h-10 rounded-lg bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-all">
+                <iconify-icon icon="solar:maximize-linear" width="20"></iconify-icon>
+            </button>
+
+            <!-- 3D Model Placeholder -->
+            <div class="relative flex flex-col items-center">
+                <svg width="320" height="320" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="opacity-40">
+                    <path d="M50 10C35 10 25 25 25 45C25 65 35 90 50 90C65 90 75 65 75 45C75 25 65 10 50 10Z" stroke="white" stroke-width="0.5" class="wireframe-tooth"></path>
+                    <path d="M25 45C25 45 40 50 50 50C60 50 75 45 75 45" stroke="white" stroke-width="0.5"></path>
+                    <path d="M50 10V90" stroke="white" stroke-width="0.2"></path>
+                    <circle cx="50" cy="45" r="30" stroke="white" stroke-width="0.2" stroke-dasharray="2 2"></circle>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <p class="text-sm font-light tracking-widest text-white/60 uppercase">3D Design Preview</p>
+                </div>
+            </div>
+
+            <!-- Viewer Controls -->
+            <div class="absolute bottom-8 flex items-center gap-4 px-6 py-3 bg-white/5 backdrop-blur-md rounded-xl border border-white/10">
+                <button class="w-10 h-10 rounded-lg hover:bg-white/10 text-white flex items-center justify-center transition-all" title="Pan">
+                    <iconify-icon icon="solar:hand-shake-linear" width="22"></iconify-icon>
+                </button>
+                <div class="w-[1px] h-6 bg-white/10"></div>
+                <button class="w-10 h-10 rounded-lg hover:bg-white/10 text-white flex items-center justify-center transition-all" title="Zoom">
+                    <iconify-icon icon="solar:magnifer-zoom-in-linear" width="22"></iconify-icon>
+                </button>
+                <div class="w-[1px] h-6 bg-white/10"></div>
+                <button class="w-10 h-10 rounded-lg hover:bg-white/10 text-white flex items-center justify-center transition-all" title="Rotate">
+                    <iconify-icon icon="solar:restart-linear" width="22"></iconify-icon>
+                </button>
+            </div>
+        </section>
+
+        <!-- Right Panel: Review (40%) -->
+        <section class="w-[40%] bg-white border-l border-[#E2E8F0] flex flex-col h-full overflow-hidden">
+            <div class="flex-1 overflow-y-auto custom-scrollbar p-6">
+                <!-- Order Info Header -->
+                <div class="mb-8">
+                    <div class="flex items-start justify-between mb-1">
+                        <h1 class="text-base font-semibold text-[#1E293B]">Upper Anterior Bridge</h1>
+                        <span class="px-2.5 py-1 rounded-full bg-[#F59E0B]/10 text-[#F59E0B] text-[10px] font-semibold uppercase tracking-wider">Awaiting Response</span>
+                    </div>
+                    <p class="text-sm text-[#64748B]">Order ID: <span class="font-mono">IB-428-7291</span></p>
+                </div>
+
+                <!-- Technician Comment Section -->
+                <div class="mb-8">
+                    <h4 class="text-sm font-semibold text-[#1E293B] mb-3">Comment from Technician</h4>
+                    <div class="bg-[#F8F9FB] border border-[#E2E8F0] rounded-xl p-4">
+                        <p class="text-sm text-[#1E293B] leading-relaxed mb-4">
+                            The design is ready for review. I've adjusted the occlusal surface for optimal contact. Please check the margin line on tooth 15.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-medium text-[#64748B]">Tech. Ahmad K.</span>
+                            <span class="text-xs text-[#64748B]">Mar 4, 2026 at 2:15 PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Revision History -->
+                <div class="mb-8">
+                    <h4 class="text-sm font-semibold text-[#1E293B] mb-3">Revision History</h4>
+                    <div class="space-y-3">
+                        <!-- Entry 1 -->
+                        <div class="p-3 bg-white border border-[#E2E8F0] rounded-lg">
+                            <div class="flex justify-between mb-1.5">
+                                <span class="text-[10px] font-semibold text-[#1E3A5F] uppercase">Lab</span>
+                                <span class="text-[10px] text-[#64748B]">Mar 4, 2026</span>
+                            </div>
+                            <p class="text-xs text-[#1E293B]">Adjusted occlusal surface and margin line per request.</p>
+                        </div>
+                        <!-- Entry 2 -->
+                        <div class="p-3 bg-white border border-[#E2E8F0] rounded-lg">
+                            <div class="flex justify-between mb-1.5">
+                                <span class="text-[10px] font-semibold text-[#C9A96E] uppercase">Dr. Mitchell</span>
+                                <span class="text-[10px] text-[#64748B]">Mar 3, 2026</span>
+                            </div>
+                            <p class="text-xs text-[#1E293B]">Please adjust the margin line on tooth 15 — needs to be slightly more subgingival.</p>
+                        </div>
+                        <!-- Entry 3 -->
+                        <div class="p-3 bg-white border border-[#E2E8F0] rounded-lg">
+                            <div class="flex justify-between mb-1.5">
+                                <span class="text-[10px] font-semibold text-[#1E3A5F] uppercase">Lab</span>
+                                <span class="text-[10px] text-[#64748B]">Mar 2, 2026</span>
+                            </div>
+                            <p class="text-xs text-[#1E293B]">Initial design uploaded for review.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Revision Input -->
+                <div class="mb-8">
+                    <h4 class="text-sm font-semibold text-[#1E293B] mb-3">Your Feedback</h4>
+                    <div class="relative">
+                        <textarea class="w-full min-h-[120px] p-4 text-sm bg-white border border-[#E2E8F0] rounded-xl focus:outline-none focus:border-[#1E3A5F] transition-colors resize-none placeholder:text-[#64748B]/50" placeholder="Describe the revisions you'd like..."></textarea>
+                        <span class="absolute bottom-3 right-4 text-[10px] text-[#64748B]">0/500</span>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="space-y-3 pb-4">
+                    <button class="w-full h-11 border border-[#F59E0B] text-[#F59E0B] text-sm font-semibold rounded-lg hover:bg-[#F59E0B]/5 transition-all">
+                        Request Revision
+                    </button>
+                    <button class="w-full h-11 bg-[#10B981] text-white text-sm font-semibold rounded-lg hover:bg-[#0E9F6E] transition-all shadow-sm shadow-[#10B981]/20">
+                        Confirm Design
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Confirmation Modal Overlay (Visible as requested) -->
+    <div class="fixed inset-0 z-[100] flex items-center justify-center bg-[#1E293B]/60 backdrop-blur-sm p-4">
+        <div class="w-full max-w-[480px] bg-white rounded-2xl shadow-2xl p-8 border border-[#E2E8F0]">
+            <div class="w-14 h-14 bg-[#10B981]/10 text-[#10B981] rounded-full flex items-center justify-center mb-6">
+                <iconify-icon icon="solar:check-circle-linear" width="32"></iconify-icon>
+            </div>
+            
+            <h3 class="text-xl font-semibold tracking-tight text-[#1E293B] mb-3">Confirm Design Approval</h3>
+            <p class="text-sm text-[#64748B] leading-relaxed mb-8">
+                Are you sure you want to approve this design? Once approved, the final price will be calculated and the order will move to payment.
+            </p>
+
+            <div class="flex items-center gap-4">
+                <button class="flex-1 h-11 border border-[#E2E8F0] text-[#64748B] text-sm font-semibold rounded-lg hover:bg-[#F8F9FB] transition-all">
+                    Cancel
+                </button>
+                <button class="flex-1 h-11 bg-[#10B981] text-white text-sm font-semibold rounded-lg hover:bg-[#0E9F6E] transition-all">
+                    Confirm Approval
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</body></html>

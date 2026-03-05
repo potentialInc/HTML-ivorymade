@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orders List | Ivorymade</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body {
+font-family: 'Inter', sans-serif;
+-webkit-font-smoothing: antialiased;
+background-color: #F8F9FB;
+}
+.custom-scrollbar::-webkit-scrollbar {
+height: 4px;
+width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+background: #E2E8F0;
+border-radius: 10px;
+}
+</style></head>
+<body class="bg-[#F8F9FB] text-[#1E293B]">
+
+    <!-- Sidebar -->
+    <aside class="fixed inset-y-0 left-0 w-[240px] bg-white border-r border-[#E2E8F0] flex flex-col z-50">
+        <div class="h-16 px-6 flex items-center">
+            <span class="text-xl font-semibold tracking-tighter uppercase text-[#1E3A5F]">
+                Ivorymade
+            </span>
+        </div>
+
+        <nav class="flex-1 px-3 mt-4 space-y-1 overflow-y-auto custom-scrollbar">
+            <a href="#" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors">
+                <iconify-icon icon="solar:home-2-linear" width="20" height="20" style="stroke-width: 1.5;"></iconify-icon>
+                <span class="text-sm font-medium">Home</span>
+            </a>
+            <a href="#" class="flex items-center h-11 px-4 gap-3 rounded-lg bg-[#1E3A5F]/5 text-[#1E3A5F] transition-colors">
+                <iconify-icon icon="solar:box-linear" width="20" height="20" style="stroke-width: 1.5;"></iconify-icon>
+                <span class="text-sm font-medium">Orders</span>
+            </a>
+            <a href="#" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors">
+                <iconify-icon icon="solar:card-transfer-linear" width="20" height="20" style="stroke-width: 1.5;"></iconify-icon>
+                <span class="text-sm font-medium">Payment</span>
+            </a>
+            <a href="#" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors">
+                <iconify-icon icon="solar:chat-round-call-linear" width="20" height="20" style="stroke-width: 1.5;"></iconify-icon>
+                <span class="text-sm font-medium">Customer Support</span>
+            </a>
+            <a href="#" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors">
+                <iconify-icon icon="solar:question-square-linear" width="20" height="20" style="stroke-width: 1.5;"></iconify-icon>
+                <span class="text-sm font-medium">FAQ</span>
+            </a>
+            <a href="#" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors">
+                <iconify-icon icon="solar:settings-linear" width="20" height="20" style="stroke-width: 1.5;"></iconify-icon>
+                <span class="text-sm font-medium">Settings</span>
+            </a>
+        </nav>
+
+        <div class="p-3 border-t border-[#E2E8F0]">
+            <button class="w-full flex items-center h-11 px-4 gap-3 rounded-lg text-[#EF4444] hover:bg-red-50 transition-colors">
+                <iconify-icon icon="solar:logout-linear" width="20" height="20" style="stroke-width: 1.5;"></iconify-icon>
+                <span class="text-sm font-medium">Log Out</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="ml-[240px] flex-1 min-h-screen">
+        <!-- Top Bar -->
+        <header class="h-20 bg-[#F8F9FB] px-8 flex items-center justify-between">
+            <h1 class="text-3xl font-semibold tracking-tight text-[#1E293B]">Orders</h1>
+            <button class="h-[44px] px-6 bg-[#1E3A5F] text-white rounded-lg flex items-center gap-2 hover:bg-[#162a45] transition-all shadow-sm">
+                <iconify-icon icon="solar:add-circle-linear" width="20" height="20" style="stroke-width: 1.5;"></iconify-icon>
+                <span class="text-sm font-semibold">New Order</span>
+            </button>
+        </header>
+
+        <div class="px-8 pb-12 max-w-[1400px]">
+            <!-- Search + Filters -->
+            <div class="mt-4 space-y-3">
+                <div class="relative w-full">
+                    <iconify-icon icon="solar:magnifer-linear" width="20" height="20" class="absolute left-4 top-1/2 -translate-y-1/2 text-[#94A3B8]" style="stroke-width: 1.5;"></iconify-icon>
+                    <input type="text" placeholder="Search by case name, Order ID, or doctor" class="w-full h-[44px] pl-12 pr-4 bg-white border border-[#E2E8F0] rounded-lg text-sm focus:outline-none focus:border-[#1E3A5F] shadow-sm">
+                </div>
+                
+                <div class="flex gap-3 overflow-x-auto pb-1 custom-scrollbar">
+                    <div class="relative min-w-[180px]">
+                        <select class="w-full h-[44px] pl-4 pr-10 bg-white border border-[#E2E8F0] rounded-lg text-sm appearance-none focus:outline-none focus:border-[#1E3A5F] cursor-pointer">
+                            <option>All Types</option>
+                            <option>Single Crown</option>
+                            <option>Bridge</option>
+                            <option>Implant Crown</option>
+                            <option>Implant Bridge</option>
+                            <option>Full Arch</option>
+                        </select>
+                        <iconify-icon icon="solar:alt-arrow-down-linear" width="16" height="16" class="absolute right-3 top-1/2 -translate-y-1/2 text-[#64748B] pointer-events-none"></iconify-icon>
+                    </div>
+                    <div class="relative min-w-[180px]">
+                        <iconify-icon icon="solar:calendar-linear" width="18" height="18" class="absolute left-3 top-1/2 -translate-y-1/2 text-[#64748B] pointer-events-none"></iconify-icon>
+                        <select class="w-full h-[44px] pl-10 pr-10 bg-white border border-[#E2E8F0] rounded-lg text-sm appearance-none focus:outline-none focus:border-[#1E3A5F] cursor-pointer">
+                            <option>All Dates</option>
+                            <option>Last 7 Days</option>
+                            <option>Last 30 Days</option>
+                        </select>
+                        <iconify-icon icon="solar:alt-arrow-down-linear" width="16" height="16" class="absolute right-3 top-1/2 -translate-y-1/2 text-[#64748B] pointer-events-none"></iconify-icon>
+                    </div>
+                    <div class="relative min-w-[180px]">
+                        <select class="w-full h-[44px] pl-4 pr-10 bg-white border border-[#E2E8F0] rounded-lg text-sm appearance-none focus:outline-none focus:border-[#1E3A5F] cursor-pointer">
+                            <option>All Statuses</option>
+                            <option>In Production</option>
+                            <option>Completed</option>
+                        </select>
+                        <iconify-icon icon="solar:alt-arrow-down-linear" width="16" height="16" class="absolute right-3 top-1/2 -translate-y-1/2 text-[#64748B] pointer-events-none"></iconify-icon>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Status Count Tabs -->
+            <div class="mt-6 flex gap-2 overflow-x-auto pb-2 custom-scrollbar">
+                <button class="h-8 px-4 flex items-center justify-center bg-[#1E3A5F] text-white rounded-[6px] text-sm font-medium whitespace-nowrap">
+                    In Production <span class="ml-2 opacity-80 text-xs">12</span>
+                </button>
+                <button class="h-8 px-4 flex items-center justify-center bg-white border border-[#E2E8F0] text-[#64748B] rounded-[6px] text-sm font-medium whitespace-nowrap hover:bg-[#F1F5F9]">
+                    Awaiting Response <span class="ml-2 text-xs">5</span>
+                </button>
+                <button class="h-8 px-4 flex items-center justify-center bg-white border border-[#E2E8F0] text-[#64748B] rounded-[6px] text-sm font-medium whitespace-nowrap hover:bg-[#F1F5F9]">
+                    In Transit <span class="ml-2 text-xs">8</span>
+                </button>
+                <button class="h-8 px-4 flex items-center justify-center bg-white border border-[#E2E8F0] text-[#64748B] rounded-[6px] text-sm font-medium whitespace-nowrap hover:bg-[#F1F5F9]">
+                    On Hold <span class="ml-2 text-xs">2</span>
+                </button>
+                <button class="h-8 px-4 flex items-center justify-center bg-white border border-[#E2E8F0] text-[#64748B] rounded-[6px] text-sm font-medium whitespace-nowrap hover:bg-[#F1F5F9]">
+                    Completed <span class="ml-2 text-xs">45</span>
+                </button>
+                <button class="h-8 px-4 flex items-center justify-center bg-white border border-[#E2E8F0] text-[#64748B] rounded-[6px] text-sm font-medium whitespace-nowrap hover:bg-[#F1F5F9]">
+                    Cancelled <span class="ml-2 text-xs">1</span>
+                </button>
+                <button class="h-8 px-4 flex items-center justify-center bg-white border border-[#E2E8F0] text-[#64748B] rounded-[6px] text-sm font-medium whitespace-nowrap hover:bg-[#F1F5F9]">
+                    Delayed <span class="ml-2 text-xs">3</span>
+                </button>
+            </div>
+
+            <!-- Order List -->
+            <div class="mt-4 space-y-3">
+                <!-- Card 1 -->
+                <div class="bg-white p-[20px] px-[24px] border border-[#E2E8F0] rounded-[12px] hover:shadow-md hover:border-[#CBD5E1] transition-all">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div class="flex-1">
+                            <div class="flex items-center gap-2">
+                                <h3 class="text-base font-semibold text-[#1E293B]">Michael Harrison</h3>
+                                <span class="text-sm text-[#64748B]">#IV-92834</span>
+                            </div>
+                            <div class="flex items-center gap-3 mt-2">
+                                <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-[#1E3A5F]/5 text-[#1E3A5F] uppercase tracking-wide">Single Crown</span>
+                                <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-[#F59E0B]/10 text-[#F59E0B] uppercase tracking-wide">In Production</span>
+                                <span class="text-xs text-[#64748B]">Due Oct 28, 2023</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <button class="px-4 h-9 rounded-lg border border-[#1E3A5F] text-[#1E3A5F] text-xs font-semibold hover:bg-[#1E3A5F]/5 transition-colors">Review Design</button>
+                        </div>
+                    </div>
+                    <!-- Progress Bar -->
+                    <div class="mt-6 flex gap-1 h-1.5 w-full bg-[#F1F5F9] rounded-full overflow-hidden">
+                        <div class="flex-1 bg-[#1E3A5F]"></div>
+                        <div class="flex-1 bg-[#1E3A5F]"></div>
+                        <div class="flex-1 bg-[#1E3A5F]"></div>
+                        <div class="flex-1 bg-[#E2E8F0]"></div>
+                        <div class="flex-1 bg-[#E2E8F0]"></div>
+                        <div class="flex-1 bg-[#E2E8F0]"></div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-[20px] px-[24px] border border-[#E2E8F0] rounded-[12px] hover:shadow-md hover:border-[#CBD5E1] transition-all">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div class="flex-1">
+                            <div class="flex items-center gap-2">
+                                <h3 class="text-base font-semibold text-[#1E293B]">Emily Thorne</h3>
+                                <span class="text-sm text-[#64748B]">#IV-92835</span>
+                            </div>
+                            <div class="flex items-center gap-3 mt-2">
+                                <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-[#1E3A5F]/5 text-[#1E3A5F] uppercase tracking-wide">Implant Bridge</span>
+                                <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-[#3B82F6]/10 text-[#3B82F6] uppercase tracking-wide">In Transit</span>
+                                <span class="text-xs text-[#64748B]">Shipped Oct 24, 2023</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <button class="px-4 h-9 rounded-lg border border-[#3B82F6] text-[#3B82F6] text-xs font-semibold hover:bg-[#3B82F6]/5 transition-colors">Track Shipment</button>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex gap-1 h-1.5 w-full bg-[#F1F5F9] rounded-full overflow-hidden">
+                        <div class="flex-1 bg-[#1E3A5F]"></div>
+                        <div class="flex-1 bg-[#1E3A5F]"></div>
+                        <div class="flex-1 bg-[#1E3A5F]"></div>
+                        <div class="flex-1 bg-[#1E3A5F]"></div>
+                        <div class="flex-1 bg-[#1E3A5F]"></div>
+                        <div class="flex-1 bg-[#E2E8F0]"></div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-[20px] px-[24px] border border-[#E2E8F0] rounded-[12px] hover:shadow-md hover:border-[#CBD5E1] transition-all">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div class="flex-1">
+                            <div class="flex items-center gap-2">
+                                <h3 class="text-base font-semibold text-[#1E293B]">David Kim</h3>
+                                <span class="text-sm text-[#64748B]">#IV-92836</span>
+                            </div>
+                            <div class="flex items-center gap-3 mt-2">
+                                <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-[#1E3A5F]/5 text-[#1E3A5F] uppercase tracking-wide">Full Arch</span>
+                                <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-[#10B981]/10 text-[#10B981] uppercase tracking-wide">Completed</span>
+                                <span class="text-xs text-[#64748B]">Delivered Oct 22, 2023</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <button class="px-4 h-9 rounded-lg border border-[#F59E0B] text-[#F59E0B] text-xs font-semibold hover:bg-[#F59E0B]/5 transition-colors">Check Invoice</button>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex gap-1 h-1.5 w-full bg-[#F1F5F9] rounded-full overflow-hidden">
+                        <div class="flex-1 bg-[#1E3A5F]"></div>
+                        <div class="flex-1 bg-[#1E3A5F]"></div>
+                        <div class="flex-1 bg-[#1E3A5F]"></div>
+                        <div class="flex-1 bg-[#1E3A5F]"></div>
+                        <div class="flex-1 bg-[#1E3A5F]"></div>
+                        <div class="flex-1 bg-[#1E3A5F]"></div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white p-[20px] px-[24px] border border-[#E2E8F0] rounded-[12px] hover:shadow-md hover:border-[#CBD5E1] transition-all">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div class="flex-1">
+                            <div class="flex items-center gap-2">
+                                <h3 class="text-base font-semibold text-[#1E293B]">Sarah Jenkins</h3>
+                                <span class="text-sm text-[#64748B]">#IV-92837</span>
+                            </div>
+                            <div class="flex items-center gap-3 mt-2">
+                                <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-[#1E3A5F]/5 text-[#1E3A5F] uppercase tracking-wide">Bridge</span>
+                                <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-[#F59E0B]/10 text-[#F59E0B] uppercase tracking-wide">In Production</span>
+                                <span class="text-xs text-[#64748B]">Due Oct 30, 2023</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <button class="px-4 h-9 rounded-lg border border-[#1E3A5F] text-[#1E3A5F] text-xs font-semibold hover:bg-[#1E3A5F]/5 transition-colors">Review Design</button>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex gap-1 h-1.5 w-full bg-[#F1F5F9] rounded-full overflow-hidden">
+                        <div class="flex-1 bg-[#1E3A5F]"></div>
+                        <div class="flex-1 bg-[#E2E8F0]"></div>
+                        <div class="flex-1 bg-[#E2E8F0]"></div>
+                        <div class="flex-1 bg-[#E2E8F0]"></div>
+                        <div class="flex-1 bg-[#E2E8F0]"></div>
+                        <div class="flex-1 bg-[#E2E8F0]"></div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white p-[20px] px-[24px] border border-[#E2E8F0] rounded-[12px] hover:shadow-md hover:border-[#CBD5E1] transition-all">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div class="flex-1">
+                            <div class="flex items-center gap-2">
+                                <h3 class="text-base font-semibold text-[#1E293B]">Robert Wilson</h3>
+                                <span class="text-sm text-[#64748B]">#IV-92838</span>
+                            </div>
+                            <div class="flex items-center gap-3 mt-2">
+                                <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-[#1E3A5F]/5 text-[#1E3A5F] uppercase tracking-wide">Implant Crown</span>
+                                <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-[#EF4444]/10 text-[#EF4444] uppercase tracking-wide">On Hold</span>
+                                <span class="text-xs text-[#64748B]">Update Required</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <button class="px-4 h-9 rounded-lg border border-[#1E3A5F] text-[#1E3A5F] text-xs font-semibold hover:bg-[#1E3A5F]/5 transition-colors">Review Design</button>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex gap-1 h-1.5 w-full bg-[#F1F5F9] rounded-full overflow-hidden">
+                        <div class="flex-1 bg-[#EF4444]"></div>
+                        <div class="flex-1 bg-[#EF4444]"></div>
+                        <div class="flex-1 bg-[#E2E8F0]"></div>
+                        <div class="flex-1 bg-[#E2E8F0]"></div>
+                        <div class="flex-1 bg-[#E2E8F0]"></div>
+                        <div class="flex-1 bg-[#E2E8F0]"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="mt-8 pt-6 border-t border-[#E2E8F0] flex items-center justify-between">
+                <p class="text-sm text-[#64748B]">Showing 1-10 of 234 orders</p>
+                
+                <div class="flex items-center gap-1">
+                    <button class="w-8 h-8 rounded flex items-center justify-center text-[#64748B] hover:bg-[#F1F5F9]">
+                        <iconify-icon icon="solar:alt-arrow-left-linear" width="18" height="18"></iconify-icon>
+                    </button>
+                    <button class="w-8 h-8 rounded flex items-center justify-center bg-[#1E3A5F] text-white text-sm font-medium">1</button>
+                    <button class="w-8 h-8 rounded flex items-center justify-center text-[#64748B] text-sm font-medium hover:bg-[#F1F5F9]">2</button>
+                    <button class="w-8 h-8 rounded flex items-center justify-center text-[#64748B] text-sm font-medium hover:bg-[#F1F5F9]">3</button>
+                    <span class="px-1 text-[#94A3B8]">...</span>
+                    <button class="w-8 h-8 rounded flex items-center justify-center text-[#64748B] text-sm font-medium hover:bg-[#F1F5F9]">24</button>
+                    <button class="w-8 h-8 rounded flex items-center justify-center text-[#64748B] hover:bg-[#F1F5F9]">
+                        <iconify-icon icon="solar:alt-arrow-right-linear" width="18" height="18"></iconify-icon>
+                    </button>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <span class="text-sm text-[#64748B]">Per page</span>
+                    <div class="relative">
+                        <select class="h-8 pl-3 pr-8 bg-white border border-[#E2E8F0] rounded text-sm appearance-none focus:outline-none focus:border-[#1E3A5F] cursor-pointer">
+                            <option>10</option>
+                            <option>25</option>
+                            <option>50</option>
+                        </select>
+                        <iconify-icon icon="solar:alt-arrow-down-linear" width="14" height="14" class="absolute right-2 top-1/2 -translate-y-1/2 text-[#64748B] pointer-events-none"></iconify-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+</body></html>

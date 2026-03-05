@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bulk Payment | Ivorymade</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body {
+font-family: 'Inter', sans-serif;
+-webkit-font-smoothing: antialiased;
+background-color: #F8F9FB;
+color: #1E293B;
+}
+.custom-shadow {
+box-shadow: 0 -10px 40px -12px rgba(0, 0, 0, 0.1);
+}
+</style></head>
+<body class="flex min-h-screen">
+
+    <!-- Sidebar -->
+    <aside class="w-[240px] bg-white border-r border-[#E2E8F0] flex flex-col fixed h-screen z-30 shadow-sm">
+        <div class="h-24 px-8 flex items-center">
+            <span class="text-[1.25rem] font-bold tracking-tighter text-[#1E3A5F]">IVORYMADE</span>
+        </div>
+        
+        <nav class="flex-1 px-4 py-4 space-y-1">
+            <a href="#" class="flex items-center h-10 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors">
+                <iconify-icon icon="solar:widget-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-[0.875rem] font-medium">Dashboard</span>
+            </a>
+            <a href="#" class="flex items-center h-10 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors">
+                <iconify-icon icon="solar:box-minimalistic-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-[0.875rem] font-medium">Orders</span>
+            </a>
+            <a href="#" class="flex items-center h-10 px-4 gap-3 rounded-lg text-[#1E3A5F] bg-[#F8F9FB] font-semibold">
+                <iconify-icon icon="solar:card-2-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-[0.875rem]">Payments</span>
+            </a>
+            <a href="#" class="flex items-center h-10 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors">
+                <iconify-icon icon="solar:chat-round-line-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-[0.875rem] font-medium">Messages</span>
+            </a>
+            <a href="#" class="flex items-center h-10 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors">
+                <iconify-icon icon="solar:settings-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-[0.875rem] font-medium">Settings</span>
+            </a>
+        </nav>
+
+        <div class="p-6 border-t border-[#E2E8F0]">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-[#1E3A5F] flex items-center justify-center text-white text-[0.75rem] font-semibold">SM</div>
+                <div class="flex-1 min-w-0">
+                    <p class="text-[0.875rem] font-semibold truncate text-[#1E293B]">Dr. Mitchell</p>
+                    <p class="text-[0.75rem] text-[#64748B] truncate">Master Account</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 ml-[240px] min-h-screen flex flex-col relative">
+        <div class="max-w-[900px] w-full mx-auto px-8 pt-16 pb-32">
+            
+            <!-- Header -->
+            <header class="mb-10">
+                <h1 class="text-[2rem] font-semibold tracking-tight text-[#1E293B] mb-2">Bulk Payment</h1>
+                <p class="text-[1rem] text-[#64748B]">Select invoices to pay in a single transaction</p>
+            </header>
+
+            <!-- Selection List -->
+            <section class="space-y-[0.75rem]">
+                <!-- Select All -->
+                <div class="flex items-center px-5 mb-4">
+                    <label class="flex items-center cursor-pointer group">
+                        <div class="w-5 h-5 rounded border-2 border-[#E2E8F0] flex items-center justify-center bg-white transition-all group-hover:border-[#1E3A5F]">
+                            <iconify-icon icon="solar:check-read-linear" class="text-white opacity-0" width="14"></iconify-icon>
+                        </div>
+                        <span class="ml-3 text-[0.875rem] font-semibold text-[#1E293B]">Select All</span>
+                    </label>
+                </div>
+
+                <!-- Invoice Card 1 (Selected) -->
+                <div class="bg-[#EBF2FA] border-l-[2px] border-[#1E3A5F] rounded-[0.75rem] p-5 flex items-center gap-5 transition-all">
+                    <div class="w-5 h-5 rounded border-2 border-[#1E3A5F] bg-[#1E3A5F] flex items-center justify-center shadow-sm">
+                        <iconify-icon icon="solar:check-read-linear" class="text-white" width="14"></iconify-icon>
+                    </div>
+                    <div class="flex-1 flex items-center justify-between">
+                        <div>
+                            <h3 class="text-[1rem] font-semibold text-[#1E293B]">Anterior Zirconia Crown</h3>
+                            <div class="flex items-center gap-2 mt-1">
+                                <span class="text-[0.875rem] font-mono text-[#94A3B8]">IB-428-7291</span>
+                                <span class="w-1 h-1 rounded-full bg-[#E2E8F0]"></span>
+                                <span class="text-[0.875rem] text-[#64748B]">Dr. James Wilson</span>
+                            </div>
+                        </div>
+                        <span class="text-[1rem] font-semibold text-[#1E293B]">$870.00</span>
+                    </div>
+                </div>
+
+                <!-- Invoice Card 2 (Selected) -->
+                <div class="bg-[#EBF2FA] border-l-[2px] border-[#1E3A5F] rounded-[0.75rem] p-5 flex items-center gap-5 transition-all">
+                    <div class="w-5 h-5 rounded border-2 border-[#1E3A5F] bg-[#1E3A5F] flex items-center justify-center shadow-sm">
+                        <iconify-icon icon="solar:check-read-linear" class="text-white" width="14"></iconify-icon>
+                    </div>
+                    <div class="flex-1 flex items-center justify-between">
+                        <div>
+                            <h3 class="text-[1rem] font-semibold text-[#1E293B]">Upper PFM Bridge (3-Unit)</h3>
+                            <div class="flex items-center gap-2 mt-1">
+                                <span class="text-[0.875rem] font-mono text-[#94A3B8]">IB-428-7288</span>
+                                <span class="w-1 h-1 rounded-full bg-[#E2E8F0]"></span>
+                                <span class="text-[0.875rem] text-[#64748B]">Dr. Sarah Mitchell</span>
+                            </div>
+                        </div>
+                        <span class="text-[1rem] font-semibold text-[#1E293B]">$1,240.00</span>
+                    </div>
+                </div>
+
+                <!-- Invoice Card 3 (Unselected) -->
+                <div class="bg-white border border-[#E2E8F0] rounded-[0.75rem] p-5 flex items-center gap-5 hover:border-[#CBD5E1] transition-all">
+                    <div class="w-5 h-5 rounded border-2 border-[#E2E8F0] bg-white flex items-center justify-center">
+                        <iconify-icon icon="solar:check-read-linear" class="text-white opacity-0" width="14"></iconify-icon>
+                    </div>
+                    <div class="flex-1 flex items-center justify-between">
+                        <div>
+                            <h3 class="text-[1rem] font-semibold text-[#1E293B]">Custom Abutment + Crown</h3>
+                            <div class="flex items-center gap-2 mt-1">
+                                <span class="text-[0.875rem] font-mono text-[#94A3B8]">IB-428-7285</span>
+                                <span class="w-1 h-1 rounded-full bg-[#E2E8F0]"></span>
+                                <span class="text-[0.875rem] text-[#64748B]">Dr. Emily Carter</span>
+                            </div>
+                        </div>
+                        <span class="text-[1rem] font-semibold text-[#1E293B]">$650.00</span>
+                    </div>
+                </div>
+
+                <!-- Invoice Card 4 (Unselected) -->
+                <div class="bg-white border border-[#E2E8F0] rounded-[0.75rem] p-5 flex items-center gap-5 hover:border-[#CBD5E1] transition-all">
+                    <div class="w-5 h-5 rounded border-2 border-[#E2E8F0] bg-white flex items-center justify-center">
+                        <iconify-icon icon="solar:check-read-linear" class="text-white opacity-0" width="14"></iconify-icon>
+                    </div>
+                    <div class="flex-1 flex items-center justify-between">
+                        <div>
+                            <h3 class="text-[1rem] font-semibold text-[#1E293B]">E.Max Veneer Set (4)</h3>
+                            <div class="flex items-center gap-2 mt-1">
+                                <span class="text-[0.875rem] font-mono text-[#94A3B8]">IB-428-7282</span>
+                                <span class="w-1 h-1 rounded-full bg-[#E2E8F0]"></span>
+                                <span class="text-[0.875rem] text-[#64748B]">Dr. James Wilson</span>
+                            </div>
+                        </div>
+                        <span class="text-[1rem] font-semibold text-[#1E293B]">$1,800.00</span>
+                    </div>
+                </div>
+
+                <!-- Invoice Card 5 (Selected) -->
+                <div class="bg-[#EBF2FA] border-l-[2px] border-[#1E3A5F] rounded-[0.75rem] p-5 flex items-center gap-5 transition-all">
+                    <div class="w-5 h-5 rounded border-2 border-[#1E3A5F] bg-[#1E3A5F] flex items-center justify-center shadow-sm">
+                        <iconify-icon icon="solar:check-read-linear" class="text-white" width="14"></iconify-icon>
+                    </div>
+                    <div class="flex-1 flex items-center justify-between">
+                        <div>
+                            <h3 class="text-[1rem] font-semibold text-[#1E293B]">Implant Bridge Titanium</h3>
+                            <div class="flex items-center gap-2 mt-1">
+                                <span class="text-[0.875rem] font-mono text-[#94A3B8]">IB-428-7279</span>
+                                <span class="w-1 h-1 rounded-full bg-[#E2E8F0]"></span>
+                                <span class="text-[0.875rem] text-[#64748B]">Dr. Sarah Mitchell</span>
+                            </div>
+                        </div>
+                        <span class="text-[1rem] font-semibold text-[#1E293B]">$960.00</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Floating Bottom Bar -->
+        <div class="fixed bottom-0 left-[240px] right-0 bg-white border-t border-[#E2E8F0] px-6 py-4 custom-shadow z-40">
+            <div class="max-w-[900px] mx-auto flex items-center justify-between">
+                <div>
+                    <p class="text-[0.875rem] text-[#64748B]">3 of 5 invoices selected</p>
+                </div>
+                <div class="flex items-center gap-8">
+                    <div class="flex flex-col items-end">
+                        <p class="text-[0.75rem] uppercase tracking-wider text-[#64748B] font-medium">Total Amount</p>
+                        <p class="text-[1.25rem] font-semibold text-[#1E3A5F]">Total: $3,070.00</p>
+                    </div>
+                    <button class="h-[44px] px-8 bg-[#1E3A5F] hover:bg-[#1E3A5F]/95 text-white rounded-lg font-semibold text-[1rem] transition-all shadow-md active:scale-[0.98]">
+                        Pay $3,070.00
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+</body></html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Management — Ivorymade</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body {
+font-family: 'Inter', sans-serif;
+background-color: #F8F9FB;
+color: #1E293B;
+}
+.hide-scrollbar::-webkit-scrollbar {
+display: none;
+}
+.hide-scrollbar {
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+.phone-frame {
+box-shadow: 0 25px 50px -12px rgba(30, 58, 95, 0.12);
+}
+</style></head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <!-- Mobile Screen Frame -->
+    <div class="phone-frame relative w-full max-w-[390px] h-[844px] bg-[#F8F9FB] rounded-[2.5rem] overflow-hidden border border-[#E2E8F0] flex flex-col">
+        
+        <!-- Header -->
+        <header class="shrink-0 bg-white h-[56px] border-b border-[#E2E8F0] px-4 flex items-center justify-between z-20">
+            <h1 class="text-[1.25rem] font-medium tracking-tight text-[#1E293B]">Orders</h1>
+            <button class="w-[40px] h-[40px] flex items-center justify-end text-[#64748B]">
+                <iconify-icon icon="solar:magnifer-linear" width="24" style="stroke-width: 1.5"></iconify-icon>
+            </button>
+        </header>
+
+        <!-- Filter Pills -->
+        <div class="shrink-0 pt-3 pb-4">
+            <div class="flex overflow-x-auto gap-2 px-4 hide-scrollbar">
+                <button class="h-[2rem] px-4 flex items-center justify-center rounded-full bg-[#1E3A5F] text-white text-[0.875rem] font-medium whitespace-nowrap">
+                    All
+                </button>
+                <button class="h-[2rem] px-4 flex items-center justify-center rounded-full bg-white border border-[#E2E8F0] text-[#64748B] text-[0.875rem] font-medium whitespace-nowrap">
+                    In Production
+                </button>
+                <button class="h-[2rem] px-4 flex items-center justify-center rounded-full bg-white border border-[#E2E8F0] text-[#64748B] text-[0.875rem] font-medium whitespace-nowrap">
+                    Awaiting
+                </button>
+                <button class="h-[2rem] px-4 flex items-center justify-center rounded-full bg-white border border-[#E2E8F0] text-[#64748B] text-[0.875rem] font-medium whitespace-nowrap">
+                    In Transit
+                </button>
+                <button class="h-[2rem] px-4 flex items-center justify-center rounded-full bg-white border border-[#E2E8F0] text-[#64748B] text-[0.875rem] font-medium whitespace-nowrap">
+                    On Hold
+                </button>
+            </div>
+        </div>
+
+        <!-- Orders List -->
+        <main class="flex-1 overflow-y-auto hide-scrollbar px-4 space-y-3 pb-24">
+            
+            <!-- Card 1 -->
+            <div class="bg-white p-4 rounded-[0.75rem] border border-[#E2E8F0]">
+                <div class="flex justify-between items-start mb-1">
+                    <h3 class="text-[1rem] font-medium text-[#1E293B]">Anterior Zirconia Crown</h3>
+                    <span class="text-[0.75rem] font-medium text-[#10B981] bg-[#10B981]/10 px-2 py-0.5 rounded-md">Design Ready</span>
+                </div>
+                <div class="flex justify-between items-center mb-3">
+                    <span class="text-[0.75rem] font-mono text-[#94A3B8]">IB-428-7291</span>
+                    <span class="text-[0.75rem] text-[#94A3B8]">Mar 3, 2026</span>
+                </div>
+                <div class="mb-4">
+                    <span class="inline-flex text-[0.75rem] font-medium bg-[#1E3A5F]/10 text-[#1E3A5F] px-3 py-1 rounded-full">Single Crown</span>
+                </div>
+                <div class="space-y-3">
+                    <div class="w-full h-[0.25rem] bg-[#E2E8F0] rounded-full overflow-hidden">
+                        <div class="w-[60%] h-full bg-[#1E3A5F] rounded-full"></div>
+                    </div>
+                    <div class="flex justify-end">
+                        <button class="text-[0.75rem] font-medium text-[#1E3A5F]">Review Design</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-4 rounded-[0.75rem] border border-[#E2E8F0]">
+                <div class="flex justify-between items-start mb-1">
+                    <h3 class="text-[1rem] font-medium text-[#1E293B]">Upper PFM Bridge (3-Unit)</h3>
+                    <span class="text-[0.75rem] font-medium text-[#3B82F6] bg-[#3B82F6]/10 px-2 py-0.5 rounded-md">Shipped</span>
+                </div>
+                <div class="flex justify-between items-center mb-3">
+                    <span class="text-[0.75rem] font-mono text-[#94A3B8]">IB-428-7288</span>
+                    <span class="text-[0.75rem] text-[#94A3B8]">Mar 5, 2026</span>
+                </div>
+                <div class="mb-4">
+                    <span class="inline-flex text-[0.75rem] font-medium bg-[#1E3A5F]/10 text-[#1E3A5F] px-3 py-1 rounded-full">Bridge</span>
+                </div>
+                <div class="space-y-3">
+                    <div class="w-full h-[0.25rem] bg-[#E2E8F0] rounded-full overflow-hidden">
+                        <div class="w-[90%] h-full bg-[#1E3A5F] rounded-full"></div>
+                    </div>
+                    <div class="flex justify-end">
+                        <button class="text-[0.75rem] font-medium text-[#1E3A5F]">Track</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-4 rounded-[0.75rem] border border-[#E2E8F0]">
+                <div class="flex justify-between items-start mb-1">
+                    <h3 class="text-[1rem] font-medium text-[#1E293B]">Custom Abutment + Crown</h3>
+                    <span class="text-[0.75rem] font-medium text-[#1E3A5F] bg-[#1E3A5F]/10 px-2 py-0.5 rounded-md">In Production</span>
+                </div>
+                <div class="flex justify-between items-center mb-3">
+                    <span class="text-[0.75rem] font-mono text-[#94A3B8]">IB-428-7285</span>
+                    <span class="text-[0.75rem] text-[#94A3B8]">Mar 8, 2026</span>
+                </div>
+                <div class="mb-4">
+                    <span class="inline-flex text-[0.75rem] font-medium bg-[#1E3A5F]/10 text-[#1E3A5F] px-3 py-1 rounded-full">Implant</span>
+                </div>
+                <div class="space-y-3">
+                    <div class="w-full h-[0.25rem] bg-[#E2E8F0] rounded-full overflow-hidden">
+                        <div class="w-[40%] h-full bg-[#1E3A5F] rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white p-4 rounded-[0.75rem] border border-[#E2E8F0]">
+                <div class="flex justify-between items-start mb-1">
+                    <h3 class="text-[1rem] font-medium text-[#1E293B]">E.Max Veneer Set (4)</h3>
+                    <span class="text-[0.75rem] font-medium text-[#F59E0B] bg-[#F59E0B]/10 px-2 py-0.5 rounded-md">On Hold</span>
+                </div>
+                <div class="flex justify-between items-center mb-3">
+                    <span class="text-[0.75rem] font-mono text-[#94A3B8]">IB-428-7282</span>
+                    <span class="text-[0.75rem] text-[#94A3B8]">Mar 12, 2026</span>
+                </div>
+                <div class="mb-4">
+                    <span class="inline-flex text-[0.75rem] font-medium bg-[#1E3A5F]/10 text-[#1E3A5F] px-3 py-1 rounded-full">Veneer</span>
+                </div>
+                <div class="space-y-3">
+                    <div class="w-full h-[0.25rem] bg-[#E2E8F0] rounded-full overflow-hidden">
+                        <div class="w-[20%] h-full bg-[#1E3A5F] rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Bottom Tab Bar -->
+        <nav class="absolute bottom-0 left-0 right-0 bg-white border-t border-[#E2E8F0] h-[72px] px-6 flex items-center justify-between z-30">
+            <a href="#" class="flex flex-col items-center gap-1 text-[#94A3B8]">
+                <iconify-icon icon="solar:home-2-linear" width="22" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-[0.625rem] font-medium uppercase">Home</span>
+            </a>
+            <a href="#" class="flex flex-col items-center gap-1 text-[#1E3A5F]">
+                <iconify-icon icon="solar:clipboard-list-bold-duotone" width="22"></iconify-icon>
+                <span class="text-[0.625rem] font-semibold uppercase">Orders</span>
+            </a>
+            <a href="#" class="flex flex-col items-center gap-1 text-[#94A3B8]">
+                <iconify-icon icon="solar:chat-round-dots-linear" width="22" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-[0.625rem] font-medium uppercase">Chat</span>
+            </a>
+            <a href="#" class="flex flex-col items-center gap-1 text-[#94A3B8]">
+                <iconify-icon icon="solar:bell-linear" width="22" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-[0.625rem] font-medium uppercase">Alerts</span>
+            </a>
+        </nav>
+
+        <!-- Home Indicator -->
+        <div class="absolute bottom-1.5 left-1/2 -translate-x-1/2 w-32 h-1 bg-[#1E293B]/10 rounded-full z-40"></div>
+    </div>
+
+
+</body></html>

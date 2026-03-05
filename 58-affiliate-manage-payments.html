@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manage Payments — IvoryMade Affiliate</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono&amp;display=swap" rel="stylesheet"></head>
+<body class="bg-[#F8F9FB] text-[#1E293B] antialiased min-h-screen flex" style="font-family: 'Inter', sans-serif;">
+
+    <!-- Affiliate Sidebar -->
+    <aside class="w-[240px] bg-[#1E3A5F] fixed inset-y-0 left-0 flex flex-col z-50">
+        <div class="h-20 flex items-center px-8">
+            <span class="text-[1.125rem] font-semibold tracking-tighter text-[#C9A96E]">IVORYMADE</span>
+        </div>
+
+        <nav class="flex-1 flex flex-col py-4">
+            <a href="#" class="flex items-center h-12 px-8 gap-3 text-white/70 hover:text-white transition-colors">
+                <iconify-icon icon="solar:widget-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-sm font-medium">Dashboard</span>
+            </a>
+            <a href="#" class="flex items-center h-12 px-8 gap-3 text-white/70 hover:text-white transition-colors">
+                <iconify-icon icon="solar:users-group-two-rounded-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-sm font-medium">Manage Users</span>
+            </a>
+            <a href="#" class="flex items-center h-12 px-8 gap-3 text-white bg-white/10 border-l-[3px] border-[#C9A96E]">
+                <iconify-icon icon="solar:card-2-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-sm font-medium">Manage Payments</span>
+            </a>
+        </nav>
+
+        <div class="p-8 mt-auto border-t border-white/5">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-[#C9A96E] flex items-center justify-center text-[#1E3A5F] text-xs font-semibold">
+                    JD
+                </div>
+                <div class="overflow-hidden">
+                    <p class="text-xs font-semibold text-white truncate">John Doe</p>
+                    <p class="text-[0.625rem] text-white/50 truncate">Affiliate Partner</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 ml-[240px] p-8">
+        
+        <!-- Header -->
+        <header class="mb-8">
+            <h1 class="text-[2rem] font-semibold tracking-tight text-[#1E293B]">Payments</h1>
+        </header>
+
+        <!-- Summary Cards -->
+        <section class="flex flex-row gap-4 mb-8">
+            <div class="flex-1 bg-white rounded-[0.75rem] border border-[#E2E8F0] p-6 shadow-sm">
+                <p class="text-[0.75rem] font-medium text-[#64748B] mb-2">Total Earned (All Time)</p>
+                <p class="text-[1.75rem] font-semibold text-[#10B981] tracking-tight">$47,250.00</p>
+            </div>
+            <div class="flex-1 bg-white rounded-[0.75rem] border border-[#E2E8F0] p-6 shadow-sm">
+                <p class="text-[0.75rem] font-medium text-[#64748B] mb-2">This Month Earnings</p>
+                <p class="text-[1.75rem] font-semibold text-[#1E293B] tracking-tight">$4,180.00</p>
+            </div>
+            <div class="flex-1 bg-white rounded-[0.75rem] border border-[#E2E8F0] p-6 shadow-sm">
+                <p class="text-[0.75rem] font-medium text-[#64748B] mb-2">Pending Payout</p>
+                <p class="text-[1.75rem] font-semibold text-[#F59E0B] tracking-tight">$2,350.00</p>
+            </div>
+        </section>
+
+        <!-- Completed Order Payouts -->
+        <section class="mb-8">
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-[1.5rem] font-semibold tracking-tight text-[#1E293B]">Completed Order Payouts</h2>
+                <div class="flex gap-3">
+                    <div class="relative">
+                        <select class="appearance-none bg-white border border-[#E2E8F0] rounded-lg px-4 py-2 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-[#1E3A5F]/10 h-[44px] min-w-[180px]">
+                            <option>Last 30 Days</option>
+                            <option>Last Quarter</option>
+                            <option>Year to Date</option>
+                        </select>
+                        <iconify-icon icon="solar:alt-arrow-down-linear" class="absolute right-3 top-1/2 -translate-y-1/2 text-[#64748B]" width="16"></iconify-icon>
+                    </div>
+                    <div class="relative">
+                        <select class="appearance-none bg-white border border-[#E2E8F0] rounded-lg px-4 py-2 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-[#1E3A5F]/10 h-[44px] min-w-[200px]">
+                            <option>All Customers</option>
+                            <option>Smile Dental</option>
+                            <option>Dr. Chen</option>
+                        </select>
+                        <iconify-icon icon="solar:user-linear" class="absolute right-3 top-1/2 -translate-y-1/2 text-[#64748B]" width="16"></iconify-icon>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-[0.75rem] border border-[#E2E8F0] overflow-hidden shadow-sm">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-[#F8F9FB] border-b border-[#E2E8F0]">
+                            <th class="px-6 py-4 text-[0.75rem] font-semibold text-[#64748B] uppercase tracking-wider">Date</th>
+                            <th class="px-6 py-4 text-[0.75rem] font-semibold text-[#64748B] uppercase tracking-wider">Order ID</th>
+                            <th class="px-6 py-4 text-[0.75rem] font-semibold text-[#64748B] uppercase tracking-wider">Customer</th>
+                            <th class="px-6 py-4 text-[0.75rem] font-semibold text-[#64748B] uppercase tracking-wider">Order Amount</th>
+                            <th class="px-6 py-4 text-[0.75rem] font-semibold text-[#64748B] uppercase tracking-wider">Net Sales</th>
+                            <th class="px-6 py-4 text-[0.75rem] font-semibold text-[#64748B] uppercase tracking-wider">Commission</th>
+                            <th class="px-6 py-4 text-[0.75rem] font-semibold text-[#64748B] uppercase tracking-wider text-right">Payout</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-[#E2E8F0]">
+                        <tr class="hover:bg-[#F8F9FB]/50 transition-colors">
+                            <td class="px-6 py-4 text-sm text-[#1E293B]">Jan 28</td>
+                            <td class="px-6 py-4 text-sm text-[#64748B]">ORD-2025-1847</td>
+                            <td class="px-6 py-4 text-sm font-medium text-[#1E293B]">Smile Dental</td>
+                            <td class="px-6 py-4 text-sm text-[#1E293B]">$1,250.00</td>
+                            <td class="px-6 py-4 text-sm text-[#64748B]">$1,125.00</td>
+                            <td class="px-6 py-4"><span class="px-2 py-0.5 bg-[#10B981]/10 text-[#10B981] text-[0.6875rem] font-semibold rounded-full">15%</span></td>
+                            <td class="px-6 py-4 text-sm font-semibold text-[#10B981] text-right">$168.75</td>
+                        </tr>
+                        <tr class="hover:bg-[#F8F9FB]/50 transition-colors">
+                            <td class="px-6 py-4 text-sm text-[#1E293B]">Jan 25</td>
+                            <td class="px-6 py-4 text-sm text-[#64748B]">ORD-2025-1832</td>
+                            <td class="px-6 py-4 text-sm font-medium text-[#1E293B]">Dr. Chen</td>
+                            <td class="px-6 py-4 text-sm text-[#1E293B]">$890.00</td>
+                            <td class="px-6 py-4 text-sm text-[#64748B]">$801.00</td>
+                            <td class="px-6 py-4"><span class="px-2 py-0.5 bg-[#10B981]/10 text-[#10B981] text-[0.6875rem] font-semibold rounded-full">15%</span></td>
+                            <td class="px-6 py-4 text-sm font-semibold text-[#10B981] text-right">$120.15</td>
+                        </tr>
+                        <tr class="hover:bg-[#F8F9FB]/50 transition-colors">
+                            <td class="px-6 py-4 text-sm text-[#1E293B]">Jan 22</td>
+                            <td class="px-6 py-4 text-sm text-[#64748B]">ORD-2025-1819</td>
+                            <td class="px-6 py-4 text-sm font-medium text-[#1E293B]">Precision Dental</td>
+                            <td class="px-6 py-4 text-sm text-[#1E293B]">$425.00</td>
+                            <td class="px-6 py-4 text-sm text-[#64748B]">$382.50</td>
+                            <td class="px-6 py-4"><span class="px-2 py-0.5 bg-[#3B82F6]/10 text-[#3B82F6] text-[0.6875rem] font-semibold rounded-full">10%</span></td>
+                            <td class="px-6 py-4 text-sm font-semibold text-[#10B981] text-right">$38.25</td>
+                        </tr>
+                        <tr class="hover:bg-[#F8F9FB]/50 transition-colors">
+                            <td class="px-6 py-4 text-sm text-[#1E293B]">Jan 18</td>
+                            <td class="px-6 py-4 text-sm text-[#64748B]">ORD-2025-1805</td>
+                            <td class="px-6 py-4 text-sm font-medium text-[#1E293B]">Wilson Ortho</td>
+                            <td class="px-6 py-4 text-sm text-[#1E293B]">$1,680.00</td>
+                            <td class="px-6 py-4 text-sm text-[#64748B]">$1,512.00</td>
+                            <td class="px-6 py-4"><span class="px-2 py-0.5 bg-[#10B981]/10 text-[#10B981] text-[0.6875rem] font-semibold rounded-full">15%</span></td>
+                            <td class="px-6 py-4 text-sm font-semibold text-[#10B981] text-right">$226.80</td>
+                        </tr>
+                        <tr class="hover:bg-[#F8F9FB]/50 transition-colors">
+                            <td class="px-6 py-4 text-sm text-[#1E293B]">Jan 15</td>
+                            <td class="px-6 py-4 text-sm text-[#64748B]">ORD-2025-1791</td>
+                            <td class="px-6 py-4 text-sm font-medium text-[#1E293B]">Park Family</td>
+                            <td class="px-6 py-4 text-sm text-[#1E293B]">$2,100.00</td>
+                            <td class="px-6 py-4 text-sm text-[#64748B]">$1,890.00</td>
+                            <td class="px-6 py-4"><span class="px-2 py-0.5 bg-[#3B82F6]/10 text-[#3B82F6] text-[0.6875rem] font-semibold rounded-full">10%</span></td>
+                            <td class="px-6 py-4 text-sm font-semibold text-[#10B981] text-right">$189.00</td>
+                        </tr>
+                        <tr class="hover:bg-[#F8F9FB]/50 transition-colors">
+                            <td class="px-6 py-4 text-sm text-[#1E293B]">Jan 10</td>
+                            <td class="px-6 py-4 text-sm text-[#64748B]">ORD-2025-1778</td>
+                            <td class="px-6 py-4 text-sm font-medium text-[#1E293B]">Smile Dental</td>
+                            <td class="px-6 py-4 text-sm text-[#1E293B]">$3,450.00</td>
+                            <td class="px-6 py-4 text-sm text-[#64748B]">$3,105.00</td>
+                            <td class="px-6 py-4"><span class="px-2 py-0.5 bg-[#10B981]/10 text-[#10B981] text-[0.6875rem] font-semibold rounded-full">15%</span></td>
+                            <td class="px-6 py-4 text-sm font-semibold text-[#10B981] text-right">$465.75</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="px-6 py-4 bg-[#F8F9FB] border-t border-[#E2E8F0] flex items-center justify-between">
+                    <span class="text-xs text-[#64748B]">Showing 1-6 of 34</span>
+                    <div class="flex gap-2">
+                        <button class="p-1 px-3 rounded border border-[#E2E8F0] bg-white text-xs text-[#64748B] hover:bg-gray-50 transition-colors">Previous</button>
+                        <button class="p-1 px-3 rounded border border-[#E2E8F0] bg-white text-xs text-[#64748B] hover:bg-gray-50 transition-colors">Next</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payout History -->
+        <section class="mb-8">
+            <h2 class="text-[1.5rem] font-semibold tracking-tight text-[#1E293B] mb-6">Payout History</h2>
+            <div class="bg-white rounded-[0.75rem] border border-[#E2E8F0] overflow-hidden shadow-sm">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-[#F8F9FB] border-b border-[#E2E8F0]">
+                            <th class="px-6 py-4 text-[0.75rem] font-semibold text-[#64748B] uppercase tracking-wider">Date</th>
+                            <th class="px-6 py-4 text-[0.75rem] font-semibold text-[#64748B] uppercase tracking-wider">Amount</th>
+                            <th class="px-6 py-4 text-[0.75rem] font-semibold text-[#64748B] uppercase tracking-wider">Status</th>
+                            <th class="px-6 py-4 text-[0.75rem] font-semibold text-[#64748B] uppercase tracking-wider">Method</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-[#E2E8F0]">
+                        <tr>
+                            <td class="px-6 py-4 text-sm text-[#1E293B]">Feb 28, 2025</td>
+                            <td class="px-6 py-4 text-sm font-semibold text-[#1E293B]">$2,350.00</td>
+                            <td class="px-6 py-4">
+                                <span class="px-2 py-0.5 bg-[#3B82F6]/10 text-[#3B82F6] text-[0.6875rem] font-semibold rounded-full">Processing</span>
+                            </td>
+                            <td class="px-6 py-4 text-sm text-[#64748B]">Bank Transfer</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm text-[#1E293B]">Jan 31, 2025</td>
+                            <td class="px-6 py-4 text-sm font-semibold text-[#1E293B]">$4,180.00</td>
+                            <td class="px-6 py-4">
+                                <span class="px-2 py-0.5 bg-[#10B981]/10 text-[#10B981] text-[0.6875rem] font-semibold rounded-full">Completed</span>
+                            </td>
+                            <td class="px-6 py-4 text-sm text-[#64748B]">Bank Transfer</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm text-[#1E293B]">Dec 31, 2024</td>
+                            <td class="px-6 py-4 text-sm font-semibold text-[#1E293B]">$4,800.00</td>
+                            <td class="px-6 py-4">
+                                <span class="px-2 py-0.5 bg-[#10B981]/10 text-[#10B981] text-[0.6875rem] font-semibold rounded-full">Completed</span>
+                            </td>
+                            <td class="px-6 py-4 text-sm text-[#64748B]">Bank Transfer</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm text-[#1E293B]">Nov 30, 2024</td>
+                            <td class="px-6 py-4 text-sm font-semibold text-[#1E293B]">$4,200.00</td>
+                            <td class="px-6 py-4">
+                                <span class="px-2 py-0.5 bg-[#10B981]/10 text-[#10B981] text-[0.6875rem] font-semibold rounded-full">Completed</span>
+                            </td>
+                            <td class="px-6 py-4 text-sm text-[#64748B]">Bank Transfer</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 12-Month Earnings Chart -->
+        <section class="mb-8">
+            <h2 class="text-[1.5rem] font-semibold tracking-tight text-[#1E293B] mb-6">12-Month Earnings</h2>
+            <div class="bg-white rounded-[0.75rem] border border-[#E2E8F0] p-6 shadow-sm">
+                <div class="flex items-end justify-between h-[250px] gap-2 pt-4">
+                    <!-- Bar Chart Implementation -->
+                    <div class="flex-1 flex flex-col items-center gap-2 group">
+                        <div class="w-full bg-[#1E3A5F]/10 rounded-t-md relative h-full flex items-end">
+                            <div class="w-full bg-[#1E3A5F] rounded-t-md transition-all duration-500" style="height: 53%"></div>
+                            <div class="absolute -top-6 left-1/2 -translate-x-1/2 text-[0.625rem] font-semibold text-[#1E3A5F] opacity-0 group-hover:opacity-100">$2.8k</div>
+                        </div>
+                        <span class="text-[0.6875rem] text-[#64748B] font-medium">Feb</span>
+                    </div>
+                    <div class="flex-1 flex flex-col items-center gap-2 group">
+                        <div class="w-full bg-[#1E3A5F]/10 rounded-t-md relative h-full flex items-end">
+                            <div class="w-full bg-[#1E3A5F] rounded-t-md transition-all duration-500" style="height: 61%"></div>
+                        </div>
+                        <span class="text-[0.6875rem] text-[#64748B] font-medium">Mar</span>
+                    </div>
+                    <div class="flex-1 flex flex-col items-center gap-2 group">
+                        <div class="w-full bg-[#1E3A5F]/10 rounded-t-md relative h-full flex items-end">
+                            <div class="w-full bg-[#1E3A5F] rounded-t-md transition-all duration-500" style="height: 78%"></div>
+                        </div>
+                        <span class="text-[0.6875rem] text-[#64748B] font-medium">Apr</span>
+                    </div>
+                    <div class="flex-1 flex flex-col items-center gap-2 group">
+                        <div class="w-full bg-[#1E3A5F]/10 rounded-t-md relative h-full flex items-end">
+                            <div class="w-full bg-[#1E3A5F] rounded-t-md transition-all duration-500" style="height: 67%"></div>
+                        </div>
+                        <span class="text-[0.6875rem] text-[#64748B] font-medium">May</span>
+                    </div>
+                    <div class="flex-1 flex flex-col items-center gap-2 group">
+                        <div class="w-full bg-[#1E3A5F]/10 rounded-t-md relative h-full flex items-end">
+                            <div class="w-full bg-[#1E3A5F] rounded-t-md transition-all duration-500" style="height: 73%"></div>
+                        </div>
+                        <span class="text-[0.6875rem] text-[#64748B] font-medium">Jun</span>
+                    </div>
+                    <div class="flex-1 flex flex-col items-center gap-2 group">
+                        <div class="w-full bg-[#1E3A5F]/10 rounded-t-md relative h-full flex items-end">
+                            <div class="w-full bg-[#1E3A5F] rounded-t-md transition-all duration-500" style="height: 86%"></div>
+                        </div>
+                        <span class="text-[0.6875rem] text-[#64748B] font-medium">Jul</span>
+                    </div>
+                    <div class="flex-1 flex flex-col items-center gap-2 group">
+                        <div class="w-full bg-[#1E3A5F]/10 rounded-t-md relative h-full flex items-end">
+                            <div class="w-full bg-[#1E3A5F] rounded-t-md transition-all duration-500" style="height: 100%"></div>
+                        </div>
+                        <span class="text-[0.6875rem] text-[#64748B] font-medium">Aug</span>
+                    </div>
+                    <div class="flex-1 flex flex-col items-center gap-2 group">
+                        <div class="w-full bg-[#1E3A5F]/10 rounded-t-md relative h-full flex items-end">
+                            <div class="w-full bg-[#1E3A5F] rounded-t-md transition-all duration-500" style="height: 92%"></div>
+                        </div>
+                        <span class="text-[0.6875rem] text-[#64748B] font-medium">Sep</span>
+                    </div>
+                    <div class="flex-1 flex flex-col items-center gap-2 group">
+                        <div class="w-full bg-[#1E3A5F]/10 rounded-t-md relative h-full flex items-end">
+                            <div class="w-full bg-[#1E3A5F] rounded-t-md transition-all duration-500" style="height: 75%"></div>
+                        </div>
+                        <span class="text-[0.6875rem] text-[#64748B] font-medium">Oct</span>
+                    </div>
+                    <div class="flex-1 flex flex-col items-center gap-2 group">
+                        <div class="w-full bg-[#1E3A5F]/10 rounded-t-md relative h-full flex items-end">
+                            <div class="w-full bg-[#1E3A5F] rounded-t-md transition-all duration-500" style="height: 81%"></div>
+                        </div>
+                        <span class="text-[0.6875rem] text-[#64748B] font-medium">Nov</span>
+                    </div>
+                    <div class="flex-1 flex flex-col items-center gap-2 group">
+                        <div class="w-full bg-[#1E3A5F]/10 rounded-t-md relative h-full flex items-end">
+                            <div class="w-full bg-[#1E3A5F] rounded-t-md transition-all duration-500" style="height: 92%"></div>
+                        </div>
+                        <span class="text-[0.6875rem] text-[#64748B] font-medium">Dec</span>
+                    </div>
+                    <div class="flex-1 flex flex-col items-center gap-2 group">
+                        <div class="w-full bg-[#1E3A5F]/10 rounded-t-md relative h-full flex items-end">
+                            <div class="w-full bg-[#C9A96E] rounded-t-md transition-all duration-500" style="height: 80%"></div>
+                        </div>
+                        <span class="text-[0.6875rem] font-semibold text-[#1E3A5F]">Jan</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Net Sales Formula -->
+        <section class="bg-[#EBF2FA] rounded-[0.5rem] p-4 border border-[#3B82F6]/10">
+            <div class="flex items-start gap-3">
+                <iconify-icon icon="solar:info-circle-linear" class="text-[#3B82F6] mt-0.5" width="18"></iconify-icon>
+                <div>
+                    <p class="text-sm font-medium text-[#1E293B]" style="font-family: 'JetBrains Mono', monospace;">Net Sales = Gross sales − refunds − store credit − shipping charge</p>
+                    <p class="text-[0.75rem] text-[#64748B] mt-0.5">Before lab COGs; excludes sales tax</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+</body></html>

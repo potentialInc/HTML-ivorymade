@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notifications — Ivorymade</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body {
+font-family: 'Inter', sans-serif;
+background-color: #F8F9FB;
+color: #1E293B;
+}
+.custom-scrollbar::-webkit-scrollbar {
+display: none;
+}
+.phone-frame {
+box-shadow: 0 25px 50px -12px rgba(30, 58, 95, 0.15);
+}
+.safe-area-bottom {
+padding-bottom: env(safe-area-inset-bottom, 24px);
+}
+</style></head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <!-- Mobile Screen Frame -->
+    <div class="phone-frame relative w-full max-w-[390px] h-[844px] bg-white rounded-[2.5rem] overflow-hidden border border-[#E2E8F0] flex flex-col">
+        
+        <!-- Header -->
+        <header class="sticky top-0 z-20 bg-white h-[56px] border-b border-[#E2E8F0] px-4 flex items-center justify-between shrink-0">
+            <div class="w-[64px]"></div> <!-- Spacer for centering -->
+            <h1 class="text-[1.25rem] font-semibold tracking-tight text-[#1E293B]">Notifications</h1>
+            <button class="text-[0.875rem] font-medium text-[#1E3A5F] w-[80px] text-right whitespace-nowrap">Mark all</button>
+        </header>
+
+        <!-- Notification List -->
+        <main class="flex-1 overflow-y-auto custom-scrollbar bg-[#F8F9FB]">
+            
+            <!-- Unread Section -->
+            <section class="mb-4">
+                <div class="px-4 py-4">
+                    <h2 class="text-[0.75rem] font-medium uppercase tracking-wider text-[#94A3B8]">Unread</h2>
+                </div>
+                
+                <div class="flex flex-col">
+                    <!-- Item 1: Security -->
+                    <div class="bg-white px-4 py-4 flex items-start gap-3 border-b border-[#E2E8F0]">
+                        <div class="mt-1.5 flex items-center justify-center w-2">
+                            <div class="w-2 h-2 rounded-full bg-[#3B82F6]"></div>
+                        </div>
+                        <div class="flex-none p-2 rounded-xl bg-[#EF4444]/10 text-[#EF4444]">
+                            <iconify-icon icon="solar:shield-warning-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-[0.875rem] font-semibold text-[#1E293B]">Login from new device</h3>
+                                <iconify-icon icon="solar:alt-arrow-right-linear" class="text-[#94A3B8] mt-1" width="16"></iconify-icon>
+                            </div>
+                            <p class="text-[0.875rem] text-[#64748B] leading-relaxed line-clamp-2 mt-0.5">A login was detected from MacBook Pro in New York</p>
+                            <span class="text-[0.75rem] text-[#94A3B8] mt-2 block">2 hours ago</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Order -->
+                    <div class="bg-white px-4 py-4 flex items-start gap-3 border-b border-[#E2E8F0]">
+                        <div class="mt-1.5 flex items-center justify-center w-2">
+                            <div class="w-2 h-2 rounded-full bg-[#3B82F6]"></div>
+                        </div>
+                        <div class="flex-none p-2 rounded-xl bg-[#3B82F6]/10 text-[#3B82F6]">
+                            <iconify-icon icon="solar:box-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-[0.875rem] font-semibold text-[#1E293B]">Order Status Updated</h3>
+                                <iconify-icon icon="solar:alt-arrow-right-linear" class="text-[#94A3B8] mt-1" width="16"></iconify-icon>
+                            </div>
+                            <p class="text-[0.875rem] text-[#64748B] leading-relaxed line-clamp-2 mt-0.5">Your Anterior Zirconia Crown design is ready for review</p>
+                            <span class="text-[0.75rem] text-[#94A3B8] mt-2 block">3 hours ago</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Payment -->
+                    <div class="bg-white px-4 py-4 flex items-start gap-3 border-b border-[#E2E8F0]">
+                        <div class="mt-1.5 flex items-center justify-center w-2">
+                            <div class="w-2 h-2 rounded-full bg-[#3B82F6]"></div>
+                        </div>
+                        <div class="flex-none p-2 rounded-xl bg-[#10B981]/10 text-[#10B981]">
+                            <iconify-icon icon="solar:dollar-minimalistic-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-[0.875rem] font-semibold text-[#1E293B]">Payment Confirmed</h3>
+                                <iconify-icon icon="solar:alt-arrow-right-linear" class="text-[#94A3B8] mt-1" width="16"></iconify-icon>
+                            </div>
+                            <p class="text-[0.875rem] text-[#64748B] leading-relaxed line-clamp-2 mt-0.5">Payment of $870.00 received for order IB-428-7291</p>
+                            <span class="text-[0.75rem] text-[#94A3B8] mt-2 block">5 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Read Section -->
+            <section class="pb-20">
+                <div class="px-4 py-4">
+                    <h2 class="text-[0.75rem] font-medium uppercase tracking-wider text-[#94A3B8]">Read</h2>
+                </div>
+                
+                <div class="flex flex-col">
+                    <!-- Item 4: Shipping -->
+                    <div class="bg-[#F8F9FB] px-4 py-4 flex items-start gap-3 border-b border-[#E2E8F0]">
+                        <div class="mt-1.5 flex items-center justify-center w-2 opacity-0">
+                            <div class="w-2 h-2 rounded-full"></div>
+                        </div>
+                        <div class="flex-none p-2 rounded-xl bg-[#3B82F6]/5 text-[#3B82F6]/60">
+                            <iconify-icon icon="solar:box-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-[0.875rem] font-semibold text-[#64748B]">Order Shipped</h3>
+                                <iconify-icon icon="solar:alt-arrow-right-linear" class="text-[#CBD5E1] mt-1" width="16"></iconify-icon>
+                            </div>
+                            <p class="text-[0.875rem] text-[#94A3B8] leading-relaxed line-clamp-2 mt-0.5">Your Upper PFM Bridge has been shipped via FedEx</p>
+                            <span class="text-[0.75rem] text-[#94A3B8] mt-2 block">1 day ago</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 5: Credit -->
+                    <div class="bg-[#F8F9FB] px-4 py-4 flex items-start gap-3 border-b border-[#E2E8F0]">
+                        <div class="mt-1.5 flex items-center justify-center w-2 opacity-0">
+                            <div class="w-2 h-2 rounded-full"></div>
+                        </div>
+                        <div class="flex-none p-2 rounded-xl bg-[#10B981]/5 text-[#10B981]/60">
+                            <iconify-icon icon="solar:dollar-minimalistic-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-[0.875rem] font-semibold text-[#64748B]">Store Credit Applied</h3>
+                                <iconify-icon icon="solar:alt-arrow-right-linear" class="text-[#CBD5E1] mt-1" width="16"></iconify-icon>
+                            </div>
+                            <p class="text-[0.875rem] text-[#94A3B8] leading-relaxed line-clamp-2 mt-0.5">$200.00 credit applied to your account</p>
+                            <span class="text-[0.75rem] text-[#94A3B8] mt-2 block">2 days ago</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 6: Production -->
+                    <div class="bg-[#F8F9FB] px-4 py-4 flex items-start gap-3 border-b border-[#E2E8F0]">
+                        <div class="mt-1.5 flex items-center justify-center w-2 opacity-0">
+                            <div class="w-2 h-2 rounded-full"></div>
+                        </div>
+                        <div class="flex-none p-2 rounded-xl bg-[#3B82F6]/5 text-[#3B82F6]/60">
+                            <iconify-icon icon="solar:box-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-[0.875rem] font-semibold text-[#64748B]">Order In Production</h3>
+                                <iconify-icon icon="solar:alt-arrow-right-linear" class="text-[#CBD5E1] mt-1" width="16"></iconify-icon>
+                            </div>
+                            <p class="text-[0.875rem] text-[#94A3B8] leading-relaxed line-clamp-2 mt-0.5">Custom Abutment is now in production</p>
+                            <span class="text-[0.75rem] text-[#94A3B8] mt-2 block">3 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Bottom Tab Bar -->
+        <nav class="absolute bottom-0 left-0 right-0 bg-white border-t border-[#E2E8F0] h-[72px] safe-area-bottom px-4 flex items-center justify-between z-20">
+            <a href="#" class="flex flex-col items-center gap-1.5 text-[#94A3B8] flex-1">
+                <iconify-icon icon="solar:home-2-linear" width="22" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-[0.625rem] font-medium uppercase tracking-tight">Home</span>
+            </a>
+            <a href="#" class="flex flex-col items-center gap-1.5 text-[#94A3B8] flex-1">
+                <iconify-icon icon="solar:box-linear" width="22" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-[0.625rem] font-medium uppercase tracking-tight">Orders</span>
+            </a>
+            <a href="#" class="flex flex-col items-center gap-1.5 text-[#94A3B8] flex-1">
+                <iconify-icon icon="solar:chat-round-dots-linear" width="22" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-[0.625rem] font-medium uppercase tracking-tight">Chat</span>
+            </a>
+            <a href="#" class="flex flex-col items-center gap-1.5 text-[#1E3A5F] flex-1">
+                <iconify-icon icon="solar:bell-bing-bold-duotone" width="22"></iconify-icon>
+                <span class="text-[0.625rem] font-semibold uppercase tracking-tight">Alerts</span>
+            </a>
+        </nav>
+
+        <!-- Home Indicator -->
+        <div class="absolute bottom-1.5 left-1/2 -translate-x-1/2 w-32 h-1 bg-[#1E293B]/10 rounded-full z-30"></div>
+    </div>
+
+
+</body></html>

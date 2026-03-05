@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Messages — IVORYMADE Admin</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body {
+font-family: 'Inter', sans-serif;
+background-color: #F8F9FB;
+color: #1E293B;
+-webkit-font-smoothing: antialiased;
+}
+.chat-container {
+height: calc(100vh - 120px);
+}
+.custom-scrollbar::-webkit-scrollbar {
+width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+background: #E2E8F0;
+border-radius: 10px;
+}
+.message-bubble-received {
+border-bottom-left-radius: 2px;
+}
+.message-bubble-sent {
+border-bottom-right-radius: 2px;
+}
+</style></head>
+<body class="h-screen overflow-hidden flex">
+
+    <!-- Admin Sidebar -->
+    <aside class="w-[240px] flex-shrink-0 bg-[#1E3A5F] text-white flex flex-col z-50">
+        <div class="h-20 flex items-center px-8">
+            <span class="text-lg font-semibold tracking-tighter text-[#C9A96E]">IVORYMADE</span>
+        </div>
+
+        <nav class="flex-1 flex flex-col py-4">
+            <a href="#" class="flex items-center h-12 px-8 gap-3 text-white/60 hover:text-white transition-colors">
+                <iconify-icon icon="solar:widget-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-sm font-medium">Dashboard</span>
+            </a>
+            <a href="#" class="flex items-center h-12 px-8 gap-3 text-white/60 hover:text-white transition-colors">
+                <iconify-icon icon="solar:cart-large-minimalistic-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-sm font-medium">Orders</span>
+            </a>
+            <a href="#" class="flex items-center h-12 px-8 gap-3 text-white/60 hover:text-white transition-colors">
+                <iconify-icon icon="solar:users-group-two-rounded-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-sm font-medium">Users</span>
+            </a>
+            <a href="#" class="bg-white/10 border-l-[3px] border-[#C9A96E] flex items-center h-12 px-[29px] gap-3 text-white transition-colors">
+                <iconify-icon icon="solar:chat-round-dots-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-sm font-medium">Customer Support</span>
+            </a>
+            <a href="#" class="flex items-center h-12 px-8 gap-3 text-white/60 hover:text-white transition-colors">
+                <iconify-icon icon="solar:card-2-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-sm font-medium">Payment</span>
+            </a>
+            <a href="#" class="flex items-center h-12 px-8 gap-3 text-white/60 hover:text-white transition-colors">
+                <iconify-icon icon="solar:document-text-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                <span class="text-sm font-medium">CMS</span>
+            </a>
+            
+            <div class="mt-auto pb-4">
+                <a href="#" class="flex items-center h-12 px-8 gap-3 text-white/60 hover:text-white transition-colors">
+                    <iconify-icon icon="solar:settings-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
+                    <span class="text-sm font-medium">Settings</span>
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main CRM Content Area -->
+    <div class="flex-1 flex overflow-hidden">
+        
+        <!-- Left Panel: User List -->
+        <section class="w-[300px] flex-shrink-0 bg-white border-r border-[#E2E8F0] flex flex-col">
+            <div class="p-4 border-b border-[#E2E8F0]">
+                <div class="relative group">
+                    <iconify-icon icon="solar:magnifer-linear" class="absolute left-3 top-1/2 -translate-y-1/2 text-[#64748B]" width="18"></iconify-icon>
+                    <input type="text" placeholder="Search users..." class="w-full h-10 pl-10 pr-4 bg-[#F8F9FB] border border-[#E2E8F0] rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1E3A5F]/5 transition-all">
+                </div>
+            </div>
+
+            <div class="flex-1 overflow-y-auto custom-scrollbar">
+                <!-- Chat Item 1 (Active) -->
+                <button class="w-full h-16 px-4 py-3 flex items-center gap-3 bg-[#EBF2FA] text-left transition-colors">
+                    <div class="relative flex-shrink-0 w-10 h-10 rounded-full bg-[#1E3A5F] flex items-center justify-center text-white text-xs font-medium">SM</div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-sm font-semibold truncate">Dr. Sarah Mitchell</h3>
+                            <span class="text-[10px] text-[#64748B] flex-shrink-0">2m ago</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <p class="text-xs text-[#64748B] truncate">Thanks for the update on...</p>
+                            <div class="w-2 h-2 rounded-full bg-[#3B82F6] ml-2"></div>
+                        </div>
+                    </div>
+                </button>
+
+                <!-- Chat Item 2 -->
+                <button class="w-full h-16 px-4 py-3 flex items-center gap-3 hover:bg-[#F8F9FB] text-left transition-colors">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#E2E8F0] flex items-center justify-center text-[#1E3A5F] text-xs font-medium">JK</div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-sm font-semibold truncate">Dr. John Kessler</h3>
+                            <span class="text-[10px] text-[#64748B] flex-shrink-0">15m ago</span>
+                        </div>
+                        <p class="text-xs text-[#64748B] truncate">The bridge looks great!</p>
+                    </div>
+                </button>
+
+                <!-- Chat Item 3 -->
+                <button class="w-full h-16 px-4 py-3 flex items-center gap-3 hover:bg-[#F8F9FB] text-left transition-colors">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#E2E8F0] flex items-center justify-center text-[#1E3A5F] text-xs font-medium">EL</div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-sm font-semibold truncate">Dr. Emily Lowe</h3>
+                            <span class="text-[10px] text-[#64748B] flex-shrink-0">1h ago</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <p class="text-xs text-[#64748B] truncate">Can we adjust the shade...</p>
+                            <div class="w-2 h-2 rounded-full bg-[#3B82F6] ml-2"></div>
+                        </div>
+                    </div>
+                </button>
+
+                <!-- Chat Item 4 -->
+                <button class="w-full h-16 px-4 py-3 flex items-center gap-3 hover:bg-[#F8F9FB] text-left transition-colors">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#E2E8F0] flex items-center justify-center text-[#1E3A5F] text-xs font-medium">MW</div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-sm font-semibold truncate">Dr. Michael Wong</h3>
+                            <span class="text-[10px] text-[#64748B] flex-shrink-0">3h ago</span>
+                        </div>
+                        <p class="text-xs text-[#64748B] truncate">Please hold my order</p>
+                    </div>
+                </button>
+
+                <!-- Chat Item 5 -->
+                <button class="w-full h-16 px-4 py-3 flex items-center gap-3 hover:bg-[#F8F9FB] text-left transition-colors">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#E2E8F0] flex items-center justify-center text-[#1E3A5F] text-xs font-medium">LC</div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-sm font-semibold truncate">Dr. Lisa Chen</h3>
+                            <span class="text-[10px] text-[#64748B] flex-shrink-0">Yesterday</span>
+                        </div>
+                        <p class="text-xs text-[#64748B] truncate">When will the implant...</p>
+                    </div>
+                </button>
+
+                <!-- Chat Item 6 -->
+                <button class="w-full h-16 px-4 py-3 flex items-center gap-3 hover:bg-[#F8F9FB] text-left transition-colors">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#E2E8F0] flex items-center justify-center text-[#1E3A5F] text-xs font-medium">JP</div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-sm font-semibold truncate">Dr. James Park</h3>
+                            <span class="text-[10px] text-[#64748B] flex-shrink-0">2 days ago</span>
+                        </div>
+                        <p class="text-xs text-[#64748B] truncate">Approved the design</p>
+                    </div>
+                </button>
+            </div>
+        </section>
+
+        <!-- Right Panel: Chat Window -->
+        <main class="flex-1 flex flex-col bg-[#F8F9FB]">
+            <!-- Header -->
+            <header class="h-16 px-6 bg-white border-b border-[#E2E8F0] flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-[#1E3A5F] flex items-center justify-center text-white text-xs font-medium">SM</div>
+                    <div>
+                        <h2 class="text-base font-semibold text-[#1E293B] leading-none">Dr. Sarah Mitchell</h2>
+                        <span class="text-xs text-[#64748B]">Mitchell Dental</span>
+                    </div>
+                </div>
+                <a href="#" class="text-sm font-medium text-[#1E3A5F] hover:underline transition-all">View Profile</a>
+            </header>
+
+            <!-- Message List -->
+            <div class="flex-1 overflow-y-auto p-6 space-y-6 custom-scrollbar">
+                <!-- Day Divider -->
+                <div class="flex items-center gap-4">
+                    <div class="flex-1 h-px bg-[#E2E8F0]"></div>
+                    <span class="text-[10px] font-bold text-[#64748B] uppercase tracking-widest">Today</span>
+                    <div class="flex-1 h-px bg-[#E2E8F0]"></div>
+                </div>
+
+                <!-- Received Message -->
+                <div class="flex flex-col items-start max-w-[80%]">
+                    <div class="p-4 bg-white border border-[#E2E8F0] rounded-2xl message-bubble-received shadow-sm">
+                        <p class="text-sm text-[#1E293B] leading-relaxed">Hi, I wanted to check on the status of my crown order IB-428-7291</p>
+                    </div>
+                    <span class="text-[10px] text-[#64748B] mt-1.5 ml-1">10:30 AM</span>
+                </div>
+
+                <!-- Sent Message -->
+                <div class="flex flex-col items-end ml-auto max-w-[80%]">
+                    <div class="p-4 bg-[#1E3A5F] text-white rounded-2xl message-bubble-sent shadow-sm">
+                        <p class="text-sm leading-relaxed">Hi Dr. Mitchell! Your order is currently in the Design Ready stage. Our team is finalizing the design.</p>
+                    </div>
+                    <span class="text-[10px] text-[#64748B] mt-1.5 mr-1">10:35 AM</span>
+                </div>
+
+                <!-- Received Message -->
+                <div class="flex flex-col items-start max-w-[80%]">
+                    <div class="p-4 bg-white border border-[#E2E8F0] rounded-2xl message-bubble-received shadow-sm">
+                        <p class="text-sm text-[#1E293B] leading-relaxed">That's great! Can I see a preview before production?</p>
+                    </div>
+                    <span class="text-[10px] text-[#64748B] mt-1.5 ml-1">10:38 AM</span>
+                </div>
+
+                <!-- Sent Message -->
+                <div class="flex flex-col items-end ml-auto max-w-[80%]">
+                    <div class="p-4 bg-[#1E3A5F] text-white rounded-2xl message-bubble-sent shadow-sm">
+                        <p class="text-sm leading-relaxed">Absolutely! I'll upload the design for your review shortly. You'll get a notification.</p>
+                    </div>
+                    <span class="text-[10px] text-[#64748B] mt-1.5 mr-1">10:42 AM</span>
+                </div>
+
+                <!-- Received Message -->
+                <div class="flex flex-col items-start max-w-[80%]">
+                    <div class="p-4 bg-white border border-[#E2E8F0] rounded-2xl message-bubble-received shadow-sm">
+                        <p class="text-sm text-[#1E293B] leading-relaxed">Thanks for the update on the timeline!</p>
+                    </div>
+                    <span class="text-[10px] text-[#64748B] mt-1.5 ml-1">10:45 AM</span>
+                </div>
+            </div>
+
+            <!-- Input Bar -->
+            <footer class="p-4 bg-white border-t border-[#E2E8F0]">
+                <div class="max-w-[1000px] mx-auto flex items-center gap-3">
+                    <button class="w-10 h-10 flex items-center justify-center text-[#64748B] hover:text-[#1E3A5F] hover:bg-[#F8F9FB] rounded-lg transition-all">
+                        <iconify-icon icon="solar:paperclip-linear" width="22"></iconify-icon>
+                    </button>
+                    <input type="text" placeholder="Type a message..." class="flex-1 h-11 px-4 bg-[#F8F9FB] border border-[#E2E8F0] rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1E3A5F]/5 transition-all">
+                    <button class="w-11 h-11 bg-[#1E3A5F] text-white flex items-center justify-center rounded-lg shadow-md hover:bg-[#152945] transition-all">
+                        <iconify-icon icon="solar:arrow-up-linear" width="20" style="stroke-width: 2"></iconify-icon>
+                    </button>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+
+</body></html>

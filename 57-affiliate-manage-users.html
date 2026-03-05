@@ -6,25 +6,25 @@
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"></head>
-<body class="bg-[#F8F9FB] text-[#1E293B] antialiased min-h-screen flex" style="font-family: 'Inter', sans-serif;">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"></head>
+<body class="bg-[#EEF3FD] text-[#181D27] antialiased min-h-screen flex" style="font-family: 'Manrope', sans-serif;">
 
     <!-- Sidebar -->
-    <aside class="w-[240px] bg-[#1E3A5F] fixed inset-y-0 left-0 flex flex-col z-50">
+    <aside class="w-[314px] bg-white border-r border-[#E6E8EC] fixed inset-y-0 left-0 flex flex-col z-50">
         <div class="h-20 flex items-center px-8">
-            <span class="text-lg font-semibold tracking-tighter text-[#C9A96E]">IVORYMADE</span>
+            <span class="text-lg font-semibold tracking-tighter text-[#181D27]">ivorymade</span>
         </div>
 
         <nav class="flex-1 flex flex-col py-4">
-            <a href="./56-affiliate-dashboard.html" class="flex items-center h-12 px-8 gap-3 text-white/70 hover:text-white transition-colors">
+            <a href="./56-affiliate-dashboard.html" class="flex items-center h-12 px-8 gap-3 text-[#535862] hover:text-[#181D27] transition-colors">
                 <iconify-icon icon="solar:widget-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Dashboard</span>
             </a>
-            <a href="./57-affiliate-manage-users.html" class="flex items-center h-12 px-8 gap-3 text-white bg-white/10 border-l-[3px] border-[#C9A96E]">
+            <a href="./57-affiliate-manage-users.html" class="flex items-center h-12 px-8 gap-3 text-white bg-[#6495ED] border-l-[3px] border-[#6495ED]">
                 <iconify-icon icon="solar:users-group-two-rounded-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Manage Users</span>
             </a>
-            <a href="./58-affiliate-manage-payments.html" class="flex items-center h-12 px-8 gap-3 text-white/70 hover:text-white transition-colors">
+            <a href="./58-affiliate-manage-payments.html" class="flex items-center h-12 px-8 gap-3 text-[#535862] hover:text-[#181D27] transition-colors">
                 <iconify-icon icon="solar:card-2-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Manage Payments</span>
             </a>
@@ -32,104 +32,104 @@
 
         <div class="p-8 mt-auto">
             <div class="flex items-center gap-3">
-                <div class="w-8 h-8 rounded-full bg-[#C9A96E] flex items-center justify-center text-[#1E3A5F] text-xs font-semibold">
+                <div class="w-8 h-8 rounded-full bg-[#6495ED] flex items-center justify-center text-[#29579A] text-xs font-semibold">
                     JD
                 </div>
                 <div class="overflow-hidden">
                     <p class="text-xs font-semibold text-white truncate">John Doe</p>
-                    <p class="text-[10px] text-white/50 truncate">Affiliate Partner</p>
+                    <p class="text-[10px] text-[#8B95A1] truncate">Affiliate Partner</p>
                 </div>
             </div>
         </div>
     </aside>
 
     <!-- Main Content -->
-    <main class="flex-1 ml-[240px] p-8">
+    <main class="flex-1 ml-[314px] p-8">
         
         <!-- Header -->
         <header class="mb-8">
-            <h1 class="text-3xl font-semibold tracking-tight text-[#1E293B]">Manage Customers</h1>
-            <p class="text-sm text-[#64748B] mt-1">View your assigned customers and commission rules</p>
+            <h1 class="text-3xl font-semibold tracking-tight text-[#181D27]">Manage Customers</h1>
+            <p class="text-sm text-[#535862] mt-1">View your assigned customers and commission rules</p>
         </header>
 
         <!-- Assigned Customers Table -->
-        <section class="mb-8 bg-white rounded-xl border border-[#E2E8F0] overflow-hidden shadow-sm">
+        <section class="mb-8 bg-white rounded-xl border border-[#E6E8EC] overflow-hidden shadow-sm">
             <div class="overflow-x-auto">
                 <table class="w-full text-left border-collapse">
                     <thead>
-                        <tr class="bg-[#F8F9FB] border-b border-[#E2E8F0]">
-                            <th class="px-6 py-4 text-xs font-semibold text-[#64748B] uppercase tracking-wider">Customer Name</th>
-                            <th class="px-6 py-4 text-xs font-semibold text-[#64748B] uppercase tracking-wider">Office</th>
-                            <th class="px-6 py-4 text-xs font-semibold text-[#64748B] uppercase tracking-wider">Status</th>
-                            <th class="px-6 py-4 text-xs font-semibold text-[#64748B] uppercase tracking-wider">Assigned Date</th>
-                            <th class="px-6 py-4 text-xs font-semibold text-[#64748B] uppercase tracking-wider text-right">Monthly Sales</th>
-                            <th class="px-6 py-4 text-xs font-semibold text-[#64748B] uppercase tracking-wider text-center">Commission Rate</th>
+                        <tr class="bg-[#EEF3FD] border-b border-[#E6E8EC]">
+                            <th class="px-6 py-4 text-xs font-semibold text-[#535862] uppercase tracking-wider">Customer Name</th>
+                            <th class="px-6 py-4 text-xs font-semibold text-[#535862] uppercase tracking-wider">Office</th>
+                            <th class="px-6 py-4 text-xs font-semibold text-[#535862] uppercase tracking-wider">Status</th>
+                            <th class="px-6 py-4 text-xs font-semibold text-[#535862] uppercase tracking-wider">Assigned Date</th>
+                            <th class="px-6 py-4 text-xs font-semibold text-[#535862] uppercase tracking-wider text-right">Monthly Sales</th>
+                            <th class="px-6 py-4 text-xs font-semibold text-[#535862] uppercase tracking-wider text-center">Commission Rate</th>
                         </tr>
                     </thead>
-                    <tbody class="divide-y divide-[#E2E8F0]">
+                    <tbody class="divide-y divide-[#E6E8EC]">
                         <!-- Row 1 -->
-                        <tr class="hover:bg-[#F8F9FB]/50 transition-colors">
-                            <td class="px-6 py-4 text-sm font-medium text-[#1E293B]">Smile Dental Group</td>
-                            <td class="px-6 py-4 text-sm text-[#64748B]">Los Angeles, CA</td>
+                        <tr class="hover:bg-[#EEF3FD]/50 transition-colors">
+                            <td class="px-6 py-4 text-sm font-medium text-[#181D27]">Smile Dental Group</td>
+                            <td class="px-6 py-4 text-sm text-[#535862]">Los Angeles, CA</td>
                             <td class="px-6 py-4">
-                                <span class="px-2 py-0.5 bg-[#10B981]/10 text-[#10B981] text-[11px] font-semibold uppercase tracking-wide rounded-full">Active</span>
+                                <span class="px-2 py-0.5 bg-[#2ABC73]/10 text-[#2ABC73] text-[11px] font-semibold uppercase tracking-wide rounded-full">Active</span>
                             </td>
-                            <td class="px-6 py-4 text-sm text-[#64748B]">Mar 15, 2024</td>
-                            <td class="px-6 py-4 text-sm font-semibold text-[#1E293B] text-right">$12,450.00</td>
+                            <td class="px-6 py-4 text-sm text-[#535862]">Mar 15, 2024</td>
+                            <td class="px-6 py-4 text-sm font-semibold text-[#181D27] text-right">$12,450.00</td>
                             <td class="px-6 py-4 text-center">
-                                <span class="px-2 py-0.5 bg-[#10B981]/10 text-[#10B981] text-[11px] font-semibold rounded-full">15%</span>
+                                <span class="px-2 py-0.5 bg-[#2ABC73]/10 text-[#2ABC73] text-[11px] font-semibold rounded-full">15%</span>
                             </td>
                         </tr>
                         <!-- Row 2 -->
-                        <tr class="hover:bg-[#F8F9FB]/50 transition-colors">
-                            <td class="px-6 py-4 text-sm font-medium text-[#1E293B]">Dr. Chen's Office</td>
-                            <td class="px-6 py-4 text-sm text-[#64748B]">San Diego, CA</td>
+                        <tr class="hover:bg-[#EEF3FD]/50 transition-colors">
+                            <td class="px-6 py-4 text-sm font-medium text-[#181D27]">Dr. Chen's Office</td>
+                            <td class="px-6 py-4 text-sm text-[#535862]">San Diego, CA</td>
                             <td class="px-6 py-4">
-                                <span class="px-2 py-0.5 bg-[#10B981]/10 text-[#10B981] text-[11px] font-semibold uppercase tracking-wide rounded-full">Active</span>
+                                <span class="px-2 py-0.5 bg-[#2ABC73]/10 text-[#2ABC73] text-[11px] font-semibold uppercase tracking-wide rounded-full">Active</span>
                             </td>
-                            <td class="px-6 py-4 text-sm text-[#64748B]">May 2, 2024</td>
-                            <td class="px-6 py-4 text-sm font-semibold text-[#1E293B] text-right">$8,200.00</td>
+                            <td class="px-6 py-4 text-sm text-[#535862]">May 2, 2024</td>
+                            <td class="px-6 py-4 text-sm font-semibold text-[#181D27] text-right">$8,200.00</td>
                             <td class="px-6 py-4 text-center">
-                                <span class="px-2 py-0.5 bg-[#3B82F6]/10 text-[#3B82F6] text-[11px] font-semibold rounded-full">10%</span>
+                                <span class="px-2 py-0.5 bg-[#6495ED]/10 text-[#6495ED] text-[11px] font-semibold rounded-full">10%</span>
                             </td>
                         </tr>
                         <!-- Row 3 -->
-                        <tr class="hover:bg-[#F8F9FB]/50 transition-colors">
-                            <td class="px-6 py-4 text-sm font-medium text-[#1E293B]">Precision Dental Lab</td>
-                            <td class="px-6 py-4 text-sm text-[#64748B]">Phoenix, AZ</td>
+                        <tr class="hover:bg-[#EEF3FD]/50 transition-colors">
+                            <td class="px-6 py-4 text-sm font-medium text-[#181D27]">Precision Dental Lab</td>
+                            <td class="px-6 py-4 text-sm text-[#535862]">Phoenix, AZ</td>
                             <td class="px-6 py-4">
-                                <span class="px-2 py-0.5 bg-[#10B981]/10 text-[#10B981] text-[11px] font-semibold uppercase tracking-wide rounded-full">Active</span>
+                                <span class="px-2 py-0.5 bg-[#2ABC73]/10 text-[#2ABC73] text-[11px] font-semibold uppercase tracking-wide rounded-full">Active</span>
                             </td>
-                            <td class="px-6 py-4 text-sm text-[#64748B]">Jul 10, 2024</td>
-                            <td class="px-6 py-4 text-sm font-semibold text-[#1E293B] text-right">$6,750.00</td>
+                            <td class="px-6 py-4 text-sm text-[#535862]">Jul 10, 2024</td>
+                            <td class="px-6 py-4 text-sm font-semibold text-[#181D27] text-right">$6,750.00</td>
                             <td class="px-6 py-4 text-center">
-                                <span class="px-2 py-0.5 bg-[#3B82F6]/10 text-[#3B82F6] text-[11px] font-semibold rounded-full">10%</span>
+                                <span class="px-2 py-0.5 bg-[#6495ED]/10 text-[#6495ED] text-[11px] font-semibold rounded-full">10%</span>
                             </td>
                         </tr>
                         <!-- Row 4 -->
-                        <tr class="hover:bg-[#F8F9FB]/50 transition-colors">
-                            <td class="px-6 py-4 text-sm font-medium text-[#1E293B]">Wilson Orthodontics</td>
-                            <td class="px-6 py-4 text-sm text-[#64748B]">Las Vegas, NV</td>
+                        <tr class="hover:bg-[#EEF3FD]/50 transition-colors">
+                            <td class="px-6 py-4 text-sm font-medium text-[#181D27]">Wilson Orthodontics</td>
+                            <td class="px-6 py-4 text-sm text-[#535862]">Las Vegas, NV</td>
                             <td class="px-6 py-4">
-                                <span class="px-2 py-0.5 bg-[#64748B]/10 text-[#64748B] text-[11px] font-semibold uppercase tracking-wide rounded-full">Inactive</span>
+                                <span class="px-2 py-0.5 bg-[#535862]/10 text-[#535862] text-[11px] font-semibold uppercase tracking-wide rounded-full">Inactive</span>
                             </td>
-                            <td class="px-6 py-4 text-sm text-[#64748B]">Sep 22, 2024</td>
-                            <td class="px-6 py-4 text-sm font-semibold text-[#1E293B] text-right">$3,100.00</td>
+                            <td class="px-6 py-4 text-sm text-[#535862]">Sep 22, 2024</td>
+                            <td class="px-6 py-4 text-sm font-semibold text-[#181D27] text-right">$3,100.00</td>
                             <td class="px-6 py-4 text-center">
-                                <span class="px-2 py-0.5 bg-[#3B82F6]/10 text-[#3B82F6] text-[11px] font-semibold rounded-full">10%</span>
+                                <span class="px-2 py-0.5 bg-[#6495ED]/10 text-[#6495ED] text-[11px] font-semibold rounded-full">10%</span>
                             </td>
                         </tr>
                         <!-- Row 5 -->
-                        <tr class="hover:bg-[#F8F9FB]/50 transition-colors">
-                            <td class="px-6 py-4 text-sm font-medium text-[#1E293B]">Park Family Dental</td>
-                            <td class="px-6 py-4 text-sm text-[#64748B]">Tucson, AZ</td>
+                        <tr class="hover:bg-[#EEF3FD]/50 transition-colors">
+                            <td class="px-6 py-4 text-sm font-medium text-[#181D27]">Park Family Dental</td>
+                            <td class="px-6 py-4 text-sm text-[#535862]">Tucson, AZ</td>
                             <td class="px-6 py-4">
-                                <span class="px-2 py-0.5 bg-[#10B981]/10 text-[#10B981] text-[11px] font-semibold uppercase tracking-wide rounded-full">Active</span>
+                                <span class="px-2 py-0.5 bg-[#2ABC73]/10 text-[#2ABC73] text-[11px] font-semibold uppercase tracking-wide rounded-full">Active</span>
                             </td>
-                            <td class="px-6 py-4 text-sm text-[#64748B]">Nov 5, 2024</td>
-                            <td class="px-6 py-4 text-sm font-semibold text-[#1E293B] text-right">$4,800.00</td>
+                            <td class="px-6 py-4 text-sm text-[#535862]">Nov 5, 2024</td>
+                            <td class="px-6 py-4 text-sm font-semibold text-[#181D27] text-right">$4,800.00</td>
                             <td class="px-6 py-4 text-center">
-                                <span class="px-2 py-0.5 bg-[#3B82F6]/10 text-[#3B82F6] text-[11px] font-semibold rounded-full">10%</span>
+                                <span class="px-2 py-0.5 bg-[#6495ED]/10 text-[#6495ED] text-[11px] font-semibold rounded-full">10%</span>
                             </td>
                         </tr>
                     </tbody>
@@ -138,52 +138,52 @@
         </section>
 
         <!-- Commission Settings -->
-        <section class="bg-white rounded-xl border border-[#E2E8F0] p-6 shadow-sm">
+        <section class="bg-white rounded-xl border border-[#E6E8EC] p-6 shadow-sm">
             <div class="mb-6">
-                <h2 class="text-2xl font-semibold tracking-tight text-[#1E293B]">Commission Settings</h2>
-                <p class="text-[13px] text-[#64748B] mt-1">Your current commission structure</p>
+                <h2 class="text-2xl font-semibold tracking-tight text-[#181D27]">Commission Settings</h2>
+                <p class="text-[13px] text-[#535862] mt-1">Your current commission structure</p>
             </div>
 
             <!-- Tier Cards -->
             <div class="flex flex-col md:flex-row gap-4 mb-4">
-                <div class="flex-1 bg-[#F8F9FB] p-4 rounded-lg border border-[#E2E8F0] border-l-[3px] border-l-[#3B82F6]">
-                    <p class="text-xs font-semibold text-[#64748B] uppercase tracking-wider mb-1">Standard Tier</p>
-                    <p class="text-sm text-[#1E293B] mb-2">$0 – $10,000/month</p>
+                <div class="flex-1 bg-[#EEF3FD] p-4 rounded-lg border border-[#E6E8EC] border-l-[3px] border-l-[#6495ED]">
+                    <p class="text-xs font-semibold text-[#535862] uppercase tracking-wider mb-1">Standard Tier</p>
+                    <p class="text-sm text-[#181D27] mb-2">$0 – $10,000/month</p>
                     <div class="flex items-baseline gap-1">
-                        <span class="text-3xl font-semibold text-[#3B82F6]">10%</span>
-                        <span class="text-xs text-[#64748B]">commission rate</span>
+                        <span class="text-3xl font-semibold text-[#6495ED]">10%</span>
+                        <span class="text-xs text-[#535862]">commission rate</span>
                     </div>
                 </div>
-                <div class="flex-1 bg-[#F8F9FB] p-4 rounded-lg border border-[#E2E8F0] border-l-[3px] border-l-[#10B981]">
-                    <p class="text-xs font-semibold text-[#64748B] uppercase tracking-wider mb-1">Premium Tier</p>
-                    <p class="text-sm text-[#1E293B] mb-2">$10,001+/month</p>
+                <div class="flex-1 bg-[#EEF3FD] p-4 rounded-lg border border-[#E6E8EC] border-l-[3px] border-l-[#2ABC73]">
+                    <p class="text-xs font-semibold text-[#535862] uppercase tracking-wider mb-1">Premium Tier</p>
+                    <p class="text-sm text-[#181D27] mb-2">$10,001+/month</p>
                     <div class="flex items-baseline gap-1">
-                        <span class="text-3xl font-semibold text-[#10B981]">15%</span>
-                        <span class="text-xs text-[#64748B]">commission rate</span>
+                        <span class="text-3xl font-semibold text-[#2ABC73]">15%</span>
+                        <span class="text-xs text-[#535862]">commission rate</span>
                     </div>
                 </div>
             </div>
 
             <!-- Bonus Row -->
-            <div class="bg-[#FEF7E8] p-4 rounded-lg border border-[#C9A96E]/20 mb-4 flex items-center justify-between">
+            <div class="bg-[#FEF7E8] p-4 rounded-lg border border-[#6495ED]/20 mb-4 flex items-center justify-between">
                 <div class="flex items-center gap-3">
-                    <iconify-icon icon="solar:star-fall-linear" width="20" class="text-[#C9A96E]"></iconify-icon>
-                    <span class="text-sm font-medium text-[#1E293B]">New Customer Bonus</span>
+                    <iconify-icon icon="solar:star-fall-linear" width="20" class="text-[#6495ED]"></iconify-icon>
+                    <span class="text-sm font-medium text-[#181D27]">New Customer Bonus</span>
                 </div>
                 <div class="flex items-baseline gap-2">
-                    <span class="text-xl font-semibold text-[#C9A96E]">$350</span>
-                    <span class="text-xs text-[#64748B]">(per new customer assigned)</span>
+                    <span class="text-xl font-semibold text-[#6495ED]">$350</span>
+                    <span class="text-xs text-[#535862]">(per new customer assigned)</span>
                 </div>
             </div>
 
             <!-- Formula Card -->
-            <div class="bg-[#EBF2FA] p-4 rounded-lg border border-[#3B82F6]/10 mb-6">
-                <p class="text-[13px] font-semibold text-[#1E293B] mb-1">Net Sales Formula</p>
-                <p class="text-sm text-[#1E293B] mb-1" style="font-family: ui-monospace, monospace;">Gross sales − refunds − store credit − shipping charge</p>
-                <p class="text-xs text-[#64748B]">(Before lab COGs; excludes sales tax)</p>
+            <div class="bg-[#E0EAFB] p-4 rounded-lg border border-[#6495ED]/10 mb-6">
+                <p class="text-[13px] font-semibold text-[#181D27] mb-1">Net Sales Formula</p>
+                <p class="text-sm text-[#181D27] mb-1" style="font-family: ui-monospace, monospace;">Gross sales − refunds − store credit − shipping charge</p>
+                <p class="text-xs text-[#535862]">(Before lab COGs; excludes sales tax)</p>
             </div>
 
-            <p class="text-xs text-[#64748B] italic">Rates set by admin and adjustable per individual affiliate</p>
+            <p class="text-xs text-[#535862] italic">Rates set by admin and adjustable per individual affiliate</p>
         </section>
 
     </main>

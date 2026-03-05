@@ -6,13 +6,13 @@
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 body {
-font-family: 'Inter', sans-serif;
+font-family: 'Manrope', sans-serif;
 -webkit-font-smoothing: antialiased;
-background-color: #F8F9FB;
-color: #1E293B;
+background-color: #EEF3FD;
+color: #181D27;
 }
 .custom-scrollbar::-webkit-scrollbar {
 width: 4px;
@@ -21,7 +21,7 @@ width: 4px;
 background: transparent;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb {
-background: #E2E8F0;
+background: #E6E8EC;
 border-radius: 10px;
 }
 select {
@@ -35,15 +35,15 @@ input[type="checkbox"] {
 appearance: none;
 width: 1.25rem;
 height: 1.25rem;
-border: 1px solid #E2E8F0;
+border: 1px solid #E6E8EC;
 border-radius: 0.375rem;
 background-color: white;
 cursor: pointer;
 position: relative;
 }
 input[type="checkbox"]:checked {
-background-color: #1E3A5F;
-border-color: #1E3A5F;
+background-color: #6495ED;
+border-color: #6495ED;
 }
 input[type="checkbox"]:checked::after {
 content: "";
@@ -57,71 +57,71 @@ border-width: 0 2px 2px 0;
 transform: rotate(45deg);
 }
 </style></head>
-<body class="bg-[#F8F9FB] text-[#1E293B]">
+<body class="bg-[#EEF3FD] text-[#181D27]">
 
     <!-- Sidebar -->
-    <aside class="fixed inset-y-0 left-0 w-[240px] bg-white border-r border-[#E2E8F0] flex flex-col z-50">
+    <aside class="fixed inset-y-0 left-0 w-[314px] bg-white border-r border-[#E6E8EC] flex flex-col z-50">
         <div class="h-20 px-8 flex items-center">
-            <span class="text-xl font-medium tracking-tighter text-[#1E3A5F]">IVORYMADE</span>
+            <span class="text-xl font-medium tracking-tighter text-[#181D27]">ivorymade</span>
         </div>
         <nav class="flex-1 px-4 space-y-1">
-            <a href="./09-dashboard.html" class="flex items-center h-10 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors">
+            <a href="./09-dashboard.html" class="flex items-center h-10 px-4 gap-3 rounded-lg text-[#535862] hover:bg-[#EEF3FD] transition-colors">
                 <iconify-icon icon="solar:widget-2-linear" width="20" height="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-normal">Dashboard</span>
             </a>
-            <a href="./12-new-order-setup.html" class="flex items-center h-10 px-4 gap-3 rounded-lg bg-[#1E3A5F]/5 text-[#1E3A5F] transition-colors">
+            <a href="./12-new-order-setup.html" class="flex items-center h-10 px-4 gap-3 rounded-lg bg-[#6495ED]/5 text-[#29579A] transition-colors">
                 <iconify-icon icon="solar:add-circle-linear" width="20" height="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">New Order</span>
             </a>
-            <a href="./10-orders-list.html" class="flex items-center h-10 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors">
+            <a href="./10-orders-list.html" class="flex items-center h-10 px-4 gap-3 rounded-lg text-[#535862] hover:bg-[#EEF3FD] transition-colors">
                 <iconify-icon icon="solar:box-linear" width="20" height="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-normal">Orders</span>
             </a>
-            <a href="./22-payment-list.html" class="flex items-center h-10 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors">
+            <a href="./22-payment-list.html" class="flex items-center h-10 px-4 gap-3 rounded-lg text-[#535862] hover:bg-[#EEF3FD] transition-colors">
                 <iconify-icon icon="solar:card-transfer-linear" width="20" height="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-normal">Billing</span>
             </a>
-            <a href="./27-settings.html" class="flex items-center h-10 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors">
+            <a href="./27-settings.html" class="flex items-center h-10 px-4 gap-3 rounded-lg text-[#535862] hover:bg-[#EEF3FD] transition-colors">
                 <iconify-icon icon="solar:settings-linear" width="20" height="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-normal">Settings</span>
             </a>
         </nav>
-        <div class="p-4 border-t border-[#E2E8F0]">
+        <div class="p-4 border-t border-[#E6E8EC]">
             <div class="flex items-center gap-3 px-3 py-2">
-                <div class="w-8 h-8 rounded-full bg-[#C9A96E]/10 flex items-center justify-center text-[#C9A96E] text-xs font-semibold">JD</div>
+                <div class="w-8 h-8 rounded-full bg-[#6495ED]/10 flex items-center justify-center text-[#6495ED] text-xs font-semibold">JD</div>
                 <div class="flex-1 min-w-0">
                     <p class="text-sm font-medium truncate">Dr. John Doe</p>
-                    <p class="text-[10px] text-[#64748B] uppercase tracking-wider">Premium Clinic</p>
+                    <p class="text-[10px] text-[#535862] uppercase tracking-wider">Premium Clinic</p>
                 </div>
             </div>
         </div>
     </aside>
 
     <!-- Main Content -->
-    <main class="ml-[240px] min-h-screen pb-32">
+    <main class="ml-[314px] min-h-screen pb-32">
         <div class="max-w-[800px] mx-auto px-12 py-10">
             
             <!-- Step Indicator -->
             <div class="flex items-center gap-4 mb-12">
                 <div class="flex items-center gap-2">
-                    <div class="w-6 h-6 rounded-full bg-[#10B981] text-white flex items-center justify-center">
+                    <div class="w-6 h-6 rounded-full bg-[#2ABC73] text-white flex items-center justify-center">
                         <iconify-icon icon="solar:check-read-linear" width="14" height="14"></iconify-icon>
                     </div>
-                    <span class="text-xs font-medium text-[#64748B]">Patient</span>
+                    <span class="text-xs font-medium text-[#535862]">Patient</span>
                 </div>
-                <div class="h-[1px] w-8 bg-[#E2E8F0]"></div>
+                <div class="h-[1px] w-8 bg-[#E6E8EC]"></div>
                 <div class="flex items-center gap-2">
-                    <div class="w-6 h-6 rounded-full bg-[#10B981] text-white flex items-center justify-center">
+                    <div class="w-6 h-6 rounded-full bg-[#2ABC73] text-white flex items-center justify-center">
                         <iconify-icon icon="solar:check-read-linear" width="14" height="14"></iconify-icon>
                     </div>
-                    <span class="text-xs font-medium text-[#64748B]">Submission</span>
+                    <span class="text-xs font-medium text-[#535862]">Submission</span>
                 </div>
-                <div class="h-[1px] w-8 bg-[#E2E8F0]"></div>
+                <div class="h-[1px] w-8 bg-[#E6E8EC]"></div>
                 <div class="flex items-center gap-2">
-                    <div class="w-6 h-6 rounded-full bg-[#1E3A5F] text-white flex items-center justify-center ring-4 ring-[#1E3A5F]/10">
+                    <div class="w-6 h-6 rounded-full bg-[#6495ED] text-white flex items-center justify-center ring-4 ring-[#6495ED]/10">
                         <span class="text-[10px] font-bold">3</span>
                     </div>
-                    <span class="text-xs font-semibold text-[#1E3A5F]">Implant Crown</span>
+                    <span class="text-xs font-semibold text-[#29579A]">Implant Crown</span>
                 </div>
             </div>
 
@@ -130,59 +130,59 @@ transform: rotate(45deg);
                 <!-- SECTION A: Site Selection -->
                 <section>
                     <div class="flex items-center justify-between mb-6">
-                        <h2 class="text-2xl font-medium tracking-tight text-[#1E293B]">Select Restoration Site</h2>
-                        <button type="button" class="flex items-center gap-2 px-4 h-9 border border-[#E2E8F0] rounded-lg text-sm font-medium text-[#64748B] hover:bg-white hover:border-[#1E3A5F] transition-all">
+                        <h2 class="text-2xl font-medium tracking-tight text-[#181D27]">Select Restoration Site</h2>
+                        <button type="button" class="flex items-center gap-2 px-4 h-9 border border-[#E6E8EC] rounded-lg text-sm font-medium text-[#535862] hover:bg-white hover:border-[#6495ED] transition-all">
                             <iconify-icon icon="solar:add-circle-linear" width="18" height="18"></iconify-icon>
                             Add Order
                         </button>
                     </div>
                     
-                    <div class="bg-white p-8 rounded-2xl border border-[#E2E8F0] shadow-sm">
+                    <div class="bg-white p-8 rounded-2xl border border-[#E6E8EC] shadow-sm">
                         <div class="space-y-8 overflow-x-auto pb-4">
                             <!-- Upper Arch -->
                             <div class="flex justify-center gap-8">
                                 <div class="flex gap-1.5">
-                                    <button type="button" class="w-9 h-9 border border-[#E2E8F0] rounded flex items-center justify-center text-xs">18</button>
-                                    <button type="button" class="w-9 h-9 border border-[#E2E8F0] rounded flex items-center justify-center text-xs">17</button>
-                                    <button type="button" class="w-9 h-9 border border-[#E2E8F0] rounded flex items-center justify-center text-xs">16</button>
-                                    <button type="button" class="w-9 h-9 border border-[#E2E8F0] rounded flex items-center justify-center text-xs">15</button>
+                                    <button type="button" class="w-9 h-9 border border-[#E6E8EC] rounded flex items-center justify-center text-xs">18</button>
+                                    <button type="button" class="w-9 h-9 border border-[#E6E8EC] rounded flex items-center justify-center text-xs">17</button>
+                                    <button type="button" class="w-9 h-9 border border-[#E6E8EC] rounded flex items-center justify-center text-xs">16</button>
+                                    <button type="button" class="w-9 h-9 border border-[#E6E8EC] rounded flex items-center justify-center text-xs">15</button>
                                     <!-- Selected Tooth 14 -->
-                                    <button type="button" class="w-9 h-9 bg-[#1E3A5F] text-white rounded flex flex-col items-center justify-center relative overflow-hidden group">
+                                    <button type="button" class="w-9 h-9 bg-[#6495ED] text-white rounded flex flex-col items-center justify-center relative overflow-hidden group">
                                         <span class="text-[10px] font-semibold">14</span>
                                         <iconify-icon icon="solar:screw-linear" width="12" height="12"></iconify-icon>
                                     </button>
-                                    <button type="button" class="w-9 h-9 border border-[#E2E8F0] rounded flex items-center justify-center text-xs">13</button>
-                                    <button type="button" class="w-9 h-9 border border-[#E2E8F0] rounded flex items-center justify-center text-xs">12</button>
-                                    <button type="button" class="w-9 h-9 border border-[#E2E8F0] rounded flex items-center justify-center text-xs">11</button>
+                                    <button type="button" class="w-9 h-9 border border-[#E6E8EC] rounded flex items-center justify-center text-xs">13</button>
+                                    <button type="button" class="w-9 h-9 border border-[#E6E8EC] rounded flex items-center justify-center text-xs">12</button>
+                                    <button type="button" class="w-9 h-9 border border-[#E6E8EC] rounded flex items-center justify-center text-xs">11</button>
                                 </div>
-                                <div class="w-[1px] bg-[#E2E8F0]"></div>
+                                <div class="w-[1px] bg-[#E6E8EC]"></div>
                                 <div class="flex gap-1.5">
-                                    <button type="button" class="w-9 h-9 border border-[#E2E8F0] rounded flex items-center justify-center text-xs">21</button>
-                                    <button type="button" class="w-9 h-9 border border-[#E2E8F0] rounded flex items-center justify-center text-xs">22</button>
-                                    <button type="button" class="w-9 h-9 border border-[#E2E8F0] rounded flex items-center justify-center text-xs">23</button>
-                                    <button type="button" class="w-9 h-9 border border-[#E2E8F0] rounded flex items-center justify-center text-xs">24</button>
-                                    <button type="button" class="w-9 h-9 border border-[#E2E8F0] rounded flex items-center justify-center text-xs">25</button>
-                                    <button type="button" class="w-9 h-9 border border-[#E2E8F0] rounded flex items-center justify-center text-xs">26</button>
-                                    <button type="button" class="w-9 h-9 border border-[#E2E8F0] rounded flex items-center justify-center text-xs">27</button>
-                                    <button type="button" class="w-9 h-9 border border-[#E2E8F0] rounded flex items-center justify-center text-xs">28</button>
+                                    <button type="button" class="w-9 h-9 border border-[#E6E8EC] rounded flex items-center justify-center text-xs">21</button>
+                                    <button type="button" class="w-9 h-9 border border-[#E6E8EC] rounded flex items-center justify-center text-xs">22</button>
+                                    <button type="button" class="w-9 h-9 border border-[#E6E8EC] rounded flex items-center justify-center text-xs">23</button>
+                                    <button type="button" class="w-9 h-9 border border-[#E6E8EC] rounded flex items-center justify-center text-xs">24</button>
+                                    <button type="button" class="w-9 h-9 border border-[#E6E8EC] rounded flex items-center justify-center text-xs">25</button>
+                                    <button type="button" class="w-9 h-9 border border-[#E6E8EC] rounded flex items-center justify-center text-xs">26</button>
+                                    <button type="button" class="w-9 h-9 border border-[#E6E8EC] rounded flex items-center justify-center text-xs">27</button>
+                                    <button type="button" class="w-9 h-9 border border-[#E6E8EC] rounded flex items-center justify-center text-xs">28</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <div class="h-[1px] bg-[#E2E8F0]"></div>
+                <div class="h-[1px] bg-[#E6E8EC]"></div>
 
                 <!-- SECTION B: Abutment Details -->
                 <section class="space-y-6">
-                    <h2 class="text-2xl font-medium tracking-tight text-[#1E293B]">Abutment Details</h2>
+                    <h2 class="text-2xl font-medium tracking-tight text-[#181D27]">Abutment Details</h2>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="space-y-1.5">
-                            <label class="text-xs font-medium text-[#64748B] uppercase tracking-wider">Implant Type*</label>
+                            <label class="text-xs font-medium text-[#535862] uppercase tracking-wider">Implant Type*</label>
                             <div class="relative">
-                                <iconify-icon icon="solar:magnifer-linear" width="18" height="18" class="absolute left-4 top-1/2 -translate-y-1/2 text-[#64748B]"></iconify-icon>
-                                <select class="w-full h-11 pl-11 pr-4 rounded-xl border border-[#E2E8F0] bg-white text-sm outline-none cursor-pointer focus:border-[#1E3A5F] transition-all">
+                                <iconify-icon icon="solar:magnifer-linear" width="18" height="18" class="absolute left-4 top-1/2 -translate-y-1/2 text-[#535862]"></iconify-icon>
+                                <select class="w-full h-11 pl-11 pr-4 rounded-xl border border-[#E6E8EC] bg-white text-sm outline-none cursor-pointer focus:border-[#6495ED] transition-all">
                                     <option>Search implant type...</option>
                                     <option>Straumann Bone Level</option>
                                     <option>Nobel Biocare Conical</option>
@@ -192,8 +192,8 @@ transform: rotate(45deg);
                         </div>
 
                         <div class="space-y-1.5">
-                            <label class="text-xs font-medium text-[#64748B] uppercase tracking-wider">Implant Connection*</label>
-                            <select class="w-full h-11 px-4 rounded-xl border border-[#E2E8F0] bg-white text-sm outline-none cursor-pointer focus:border-[#1E3A5F]">
+                            <label class="text-xs font-medium text-[#535862] uppercase tracking-wider">Implant Connection*</label>
+                            <select class="w-full h-11 px-4 rounded-xl border border-[#E6E8EC] bg-white text-sm outline-none cursor-pointer focus:border-[#6495ED]">
                                 <option>Select connection...</option>
                                 <option>NC (Narrow Connection)</option>
                                 <option>RC (Regular Connection)</option>
@@ -202,26 +202,26 @@ transform: rotate(45deg);
                     </div>
 
                     <div class="space-y-3">
-                        <label class="text-xs font-medium text-[#64748B] uppercase tracking-wider">Abutment Type*</label>
+                        <label class="text-xs font-medium text-[#535862] uppercase tracking-wider">Abutment Type*</label>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                             <label class="cursor-pointer">
                                 <input type="radio" name="abutment_type" class="peer hidden" checked="">
-                                <div class="h-24 p-4 flex flex-col items-center justify-center gap-2 border border-[#E2E8F0] rounded-xl bg-white peer-checked:border-[#1E3A5F] peer-checked:bg-[#1E3A5F]/5 peer-checked:ring-2 peer-checked:ring-[#1E3A5F]/10 transition-all">
-                                    <iconify-icon icon="solar:medal-star-linear" width="24" height="24" class="text-[#64748B] peer-checked:text-[#1E3A5F]"></iconify-icon>
+                                <div class="h-24 p-4 flex flex-col items-center justify-center gap-2 border border-[#E6E8EC] rounded-xl bg-white peer-checked:border-[#6495ED] peer-checked:bg-[#6495ED]/5 peer-checked:ring-2 peer-checked:ring-[#6495ED]/10 transition-all">
+                                    <iconify-icon icon="solar:medal-star-linear" width="24" height="24" class="text-[#535862] peer-checked:text-[#29579A]"></iconify-icon>
                                     <span class="text-xs font-medium text-center">Custom Titanium Abutment</span>
                                 </div>
                             </label>
                             <label class="cursor-pointer">
                                 <input type="radio" name="abutment_type" class="peer hidden">
-                                <div class="h-24 p-4 flex flex-col items-center justify-center gap-2 border border-[#E2E8F0] rounded-xl bg-white peer-checked:border-[#1E3A5F] peer-checked:bg-[#1E3A5F]/5 peer-checked:ring-2 peer-checked:ring-[#1E3A5F]/10 transition-all">
-                                    <iconify-icon icon="solar:crown-minimalistic-linear" width="24" height="24" class="text-[#64748B]"></iconify-icon>
+                                <div class="h-24 p-4 flex flex-col items-center justify-center gap-2 border border-[#E6E8EC] rounded-xl bg-white peer-checked:border-[#6495ED] peer-checked:bg-[#6495ED]/5 peer-checked:ring-2 peer-checked:ring-[#6495ED]/10 transition-all">
+                                    <iconify-icon icon="solar:crown-minimalistic-linear" width="24" height="24" class="text-[#535862]"></iconify-icon>
                                     <span class="text-xs font-medium text-center">Zirconia Hybrid Abutment</span>
                                 </div>
                             </label>
                             <label class="cursor-pointer">
                                 <input type="radio" name="abutment_type" class="peer hidden">
-                                <div class="h-24 p-4 flex flex-col items-center justify-center gap-2 border border-[#E2E8F0] rounded-xl bg-white peer-checked:border-[#1E3A5F] peer-checked:bg-[#1E3A5F]/5 peer-checked:ring-2 peer-checked:ring-[#1E3A5F]/10 transition-all">
-                                    <iconify-icon icon="solar:box-linear" width="24" height="24" class="text-[#64748B]"></iconify-icon>
+                                <div class="h-24 p-4 flex flex-col items-center justify-center gap-2 border border-[#E6E8EC] rounded-xl bg-white peer-checked:border-[#6495ED] peer-checked:bg-[#6495ED]/5 peer-checked:ring-2 peer-checked:ring-[#6495ED]/10 transition-all">
+                                    <iconify-icon icon="solar:box-linear" width="24" height="24" class="text-[#535862]"></iconify-icon>
                                     <span class="text-xs font-medium text-center">Ti-Base</span>
                                 </div>
                             </label>
@@ -230,17 +230,17 @@ transform: rotate(45deg);
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="space-y-3">
-                            <label class="text-xs font-medium text-[#64748B] uppercase tracking-wider">Retention Type*</label>
+                            <label class="text-xs font-medium text-[#535862] uppercase tracking-wider">Retention Type*</label>
                             <div class="flex p-1 bg-[#F1F5F9] rounded-xl w-fit">
-                                <button type="button" class="px-5 h-9 rounded-lg text-sm font-medium bg-white text-[#1E3A5F] shadow-sm">Screw-retained</button>
-                                <button type="button" class="px-5 h-9 rounded-lg text-sm font-medium text-[#64748B]">Cement-retained</button>
-                                <button type="button" class="px-5 h-9 rounded-lg text-sm font-medium text-[#64748B]">Screwmentable</button>
+                                <button type="button" class="px-5 h-9 rounded-lg text-sm font-medium bg-white text-[#29579A] shadow-sm">Screw-retained</button>
+                                <button type="button" class="px-5 h-9 rounded-lg text-sm font-medium text-[#535862]">Cement-retained</button>
+                                <button type="button" class="px-5 h-9 rounded-lg text-sm font-medium text-[#535862]">Screwmentable</button>
                             </div>
                         </div>
 
                         <div class="space-y-1.5">
-                            <label class="text-xs font-medium text-[#64748B] uppercase tracking-wider">Scanbody Type*</label>
-                            <select class="w-full h-11 px-4 rounded-xl border border-[#E2E8F0] bg-white text-sm outline-none cursor-pointer focus:border-[#1E3A5F]">
+                            <label class="text-xs font-medium text-[#535862] uppercase tracking-wider">Scanbody Type*</label>
+                            <select class="w-full h-11 px-4 rounded-xl border border-[#E6E8EC] bg-white text-sm outline-none cursor-pointer focus:border-[#6495ED]">
                                 <option>DESS Intra-Oral</option>
                                 <option>Atlantis IO</option>
                                 <option>ELOS</option>
@@ -251,71 +251,71 @@ transform: rotate(45deg);
                     </div>
                 </section>
 
-                <div class="h-[1px] bg-[#E2E8F0]"></div>
+                <div class="h-[1px] bg-[#E6E8EC]"></div>
 
                 <!-- SECTION C: Abutment Design -->
                 <section class="space-y-8">
-                    <h2 class="text-2xl font-medium tracking-tight text-[#1E293B]">Abutment Design</h2>
+                    <h2 class="text-2xl font-medium tracking-tight text-[#181D27]">Abutment Design</h2>
                     
                     <div class="space-y-6">
                         <div class="space-y-3">
-                            <label class="text-xs font-medium text-[#64748B] uppercase tracking-wider">Emergence Profile</label>
+                            <label class="text-xs font-medium text-[#535862] uppercase tracking-wider">Emergence Profile</label>
                             <div class="flex flex-wrap gap-2">
-                                <button type="button" class="px-4 h-9 rounded-lg text-xs font-medium bg-[#1E3A5F] text-white">Contour tissue</button>
-                                <button type="button" class="px-4 h-9 rounded-lg text-xs font-medium border border-[#E2E8F0] text-[#64748B] hover:bg-white">Support Tissue</button>
-                                <button type="button" class="px-4 h-9 rounded-lg text-xs font-medium border border-[#E2E8F0] text-[#64748B] hover:bg-white">Full anatomical</button>
-                                <button type="button" class="px-4 h-9 rounded-lg text-xs font-medium border border-[#E2E8F0] text-[#64748B] hover:bg-white">Anatomical support</button>
-                                <button type="button" class="px-4 h-9 rounded-lg text-xs font-medium border border-[#E2E8F0] text-[#64748B] hover:bg-white">No displacement</button>
+                                <button type="button" class="px-4 h-9 rounded-lg text-xs font-medium bg-[#6495ED] text-white">Contour tissue</button>
+                                <button type="button" class="px-4 h-9 rounded-lg text-xs font-medium border border-[#E6E8EC] text-[#535862] hover:bg-white">Support Tissue</button>
+                                <button type="button" class="px-4 h-9 rounded-lg text-xs font-medium border border-[#E6E8EC] text-[#535862] hover:bg-white">Full anatomical</button>
+                                <button type="button" class="px-4 h-9 rounded-lg text-xs font-medium border border-[#E6E8EC] text-[#535862] hover:bg-white">Anatomical support</button>
+                                <button type="button" class="px-4 h-9 rounded-lg text-xs font-medium border border-[#E6E8EC] text-[#535862] hover:bg-white">No displacement</button>
                             </div>
                         </div>
 
                         <div class="space-y-3">
-                            <label class="text-xs font-medium text-[#64748B] uppercase tracking-wider">Emergence Shape</label>
+                            <label class="text-xs font-medium text-[#535862] uppercase tracking-wider">Emergence Shape</label>
                             <div class="flex gap-2">
-                                <button type="button" class="px-6 h-9 rounded-lg text-xs font-medium border border-[#E2E8F0] text-[#64748B] hover:bg-white">Straight</button>
-                                <button type="button" class="px-6 h-9 rounded-lg text-xs font-medium bg-[#1E3A5F] text-white">Concave</button>
-                                <button type="button" class="px-6 h-9 rounded-lg text-xs font-medium border border-[#E2E8F0] text-[#64748B] hover:bg-white">Convex</button>
+                                <button type="button" class="px-6 h-9 rounded-lg text-xs font-medium border border-[#E6E8EC] text-[#535862] hover:bg-white">Straight</button>
+                                <button type="button" class="px-6 h-9 rounded-lg text-xs font-medium bg-[#6495ED] text-white">Concave</button>
+                                <button type="button" class="px-6 h-9 rounded-lg text-xs font-medium border border-[#E6E8EC] text-[#535862] hover:bg-white">Convex</button>
                             </div>
                         </div>
 
                         <div class="space-y-3">
-                            <label class="text-xs font-medium text-[#64748B] uppercase tracking-wider">Margin Position</label>
-                            <div class="bg-white rounded-2xl border border-[#E2E8F0] overflow-hidden">
+                            <label class="text-xs font-medium text-[#535862] uppercase tracking-wider">Margin Position</label>
+                            <div class="bg-white rounded-2xl border border-[#E6E8EC] overflow-hidden">
                                 <table class="w-full text-sm">
-                                    <thead class="bg-[#F8F9FB] border-bottom border-[#E2E8F0]">
+                                    <thead class="bg-[#EEF3FD] border-bottom border-[#E6E8EC]">
                                         <tr>
-                                            <th class="text-left py-3 px-6 font-medium text-[#64748B] text-xs">SURFACE</th>
-                                            <th class="text-right py-3 px-6 font-medium text-[#64748B] text-xs">POSITION (MM)</th>
+                                            <th class="text-left py-3 px-6 font-medium text-[#535862] text-xs">SURFACE</th>
+                                            <th class="text-right py-3 px-6 font-medium text-[#535862] text-xs">POSITION (MM)</th>
                                         </tr>
                                     </thead>
                                     <tbody class="divide-y divide-[#F1F5F9]">
                                         <tr>
                                             <td class="py-4 px-6 font-medium">Buccal</td>
                                             <td class="py-4 px-6 flex justify-end">
-                                                <div class="flex items-center border border-[#E2E8F0] rounded-xl bg-[#F8F9FB] p-1">
-                                                    <button type="button" class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-white text-[#64748B]"><iconify-icon icon="solar:minus-circle-linear" width="18" height="18"></iconify-icon></button>
-                                                    <span class="w-16 text-center text-sm font-semibold text-[#1E3A5F]">-1.0</span>
-                                                    <button type="button" class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-white text-[#64748B]"><iconify-icon icon="solar:add-circle-linear" width="18" height="18"></iconify-icon></button>
+                                                <div class="flex items-center border border-[#E6E8EC] rounded-xl bg-[#EEF3FD] p-1">
+                                                    <button type="button" class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-white text-[#535862]"><iconify-icon icon="solar:minus-circle-linear" width="18" height="18"></iconify-icon></button>
+                                                    <span class="w-16 text-center text-sm font-semibold text-[#29579A]">-1.0</span>
+                                                    <button type="button" class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-white text-[#535862]"><iconify-icon icon="solar:add-circle-linear" width="18" height="18"></iconify-icon></button>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="py-4 px-6 font-medium">Lingual</td>
                                             <td class="py-4 px-6 flex justify-end">
-                                                <div class="flex items-center border border-[#E2E8F0] rounded-xl bg-[#F8F9FB] p-1">
-                                                    <button type="button" class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-white text-[#64748B]"><iconify-icon icon="solar:minus-circle-linear" width="18" height="18"></iconify-icon></button>
-                                                    <span class="w-16 text-center text-sm font-semibold text-[#1E3A5F]">-0.5</span>
-                                                    <button type="button" class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-white text-[#64748B]"><iconify-icon icon="solar:add-circle-linear" width="18" height="18"></iconify-icon></button>
+                                                <div class="flex items-center border border-[#E6E8EC] rounded-xl bg-[#EEF3FD] p-1">
+                                                    <button type="button" class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-white text-[#535862]"><iconify-icon icon="solar:minus-circle-linear" width="18" height="18"></iconify-icon></button>
+                                                    <span class="w-16 text-center text-sm font-semibold text-[#29579A]">-0.5</span>
+                                                    <button type="button" class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-white text-[#535862]"><iconify-icon icon="solar:add-circle-linear" width="18" height="18"></iconify-icon></button>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="py-4 px-6 font-medium">Mesial / Distal</td>
                                             <td class="py-4 px-6 flex justify-end">
-                                                <div class="flex items-center border border-[#E2E8F0] rounded-xl bg-[#F8F9FB] p-1">
-                                                    <button type="button" class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-white text-[#64748B]"><iconify-icon icon="solar:minus-circle-linear" width="18" height="18"></iconify-icon></button>
-                                                    <span class="w-16 text-center text-sm font-semibold text-[#1E3A5F]">-0.5</span>
-                                                    <button type="button" class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-white text-[#64748B]"><iconify-icon icon="solar:add-circle-linear" width="18" height="18"></iconify-icon></button>
+                                                <div class="flex items-center border border-[#E6E8EC] rounded-xl bg-[#EEF3FD] p-1">
+                                                    <button type="button" class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-white text-[#535862]"><iconify-icon icon="solar:minus-circle-linear" width="18" height="18"></iconify-icon></button>
+                                                    <span class="w-16 text-center text-sm font-semibold text-[#29579A]">-0.5</span>
+                                                    <button type="button" class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-white text-[#535862]"><iconify-icon icon="solar:add-circle-linear" width="18" height="18"></iconify-icon></button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -326,16 +326,16 @@ transform: rotate(45deg);
                     </div>
                 </section>
 
-                <div class="h-[1px] bg-[#E2E8F0]"></div>
+                <div class="h-[1px] bg-[#E6E8EC]"></div>
 
                 <!-- SECTION D: Crown Details -->
                 <section class="space-y-6">
-                    <h2 class="text-2xl font-medium tracking-tight text-[#1E293B]">Crown Details</h2>
+                    <h2 class="text-2xl font-medium tracking-tight text-[#181D27]">Crown Details</h2>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="space-y-1.5">
-                            <label class="text-xs font-medium text-[#64748B] uppercase tracking-wider">Crown Material*</label>
-                            <select class="w-full h-11 px-4 rounded-xl border border-[#E2E8F0] bg-white text-sm outline-none cursor-pointer">
+                            <label class="text-xs font-medium text-[#535862] uppercase tracking-wider">Crown Material*</label>
+                            <select class="w-full h-11 px-4 rounded-xl border border-[#E6E8EC] bg-white text-sm outline-none cursor-pointer">
                                 <option>Monolithic Zirconia ($85/unit)</option>
                                 <option>Full Contour Zirconia ($75/unit)</option>
                                 <option>E.max Press ($110/unit)</option>
@@ -344,8 +344,8 @@ transform: rotate(45deg);
                         </div>
 
                         <div class="space-y-1.5">
-                            <label class="text-xs font-medium text-[#64748B] uppercase tracking-wider">Tooth Shade*</label>
-                            <select class="w-full h-11 px-4 rounded-xl border border-[#E2E8F0] bg-white text-sm outline-none cursor-pointer">
+                            <label class="text-xs font-medium text-[#535862] uppercase tracking-wider">Tooth Shade*</label>
+                            <select class="w-full h-11 px-4 rounded-xl border border-[#E6E8EC] bg-white text-sm outline-none cursor-pointer">
                                 <optgroup label="Bleach Shades">
                                     <option>OM1</option><option>OM2</option>
                                 </optgroup>
@@ -356,8 +356,8 @@ transform: rotate(45deg);
                         </div>
 
                         <div class="space-y-1.5">
-                            <label class="text-xs font-medium text-[#64748B] uppercase tracking-wider">Pink Tissue Shade</label>
-                            <select class="w-full h-11 px-4 rounded-xl border border-[#E2E8F0] bg-white text-sm outline-none cursor-pointer">
+                            <label class="text-xs font-medium text-[#535862] uppercase tracking-wider">Pink Tissue Shade</label>
+                            <select class="w-full h-11 px-4 rounded-xl border border-[#E6E8EC] bg-white text-sm outline-none cursor-pointer">
                                 <option>None</option>
                                 <option>Light Pink</option>
                                 <option>Medium Pink</option>
@@ -367,85 +367,85 @@ transform: rotate(45deg);
                     </div>
                 </section>
 
-                <div class="h-[1px] bg-[#E2E8F0]"></div>
+                <div class="h-[1px] bg-[#E6E8EC]"></div>
 
                 <!-- SECTION E: Crown Design -->
                 <section class="space-y-6">
-                    <h2 class="text-2xl font-medium tracking-tight text-[#1E293B]">Crown Design</h2>
+                    <h2 class="text-2xl font-medium tracking-tight text-[#181D27]">Crown Design</h2>
                     
                     <div class="space-y-6">
                         <div class="space-y-3">
-                            <label class="text-xs font-medium text-[#64748B] uppercase tracking-wider">Occlusal Contact</label>
+                            <label class="text-xs font-medium text-[#535862] uppercase tracking-wider">Occlusal Contact</label>
                             <div class="flex p-1 bg-[#F1F5F9] rounded-xl w-fit">
-                                <button type="button" class="px-8 h-9 rounded-lg text-sm font-medium bg-white text-[#1E3A5F] shadow-sm">Light</button>
-                                <button type="button" class="px-8 h-9 rounded-lg text-sm font-medium text-[#64748B]">Medium</button>
-                                <button type="button" class="px-8 h-9 rounded-lg text-sm font-medium text-[#64748B]">Heavy</button>
+                                <button type="button" class="px-8 h-9 rounded-lg text-sm font-medium bg-white text-[#29579A] shadow-sm">Light</button>
+                                <button type="button" class="px-8 h-9 rounded-lg text-sm font-medium text-[#535862]">Medium</button>
+                                <button type="button" class="px-8 h-9 rounded-lg text-sm font-medium text-[#535862]">Heavy</button>
                             </div>
                         </div>
 
                         <div class="space-y-3">
-                            <label class="text-xs font-medium text-[#64748B] uppercase tracking-wider">Interproximal Contact</label>
+                            <label class="text-xs font-medium text-[#535862] uppercase tracking-wider">Interproximal Contact</label>
                             <div class="flex p-1 bg-[#F1F5F9] rounded-xl w-fit">
-                                <button type="button" class="px-8 h-9 rounded-lg text-sm font-medium bg-white text-[#1E3A5F] shadow-sm">Light</button>
-                                <button type="button" class="px-8 h-9 rounded-lg text-sm font-medium text-[#64748B]">Medium</button>
-                                <button type="button" class="px-8 h-9 rounded-lg text-sm font-medium text-[#64748B]">Heavy</button>
+                                <button type="button" class="px-8 h-9 rounded-lg text-sm font-medium bg-white text-[#29579A] shadow-sm">Light</button>
+                                <button type="button" class="px-8 h-9 rounded-lg text-sm font-medium text-[#535862]">Medium</button>
+                                <button type="button" class="px-8 h-9 rounded-lg text-sm font-medium text-[#535862]">Heavy</button>
                             </div>
                         </div>
 
                         <div class="space-y-3">
-                            <label class="text-xs font-medium text-[#64748B] uppercase tracking-wider">If No Occlusal Clearance</label>
+                            <label class="text-xs font-medium text-[#535862] uppercase tracking-wider">If No Occlusal Clearance</label>
                             <div class="flex p-1 bg-[#F1F5F9] rounded-xl w-fit">
-                                <button type="button" class="px-6 h-9 rounded-lg text-sm font-medium bg-white text-[#1E3A5F] shadow-sm">Spot opposing</button>
-                                <button type="button" class="px-6 h-9 rounded-lg text-sm font-medium text-[#64748B]">Inform doctor</button>
-                                <button type="button" class="px-6 h-9 rounded-lg text-sm font-medium text-[#64748B]">Reduce prep</button>
+                                <button type="button" class="px-6 h-9 rounded-lg text-sm font-medium bg-white text-[#29579A] shadow-sm">Spot opposing</button>
+                                <button type="button" class="px-6 h-9 rounded-lg text-sm font-medium text-[#535862]">Inform doctor</button>
+                                <button type="button" class="px-6 h-9 rounded-lg text-sm font-medium text-[#535862]">Reduce prep</button>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <div class="h-[1px] bg-[#E2E8F0]"></div>
+                <div class="h-[1px] bg-[#E6E8EC]"></div>
 
                 <!-- SECTION F: Additional Services -->
                 <section class="space-y-6">
-                    <h2 class="text-2xl font-medium tracking-tight text-[#1E293B]">Additional Services</h2>
+                    <h2 class="text-2xl font-medium tracking-tight text-[#181D27]">Additional Services</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                        <label class="flex items-center justify-between p-4 bg-white rounded-2xl border border-[#E2E8F0] cursor-pointer hover:border-[#1E3A5F]/30 transition-all">
+                        <label class="flex items-center justify-between p-4 bg-white rounded-2xl border border-[#E6E8EC] cursor-pointer hover:border-[#6495ED]/30 transition-all">
                             <div class="flex items-center gap-3">
                                 <input type="checkbox">
                                 <span class="text-sm font-medium">PMMA Temporary</span>
                             </div>
-                            <span class="text-xs text-[#64748B]">$35.00</span>
+                            <span class="text-xs text-[#535862]">$35.00</span>
                         </label>
-                        <label class="flex items-center justify-between p-4 bg-white rounded-2xl border border-[#E2E8F0] cursor-pointer hover:border-[#1E3A5F]/30 transition-all">
+                        <label class="flex items-center justify-between p-4 bg-white rounded-2xl border border-[#E6E8EC] cursor-pointer hover:border-[#6495ED]/30 transition-all">
                             <div class="flex items-center gap-3">
                                 <input type="checkbox">
                                 <span class="text-sm font-medium">Anodize service</span>
                             </div>
-                            <span class="text-xs text-[#64748B]">$10.00</span>
+                            <span class="text-xs text-[#535862]">$10.00</span>
                         </label>
-                        <label class="flex items-center justify-between p-4 bg-white rounded-2xl border border-[#E2E8F0] cursor-pointer hover:border-[#1E3A5F]/30 transition-all">
+                        <label class="flex items-center justify-between p-4 bg-white rounded-2xl border border-[#E6E8EC] cursor-pointer hover:border-[#6495ED]/30 transition-all">
                             <div class="flex items-center gap-3">
                                 <input type="checkbox">
                                 <span class="text-sm font-medium">Abutment fitting jig</span>
                             </div>
-                            <span class="text-xs text-[#64748B]">$15.00</span>
+                            <span class="text-xs text-[#535862]">$15.00</span>
                         </label>
-                        <label class="flex items-center justify-between p-4 bg-white rounded-2xl border border-[#E2E8F0] cursor-pointer hover:border-[#1E3A5F]/30 transition-all">
+                        <label class="flex items-center justify-between p-4 bg-white rounded-2xl border border-[#E6E8EC] cursor-pointer hover:border-[#6495ED]/30 transition-all">
                             <div class="flex items-center gap-3">
                                 <input type="checkbox">
                                 <span class="text-sm font-medium">Printed models</span>
                             </div>
-                            <span class="text-xs text-[#64748B]">$35.00</span>
+                            <span class="text-xs text-[#535862]">$35.00</span>
                         </label>
                     </div>
                 </section>
 
-                <div class="h-[1px] bg-[#E2E8F0]"></div>
+                <div class="h-[1px] bg-[#E6E8EC]"></div>
 
                 <!-- SECTION G: Additional Instructions -->
                 <section class="space-y-6 pb-20">
-                    <h2 class="text-2xl font-medium tracking-tight text-[#1E293B]">Additional Instructions</h2>
-                    <textarea class="w-full min-h-[120px] p-4 rounded-2xl border border-[#E2E8F0] bg-white text-sm focus:ring-2 focus:ring-[#1E3A5F]/5 focus:border-[#1E3A5F] outline-none transition-all resize-none placeholder:text-[#94A3B8]" placeholder="Enter any specific notes for the laboratory technician..."></textarea>
+                    <h2 class="text-2xl font-medium tracking-tight text-[#181D27]">Additional Instructions</h2>
+                    <textarea class="w-full min-h-[120px] p-4 rounded-2xl border border-[#E6E8EC] bg-white text-sm focus:ring-2 focus:ring-[#6495ED]/5 focus:border-[#6495ED] outline-none transition-all resize-none placeholder:text-[#8B95A1]" placeholder="Enter any specific notes for the laboratory technician..."></textarea>
                 </section>
 
             </form>
@@ -453,18 +453,18 @@ transform: rotate(45deg);
     </main>
 
     <!-- Sticky Action Bar -->
-    <footer class="fixed bottom-0 left-[240px] right-0 h-20 bg-white border-t border-[#E2E8F0] z-40 px-12 flex items-center justify-center">
+    <footer class="fixed bottom-0 left-[240px] right-0 h-20 bg-white border-t border-[#E6E8EC] z-40 px-12 flex items-center justify-center">
         <div class="w-full max-w-[800px] flex items-center justify-between">
-            <button class="text-sm font-medium text-[#64748B] hover:text-[#1E293B] flex items-center gap-2 transition-colors">
+            <button class="text-sm font-medium text-[#535862] hover:text-[#181D27] flex items-center gap-2 transition-colors">
                 <iconify-icon icon="solar:alt-arrow-left-linear" width="18" height="18"></iconify-icon>
                 Back to submission
             </button>
             <div class="flex items-center gap-6">
                 <div class="text-right">
-                    <p class="text-[10px] uppercase tracking-widest text-[#64748B] font-medium">Unit Cost</p>
-                    <p class="text-lg font-semibold text-[#1E3A5F]">$85.00</p>
+                    <p class="text-[10px] uppercase tracking-widest text-[#535862] font-medium">Unit Cost</p>
+                    <p class="text-lg font-semibold text-[#29579A]">$85.00</p>
                 </div>
-                <button class="bg-[#1E3A5F] text-white h-[44px] px-8 rounded-xl text-sm font-medium hover:bg-[#162a45] shadow-lg shadow-[#1E3A5F]/10 active:scale-[0.98] transition-all">
+                <button class="bg-[#6495ED] text-white h-[44px] px-8 rounded-xl text-sm font-medium hover:bg-[#162a45] shadow-lg shadow-[#6495ED]/10 active:scale-[0.98] transition-all">
                     Review Order
                 </button>
             </div>

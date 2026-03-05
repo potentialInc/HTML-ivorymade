@@ -6,10 +6,10 @@
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 body {
-font-family: 'Inter', sans-serif;
+font-family: 'Manrope', sans-serif;
 -webkit-font-smoothing: antialiased;
 }
 .logo-tracking {
@@ -17,28 +17,27 @@ letter-spacing: -0.05em;
 }
 input:focus {
 outline: none;
-border-color: #1E3A5F;
-box-shadow: 0 0 0 1px #1E3A5F;
+border-color: #6495ED;
+box-shadow: 0 0 0 1px #6495ED;
 }
 .error-state {
-border-color: #EF4444 !important;
+border-color: #E82E29 !important;
 }
 </style></head>
-<body class="bg-[#F8F9FB] text-[#1E293B] min-h-screen flex items-center justify-center p-6">
+<body class="bg-[#EEF3FD] text-[#181D27] min-h-screen flex items-center justify-center p-6">
 
     <div class="w-full max-w-[440px] bg-white rounded-[12px] shadow-md p-8">
         <!-- Logo Section -->
         <div class="flex justify-center h-[48px] mb-8">
             <span class="logo-tracking text-3xl font-semibold uppercase flex items-center">
-                <span class="text-[#1E3A5F]">Ivory</span>
-                <span class="text-[#C9A96E]">made</span>
+                <span class="text-[#181D27]">ivorymade</span>
             </span>
         </div>
 
         <!-- Heading Section -->
         <div class="text-center mb-6">
-            <h2 class="text-2xl font-semibold text-[#1E293B] tracking-tight">Welcome Back</h2>
-            <p class="text-sm text-[#64748B] mt-1">Sign in to your account</p>
+            <h2 class="text-2xl font-semibold text-[#181D27] tracking-tight">Welcome Back</h2>
+            <p class="text-sm text-[#535862] mt-1">Sign in to your account</p>
         </div>
 
         <!-- Form Section -->
@@ -46,25 +45,25 @@ border-color: #EF4444 !important;
             <!-- Email/Phone Field -->
             <div class="relative">
                 <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                    <iconify-icon icon="solar:letter-linear" width="20" height="20" class="text-[#64748B]" stroke-width="1.5"></iconify-icon>
+                    <iconify-icon icon="solar:letter-linear" width="20" height="20" class="text-[#535862]" stroke-width="1.5"></iconify-icon>
                 </div>
-                <input type="text" placeholder="Email address or phone number" class="w-full h-[44px] pl-10 pr-4 bg-white border border-[#E2E8F0] rounded-[8px] text-sm transition-all placeholder:text-[#94A3B8]">
+                <input type="text" placeholder="Email address or phone number" class="w-full h-[44px] pl-10 pr-4 bg-white border border-[#E6E8EC] rounded-[8px] text-sm transition-all placeholder:text-[#8B95A1]">
             </div>
 
             <!-- Password Field -->
             <div class="relative">
                 <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                    <iconify-icon icon="solar:lock-password-linear" width="20" height="20" class="text-[#64748B]" stroke-width="1.5"></iconify-icon>
+                    <iconify-icon icon="solar:lock-password-linear" width="20" height="20" class="text-[#535862]" stroke-width="1.5"></iconify-icon>
                 </div>
-                <input type="password" id="passwordInput" placeholder="Password" class="w-full h-[44px] px-10 bg-white border border-[#E2E8F0] rounded-[8px] text-sm transition-all placeholder:text-[#94A3B8]">
-                <button type="button" class="absolute inset-y-0 right-0 pr-3 flex items-center text-[#64748B] hover:text-[#1E3A5F] transition-colors">
+                <input type="password" id="passwordInput" placeholder="Password" class="w-full h-[44px] px-10 bg-white border border-[#E6E8EC] rounded-[8px] text-sm transition-all placeholder:text-[#8B95A1]">
+                <button type="button" class="absolute inset-y-0 right-0 pr-3 flex items-center text-[#535862] hover:text-[#29579A] transition-colors">
                     <iconify-icon icon="solar:eye-linear" width="20" height="20" stroke-width="1.5"></iconify-icon>
                 </button>
             </div>
 
             <!-- Login Button -->
             <div class="pt-2">
-                <button class="w-full h-[44px] bg-[#1E3A5F] hover:bg-[#2D5F8A] text-white text-sm font-semibold rounded-[8px] transition-all duration-200 shadow-sm flex items-center justify-center">
+                <button class="w-full h-[44px] bg-[#6495ED] hover:bg-[#3B76CE] text-white text-sm font-semibold rounded-[8px] transition-all duration-200 shadow-sm flex items-center justify-center">
                     Log In
                 </button>
             </div>
@@ -72,16 +71,16 @@ border-color: #EF4444 !important;
 
         <!-- Recovery Links -->
         <div class="mt-6 flex flex-col items-center space-y-3">
-            <a href="#" class="text-sm font-medium text-[#1E3A5F] hover:underline decoration-2 underline-offset-4">Forgot your email?</a>
-            <a href="./06-forgot-password.html" class="text-sm font-medium text-[#1E3A5F] hover:underline decoration-2 underline-offset-4">Forgot password?</a>
-            <a href="#" class="text-sm font-medium text-[#1E3A5F] hover:underline decoration-2 underline-offset-4">Login security link</a>
+            <a href="#" class="text-sm font-medium text-[#29579A] hover:underline decoration-2 underline-offset-4">Forgot your email?</a>
+            <a href="./06-forgot-password.html" class="text-sm font-medium text-[#29579A] hover:underline decoration-2 underline-offset-4">Forgot password?</a>
+            <a href="#" class="text-sm font-medium text-[#29579A] hover:underline decoration-2 underline-offset-4">Login security link</a>
         </div>
 
         <!-- Signup Link -->
-        <div class="mt-6 pt-6 border-t border-[#E2E8F0] text-center">
-            <p class="text-sm text-[#64748B]">
+        <div class="mt-6 pt-6 border-t border-[#E6E8EC] text-center">
+            <p class="text-sm text-[#535862]">
                 Don't have an account? 
-                <a href="./03-signup.html" class="text-[#1E3A5F] font-semibold hover:underline decoration-2 underline-offset-4">Sign Up</a>
+                <a href="./03-signup.html" class="text-[#29579A] font-semibold hover:underline decoration-2 underline-offset-4">Sign Up</a>
             </p>
         </div>
     </div>

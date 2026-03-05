@@ -6,51 +6,50 @@
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 body {
-font-family: 'Inter', sans-serif;
+font-family: 'Manrope', sans-serif;
 -webkit-font-smoothing: antialiased;
-background-color: #F8F9FB;
+background-color: #EEF3FD;
 }
 .step-dot {
 transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-field {
 height: 44px;
-border: 1px solid #E2E8F0;
+border: 1px solid #E6E8EC;
 border-radius: 8px;
 padding: 0 16px;
 width: 100%;
 transition: all 0.2s;
-color: #1E293B;
+color: #181D27;
 font-size: 0.875rem;
 }
 .input-field:focus {
 outline: none;
-border-color: #1E3A5F;
-box-shadow: 0 0 0 1px #1E3A5F;
+border-color: #6495ED;
+box-shadow: 0 0 0 1px #6495ED;
 }
 .specialty-card {
 cursor: pointer;
 transition: all 0.2s;
-border: 1px solid #E2E8F0;
+border: 1px solid #E6E8EC;
 }
 .specialty-radio:checked + .specialty-card {
-border-color: #1E3A5F;
-background-color: #EBF2FA;
+border-color: #6495ED;
+background-color: #E0EAFB;
 }
 .logo-text {
 letter-spacing: -0.05em;
 }
 </style></head>
-<body class="min-h-screen flex flex-col items-center justify-center p-6 text-[#1E293B]">
+<body class="min-h-screen flex flex-col items-center justify-center p-6 text-[#181D27]">
 
     <!-- Logo -->
     <div class="mb-10">
         <span class="logo-text text-xl font-semibold uppercase flex items-center">
-            <span class="text-[#1E3A5F]">Ivory</span>
-            <span class="text-[#C9A96E]">made</span>
+            <span class="text-[#181D27]">ivorymade</span>
         </span>
     </div>
 
@@ -60,12 +59,12 @@ letter-spacing: -0.05em;
         <!-- Step Indicator -->
         <div class="flex flex-col items-center mb-10">
             <div class="flex items-center gap-3 mb-3">
-                <div id="dot-1" class="step-dot w-[10px] h-[10px] rounded-full bg-[#1E3A5F]"></div>
-                <div id="dot-2" class="step-dot w-[10px] h-[10px] rounded-full bg-[#E2E8F0]"></div>
-                <div id="dot-3" class="step-dot w-[10px] h-[10px] rounded-full bg-[#E2E8F0]"></div>
-                <div id="dot-4" class="step-dot w-[10px] h-[10px] rounded-full bg-[#E2E8F0]"></div>
+                <div id="dot-1" class="step-dot w-[10px] h-[10px] rounded-full bg-[#6495ED]"></div>
+                <div id="dot-2" class="step-dot w-[10px] h-[10px] rounded-full bg-[#E6E8EC]"></div>
+                <div id="dot-3" class="step-dot w-[10px] h-[10px] rounded-full bg-[#E6E8EC]"></div>
+                <div id="dot-4" class="step-dot w-[10px] h-[10px] rounded-full bg-[#E6E8EC]"></div>
             </div>
-            <span id="step-label" class="text-xs font-medium text-[#94A3B8] uppercase tracking-wider">Step 1 of 4</span>
+            <span id="step-label" class="text-xs font-medium text-[#8B95A1] uppercase tracking-wider">Step 1 of 4</span>
         </div>
 
         <form id="onboarding-form">
@@ -74,15 +73,15 @@ letter-spacing: -0.05em;
                 <h2 class="text-2xl font-semibold tracking-tight mb-8">Tell us about your office</h2>
                 <div class="space-y-4">
                     <div>
-                        <label class="block text-xs font-medium text-[#64748B] mb-1.5 ml-1">Office Name</label>
+                        <label class="block text-xs font-medium text-[#535862] mb-1.5 ml-1">Office Name</label>
                         <input type="text" class="input-field" placeholder="e.g. Sunset Dental Clinic">
                     </div>
                     <div>
-                        <label class="block text-xs font-medium text-[#64748B] mb-1.5 ml-1">Office Phone Number</label>
+                        <label class="block text-xs font-medium text-[#535862] mb-1.5 ml-1">Office Phone Number</label>
                         <input type="tel" class="input-field" placeholder="(555) 000-0000">
                     </div>
                     <div>
-                        <label class="block text-xs font-medium text-[#64748B] mb-1.5 ml-1">Office Address</label>
+                        <label class="block text-xs font-medium text-[#535862] mb-1.5 ml-1">Office Address</label>
                         <input type="text" class="input-field" placeholder="Street address, City, Zip">
                     </div>
                 </div>
@@ -93,11 +92,11 @@ letter-spacing: -0.05em;
                 <h2 class="text-2xl font-semibold tracking-tight mb-8">What's your name?</h2>
                 <div class="grid grid-cols-2 gap-4">
                     <div>
-                        <label class="block text-xs font-medium text-[#64748B] mb-1.5 ml-1">First Name</label>
+                        <label class="block text-xs font-medium text-[#535862] mb-1.5 ml-1">First Name</label>
                         <input type="text" class="input-field" placeholder="John">
                     </div>
                     <div>
-                        <label class="block text-xs font-medium text-[#64748B] mb-1.5 ml-1">Last Name</label>
+                        <label class="block text-xs font-medium text-[#535862] mb-1.5 ml-1">Last Name</label>
                         <input type="text" class="input-field" placeholder="Doe">
                     </div>
                 </div>
@@ -111,7 +110,7 @@ letter-spacing: -0.05em;
                     <label class="relative block">
                         <input type="radio" name="specialty" class="specialty-radio absolute opacity-0" checked="">
                         <div class="specialty-card w-full h-[80px] rounded-[8px] flex flex-col items-center justify-center gap-2">
-                            <iconify-icon icon="solar:medical-kit-linear" width="20" height="20" class="text-[#1E3A5F]"></iconify-icon>
+                            <iconify-icon icon="solar:medical-kit-linear" width="20" height="20" class="text-[#29579A]"></iconify-icon>
                             <span class="text-xs font-medium">General Dentist</span>
                         </div>
                     </label>
@@ -119,7 +118,7 @@ letter-spacing: -0.05em;
                     <label class="relative block">
                         <input type="radio" name="specialty" class="specialty-radio absolute opacity-0">
                         <div class="specialty-card w-full h-[80px] rounded-[8px] flex flex-col items-center justify-center gap-2">
-                            <iconify-icon icon="solar:tooth-linear" width="20" height="20" class="text-[#1E3A5F]"></iconify-icon>
+                            <iconify-icon icon="solar:tooth-linear" width="20" height="20" class="text-[#29579A]"></iconify-icon>
                             <span class="text-xs font-medium">Prosthodontist</span>
                         </div>
                     </label>
@@ -127,7 +126,7 @@ letter-spacing: -0.05em;
                     <label class="relative block">
                         <input type="radio" name="specialty" class="specialty-radio absolute opacity-0">
                         <div class="specialty-card w-full h-[80px] rounded-[8px] flex flex-col items-center justify-center gap-2">
-                            <iconify-icon icon="solar:scissors-square-linear" width="20" height="20" class="text-[#1E3A5F]"></iconify-icon>
+                            <iconify-icon icon="solar:scissors-square-linear" width="20" height="20" class="text-[#29579A]"></iconify-icon>
                             <span class="text-xs font-medium">Oral Surgeon</span>
                         </div>
                     </label>
@@ -135,7 +134,7 @@ letter-spacing: -0.05em;
                     <label class="relative block">
                         <input type="radio" name="specialty" class="specialty-radio absolute opacity-0">
                         <div class="specialty-card w-full h-[80px] rounded-[8px] flex flex-col items-center justify-center gap-2">
-                            <iconify-icon icon="solar:shield-check-linear" width="20" height="20" class="text-[#1E3A5F]"></iconify-icon>
+                            <iconify-icon icon="solar:shield-check-linear" width="20" height="20" class="text-[#29579A]"></iconify-icon>
                             <span class="text-xs font-medium">Periodontist</span>
                         </div>
                     </label>
@@ -143,7 +142,7 @@ letter-spacing: -0.05em;
                     <label class="relative block">
                         <input type="radio" name="specialty" class="specialty-radio absolute opacity-0">
                         <div class="specialty-card w-full h-[80px] rounded-[8px] flex flex-col items-center justify-center gap-2">
-                            <iconify-icon icon="solar:pulse-linear" width="20" height="20" class="text-[#1E3A5F]"></iconify-icon>
+                            <iconify-icon icon="solar:pulse-linear" width="20" height="20" class="text-[#29579A]"></iconify-icon>
                             <span class="text-xs font-medium">Endodontist</span>
                         </div>
                     </label>
@@ -151,7 +150,7 @@ letter-spacing: -0.05em;
                     <label class="relative block">
                         <input type="radio" name="specialty" class="specialty-radio absolute opacity-0">
                         <div class="specialty-card w-full h-[80px] rounded-[8px] flex flex-col items-center justify-center gap-2">
-                            <iconify-icon icon="solar:menu-dots-square-linear" width="20" height="20" class="text-[#1E3A5F]"></iconify-icon>
+                            <iconify-icon icon="solar:menu-dots-square-linear" width="20" height="20" class="text-[#29579A]"></iconify-icon>
                             <span class="text-xs font-medium">Other</span>
                         </div>
                     </label>
@@ -162,11 +161,11 @@ letter-spacing: -0.05em;
             <div id="step-4-content" class="step-content hidden">
                 <div class="flex justify-between items-baseline mb-8">
                     <h2 class="text-2xl font-semibold tracking-tight">Have a referral code?</h2>
-                    <button type="button" class="text-xs font-medium text-[#64748B] hover:text-[#1E3A5F] underline underline-offset-4">Skip</button>
+                    <button type="button" class="text-xs font-medium text-[#535862] hover:text-[#29579A] underline underline-offset-4">Skip</button>
                 </div>
                 <div class="space-y-4">
                     <div>
-                        <label class="block text-xs font-medium text-[#64748B] mb-1.5 ml-1">Referral Code (Optional)</label>
+                        <label class="block text-xs font-medium text-[#535862] mb-1.5 ml-1">Referral Code (Optional)</label>
                         <input type="text" class="input-field" placeholder="Enter code">
                     </div>
                 </div>
@@ -175,12 +174,12 @@ letter-spacing: -0.05em;
             <!-- Navigation Buttons -->
             <div class="mt-12 flex items-center justify-between">
                 <div>
-                    <button type="button" id="prev-btn" class="hidden text-sm font-medium text-[#64748B] hover:text-[#1E3A5F] transition-colors flex items-center gap-2">
+                    <button type="button" id="prev-btn" class="hidden text-sm font-medium text-[#535862] hover:text-[#29579A] transition-colors flex items-center gap-2">
                         <iconify-icon icon="solar:alt-arrow-left-linear" width="16" height="16"></iconify-icon>
                         Back
                     </button>
                 </div>
-                <button type="button" id="next-btn" class="h-11 px-8 bg-[#1E3A5F] text-white rounded-[8px] text-sm font-medium hover:bg-[#162a45] transition-all shadow-sm">
+                <button type="button" id="next-btn" class="h-11 px-8 bg-[#6495ED] text-white rounded-[8px] text-sm font-medium hover:bg-[#162a45] transition-all shadow-sm">
                     Next
                 </button>
             </div>
@@ -189,7 +188,7 @@ letter-spacing: -0.05em;
 
     <!-- Legal Footer -->
     <div class="mt-8">
-        <p class="text-xs text-[#94A3B8]">
+        <p class="text-xs text-[#8B95A1]">
             © 2024 Ivorymade Dental Laboratory. All rights reserved.
         </p>
     </div>
@@ -212,11 +211,11 @@ letter-spacing: -0.05em;
             for (let i = 1; i <= totalSteps; i++) {
                 const dot = document.getElementById(`dot-${i}`);
                 if (i < currentStep) {
-                    dot.style.backgroundColor = '#10B981'; // Success
+                    dot.style.backgroundColor = '#2ABC73'; // Success
                 } else if (i === currentStep) {
-                    dot.style.backgroundColor = '#1E3A5F'; // Active
+                    dot.style.backgroundColor = '#6495ED'; // Active
                 } else {
-                    dot.style.backgroundColor = '#E2E8F0'; // Upcoming
+                    dot.style.backgroundColor = '#E6E8EC'; // Upcoming
                 }
             }
 

@@ -6,12 +6,12 @@
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 body {
-font-family: 'Inter', sans-serif;
-background-color: #F8F9FB;
-color: #1E293B;
+font-family: 'Manrope', sans-serif;
+background-color: #EEF3FD;
+color: #181D27;
 -webkit-font-smoothing: antialiased;
 }
 .mono { font-family: 'JetBrains Mono', monospace; }
@@ -19,7 +19,7 @@ color: #1E293B;
 appearance: none;
 width: 18px;
 height: 18px;
-border: 1.5px solid #E2E8F0;
+border: 1.5px solid #E6E8EC;
 border-radius: 4px;
 cursor: pointer;
 position: relative;
@@ -27,8 +27,8 @@ background: white;
 transition: all 0.2s ease;
 }
 .custom-checkbox:checked {
-background-color: #1E3A5F;
-border-color: #1E3A5F;
+background-color: #6495ED;
+border-color: #6495ED;
 }
 .custom-checkbox:checked::after {
 content: '';
@@ -48,35 +48,35 @@ background-color: #FBFBFC;
 <body class="min-h-screen flex">
 
     <!-- Admin Sidebar -->
-    <aside class="fixed left-0 top-0 bottom-0 w-[240px] bg-[#1E3A5F] text-white flex flex-col z-50">
+    <aside class="fixed left-0 top-0 bottom-0 w-[314px] bg-white border-r border-[#E6E8EC] flex flex-col z-50">
         <div class="pt-10 px-8 mb-12">
-            <span class="text-xl font-bold tracking-tighter text-[#C9A96E]">IVORYMADE</span>
+            <span class="text-xl font-bold tracking-tighter text-[#181D27]">ivorymade</span>
         </div>
 
         <nav class="flex-1 flex flex-col">
-            <a href="./40-admin-dashboard.html" class="flex items-center h-[52px] px-8 gap-4 text-white/60 hover:text-white transition-colors">
+            <a href="./40-admin-dashboard.html" class="flex items-center h-[52px] px-8 gap-4 text-[#8B95A1] hover:text-[#181D27] transition-colors">
                 <iconify-icon icon="solar:widget-linear" width="22" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Dashboard</span>
             </a>
-            <a href="./43-admin-order-list.html" class="flex items-center h-[52px] px-8 gap-4 text-white border-l-[3px] border-[#C9A96E] bg-white/5 transition-colors">
+            <a href="./43-admin-order-list.html" class="flex items-center h-[52px] px-8 gap-4 text-white border-l-[3px] border-[#6495ED] bg-white/5 transition-colors">
                 <iconify-icon icon="solar:cart-large-linear" width="22" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Orders</span>
             </a>
-            <a href="./41-admin-user-list.html" class="flex items-center h-[52px] px-8 gap-4 text-white/60 hover:text-white transition-colors">
+            <a href="./41-admin-user-list.html" class="flex items-center h-[52px] px-8 gap-4 text-[#8B95A1] hover:text-[#181D27] transition-colors">
                 <iconify-icon icon="solar:users-group-two-rounded-linear" width="22" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Customers</span>
             </a>
-            <a href="./45-admin-crm-messages.html" class="flex items-center h-[52px] px-8 gap-4 text-white/60 hover:text-white transition-colors">
+            <a href="./45-admin-crm-messages.html" class="flex items-center h-[52px] px-8 gap-4 text-[#8B95A1] hover:text-[#181D27] transition-colors">
                 <iconify-icon icon="solar:chat-round-dots-linear" width="22" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Messages</span>
             </a>
-            <a href="./48-admin-payment-summary.html" class="flex items-center h-[52px] px-8 gap-4 text-white/60 hover:text-white transition-colors">
+            <a href="./48-admin-payment-summary.html" class="flex items-center h-[52px] px-8 gap-4 text-[#8B95A1] hover:text-[#181D27] transition-colors">
                 <iconify-icon icon="solar:bill-list-linear" width="22" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Invoices</span>
             </a>
             
             <div class="mt-auto pb-8">
-                <a href="./55-admin-customer-preferences.html" class="flex items-center h-[52px] px-8 gap-4 text-white/60 hover:text-white transition-colors">
+                <a href="./55-admin-customer-preferences.html" class="flex items-center h-[52px] px-8 gap-4 text-[#8B95A1] hover:text-[#181D27] transition-colors">
                     <iconify-icon icon="solar:settings-linear" width="22" style="stroke-width: 1.5"></iconify-icon>
                     <span class="text-sm font-medium">Settings</span>
                 </a>
@@ -85,12 +85,12 @@ background-color: #FBFBFC;
     </aside>
 
     <!-- Main Content -->
-    <main class="ml-[240px] flex-1 p-8 min-w-0">
+    <main class="ml-[314px] flex-1 p-8 min-w-0">
         
         <!-- Header -->
         <div class="flex justify-between items-center mb-4">
-            <h1 class="text-3xl font-semibold tracking-tight text-[#1E293B]">Orders</h1>
-            <button class="h-[44px] px-6 bg-[#1E3A5F] text-white text-sm font-semibold rounded-lg shadow-sm hover:bg-[#152945] transition-all flex items-center gap-2">
+            <h1 class="text-3xl font-semibold tracking-tight text-[#181D27]">Orders</h1>
+            <button class="h-[44px] px-6 bg-white border-r border-[#E6E8EC] text-white text-sm font-semibold rounded-lg shadow-sm hover:bg-[#152945] transition-all flex items-center gap-2">
                 <iconify-icon icon="solar:add-circle-linear" width="20"></iconify-icon>
                 New Order
             </button>
@@ -99,75 +99,75 @@ background-color: #FBFBFC;
         <!-- Search & Filters -->
         <div class="space-y-3 mb-6">
             <div class="relative">
-                <iconify-icon icon="solar:magnifer-linear" width="20" class="absolute left-4 top-1/2 -translate-y-1/2 text-[#64748B]"></iconify-icon>
-                <input type="text" placeholder="Search by order ID, case name, or customer" class="w-full h-[44px] pl-12 pr-4 bg-white border border-[#E2E8F0] rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1E3A5F]/10 focus:border-[#1E3A5F] transition-all shadow-sm">
+                <iconify-icon icon="solar:magnifer-linear" width="20" class="absolute left-4 top-1/2 -translate-y-1/2 text-[#535862]"></iconify-icon>
+                <input type="text" placeholder="Search by order ID, case name, or customer" class="w-full h-[44px] pl-12 pr-4 bg-white border border-[#E6E8EC] rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#6495ED]/10 focus:border-[#6495ED] transition-all shadow-sm">
             </div>
             
             <div class="flex items-center gap-4">
                 <div class="flex-1 relative">
-                    <select class="w-full h-[40px] px-4 bg-white border border-[#E2E8F0] rounded-lg text-sm appearance-none focus:outline-none cursor-pointer">
+                    <select class="w-full h-[40px] px-4 bg-white border border-[#E6E8EC] rounded-lg text-sm appearance-none focus:outline-none cursor-pointer">
                         <option>Case Type</option>
                     </select>
-                    <iconify-icon icon="solar:alt-arrow-down-linear" width="16" class="absolute right-4 top-1/2 -translate-y-1/2 text-[#64748B] pointer-events-none"></iconify-icon>
+                    <iconify-icon icon="solar:alt-arrow-down-linear" width="16" class="absolute right-4 top-1/2 -translate-y-1/2 text-[#535862] pointer-events-none"></iconify-icon>
                 </div>
                 <div class="flex-1 relative">
-                    <select class="w-full h-[40px] px-4 bg-white border border-[#E2E8F0] rounded-lg text-sm appearance-none focus:outline-none cursor-pointer">
+                    <select class="w-full h-[40px] px-4 bg-white border border-[#E6E8EC] rounded-lg text-sm appearance-none focus:outline-none cursor-pointer">
                         <option>Date Range</option>
                     </select>
-                    <iconify-icon icon="solar:calendar-linear" width="16" class="absolute right-4 top-1/2 -translate-y-1/2 text-[#64748B] pointer-events-none"></iconify-icon>
+                    <iconify-icon icon="solar:calendar-linear" width="16" class="absolute right-4 top-1/2 -translate-y-1/2 text-[#535862] pointer-events-none"></iconify-icon>
                 </div>
                 <div class="flex-1 relative">
-                    <select class="w-full h-[40px] px-4 bg-white border border-[#E2E8F0] rounded-lg text-sm appearance-none focus:outline-none cursor-pointer">
+                    <select class="w-full h-[40px] px-4 bg-white border border-[#E6E8EC] rounded-lg text-sm appearance-none focus:outline-none cursor-pointer">
                         <option>Status</option>
                     </select>
-                    <iconify-icon icon="solar:filter-linear" width="16" class="absolute right-4 top-1/2 -translate-y-1/2 text-[#64748B] pointer-events-none"></iconify-icon>
+                    <iconify-icon icon="solar:filter-linear" width="16" class="absolute right-4 top-1/2 -translate-y-1/2 text-[#535862] pointer-events-none"></iconify-icon>
                 </div>
                 <div class="flex-1 relative">
-                    <select class="w-full h-[40px] px-4 bg-white border border-[#E2E8F0] rounded-lg text-sm appearance-none focus:outline-none cursor-pointer">
+                    <select class="w-full h-[40px] px-4 bg-white border border-[#E6E8EC] rounded-lg text-sm appearance-none focus:outline-none cursor-pointer">
                         <option>Doctor Name</option>
                     </select>
-                    <iconify-icon icon="solar:user-rounded-linear" width="16" class="absolute right-4 top-1/2 -translate-y-1/2 text-[#64748B] pointer-events-none"></iconify-icon>
+                    <iconify-icon icon="solar:user-rounded-linear" width="16" class="absolute right-4 top-1/2 -translate-y-1/2 text-[#535862] pointer-events-none"></iconify-icon>
                 </div>
             </div>
         </div>
 
         <!-- Order Table -->
-        <div class="bg-white border border-[#E2E8F0] rounded-xl shadow-sm overflow-hidden">
+        <div class="bg-white border border-[#E6E8EC] rounded-xl shadow-sm overflow-hidden">
             <div class="overflow-x-auto">
                 <table class="w-full text-left border-collapse">
-                    <thead class="sticky top-0 bg-[#F8F9FB] border-b border-[#E2E8F0] z-10">
+                    <thead class="sticky top-0 bg-[#EEF3FD] border-b border-[#E6E8EC] z-10">
                         <tr>
                             <th class="pl-6 py-4 w-[60px]">
                                 <input type="checkbox" class="custom-checkbox">
                             </th>
-                            <th class="px-4 py-4 text-sm font-medium uppercase tracking-wider text-[#64748B]">Case Name</th>
-                            <th class="px-4 py-4 text-sm font-medium uppercase tracking-wider text-[#64748B]">Type</th>
-                            <th class="px-4 py-4 text-sm font-medium uppercase tracking-wider text-[#64748B]">Order ID</th>
-                            <th class="px-4 py-4 text-sm font-medium uppercase tracking-wider text-[#64748B]">Status</th>
-                            <th class="px-4 py-4 text-sm font-medium uppercase tracking-wider text-[#64748B]">Doctor</th>
-                            <th class="px-4 py-4 text-sm font-medium uppercase tracking-wider text-[#64748B]">Date</th>
-                            <th class="pr-6 py-4 text-right text-sm font-medium uppercase tracking-wider text-[#64748B]">Actions</th>
+                            <th class="px-4 py-4 text-sm font-medium uppercase tracking-wider text-[#535862]">Case Name</th>
+                            <th class="px-4 py-4 text-sm font-medium uppercase tracking-wider text-[#535862]">Type</th>
+                            <th class="px-4 py-4 text-sm font-medium uppercase tracking-wider text-[#535862]">Order ID</th>
+                            <th class="px-4 py-4 text-sm font-medium uppercase tracking-wider text-[#535862]">Status</th>
+                            <th class="px-4 py-4 text-sm font-medium uppercase tracking-wider text-[#535862]">Doctor</th>
+                            <th class="px-4 py-4 text-sm font-medium uppercase tracking-wider text-[#535862]">Date</th>
+                            <th class="pr-6 py-4 text-right text-sm font-medium uppercase tracking-wider text-[#535862]">Actions</th>
                         </tr>
                     </thead>
-                    <tbody class="divide-y divide-[#E2E8F0]">
+                    <tbody class="divide-y divide-[#E6E8EC]">
                         <!-- Row 1 -->
                         <tr class="order-row group transition-colors">
                             <td colspan="8" class="p-0">
                                 <div class="flex items-center h-[56px] w-full">
                                     <div class="pl-6 w-[60px] flex items-center"><input type="checkbox" class="custom-checkbox"></div>
-                                    <div class="px-4 flex-1 font-semibold text-[#1E293B]">Anterior Zirconia Crown</div>
-                                    <div class="px-4 w-[140px]"><span class="px-2.5 py-1 rounded-md text-xs font-medium bg-[#F1F5F9] text-[#1E3A5F]">Single Crown</span></div>
-                                    <div class="px-4 w-[140px] mono text-xs text-[#64748B]">IB-428-7291</div>
-                                    <div class="px-4 w-[160px]"><span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-[#10B981]/10 text-[#10B981]">Design Ready</span></div>
-                                    <div class="px-4 w-[140px] text-sm text-[#1E293B]">Dr. Mitchell</div>
-                                    <div class="px-4 w-[100px] text-sm text-[#64748B]">Mar 3</div>
+                                    <div class="px-4 flex-1 font-semibold text-[#181D27]">Anterior Zirconia Crown</div>
+                                    <div class="px-4 w-[140px]"><span class="px-2.5 py-1 rounded-md text-xs font-medium bg-[#F1F5F9] text-[#29579A]">Single Crown</span></div>
+                                    <div class="px-4 w-[140px] mono text-xs text-[#535862]">IB-428-7291</div>
+                                    <div class="px-4 w-[160px]"><span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-[#2ABC73]/10 text-[#2ABC73]">Design Ready</span></div>
+                                    <div class="px-4 w-[140px] text-sm text-[#181D27]">Dr. Mitchell</div>
+                                    <div class="px-4 w-[100px] text-sm text-[#535862]">Mar 3</div>
                                     <div class="pr-6 flex-1 text-right">
-                                        <button class="p-2 text-[#64748B] hover:text-[#1E3A5F] transition-colors"><iconify-icon icon="solar:eye-linear" width="20"></iconify-icon></button>
+                                        <button class="p-2 text-[#535862] hover:text-[#29579A] transition-colors"><iconify-icon icon="solar:eye-linear" width="20"></iconify-icon></button>
                                     </div>
                                 </div>
                                 <div class="h-[20px] px-6 flex items-center">
-                                    <div class="w-full bg-[#E2E8F0] h-[4px] rounded-full overflow-hidden">
-                                        <div class="bg-[#1E3A5F] h-full" style="width: 60%"></div>
+                                    <div class="w-full bg-[#E6E8EC] h-[4px] rounded-full overflow-hidden">
+                                        <div class="bg-white border-r border-[#E6E8EC] h-full" style="width: 60%"></div>
                                     </div>
                                 </div>
                             </td>
@@ -177,19 +177,19 @@ background-color: #FBFBFC;
                             <td colspan="8" class="p-0">
                                 <div class="flex items-center h-[56px] w-full">
                                     <div class="pl-6 w-[60px] flex items-center"><input type="checkbox" class="custom-checkbox"></div>
-                                    <div class="px-4 flex-1 font-semibold text-[#1E293B]">Upper PFM Bridge (3-Unit)</div>
-                                    <div class="px-4 w-[140px]"><span class="px-2.5 py-1 rounded-md text-xs font-medium bg-[#F1F5F9] text-[#1E3A5F]">Bridge</span></div>
-                                    <div class="px-4 w-[140px] mono text-xs text-[#64748B]">IB-428-7288</div>
-                                    <div class="px-4 w-[160px]"><span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-[#3B82F6]/10 text-[#3B82F6]">Shipped</span></div>
-                                    <div class="px-4 w-[140px] text-sm text-[#1E293B]">Dr. Kessler</div>
-                                    <div class="px-4 w-[100px] text-sm text-[#64748B]">Mar 5</div>
+                                    <div class="px-4 flex-1 font-semibold text-[#181D27]">Upper PFM Bridge (3-Unit)</div>
+                                    <div class="px-4 w-[140px]"><span class="px-2.5 py-1 rounded-md text-xs font-medium bg-[#F1F5F9] text-[#29579A]">Bridge</span></div>
+                                    <div class="px-4 w-[140px] mono text-xs text-[#535862]">IB-428-7288</div>
+                                    <div class="px-4 w-[160px]"><span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-[#6495ED]/10 text-[#6495ED]">Shipped</span></div>
+                                    <div class="px-4 w-[140px] text-sm text-[#181D27]">Dr. Kessler</div>
+                                    <div class="px-4 w-[100px] text-sm text-[#535862]">Mar 5</div>
                                     <div class="pr-6 flex-1 text-right">
-                                        <button class="p-2 text-[#64748B] hover:text-[#1E3A5F] transition-colors"><iconify-icon icon="solar:eye-linear" width="20"></iconify-icon></button>
+                                        <button class="p-2 text-[#535862] hover:text-[#29579A] transition-colors"><iconify-icon icon="solar:eye-linear" width="20"></iconify-icon></button>
                                     </div>
                                 </div>
                                 <div class="h-[20px] px-6 flex items-center">
-                                    <div class="w-full bg-[#E2E8F0] h-[4px] rounded-full overflow-hidden">
-                                        <div class="bg-[#3B82F6] h-full" style="width: 90%"></div>
+                                    <div class="w-full bg-[#E6E8EC] h-[4px] rounded-full overflow-hidden">
+                                        <div class="bg-[#6495ED] h-full" style="width: 90%"></div>
                                     </div>
                                 </div>
                             </td>
@@ -199,19 +199,19 @@ background-color: #FBFBFC;
                             <td colspan="8" class="p-0">
                                 <div class="flex items-center h-[56px] w-full">
                                     <div class="pl-6 w-[60px] flex items-center"><input type="checkbox" class="custom-checkbox"></div>
-                                    <div class="px-4 flex-1 font-semibold text-[#1E293B]">Custom Abutment + Crown</div>
-                                    <div class="px-4 w-[140px]"><span class="px-2.5 py-1 rounded-md text-xs font-medium bg-[#F1F5F9] text-[#1E3A5F]">Implant</span></div>
-                                    <div class="px-4 w-[140px] mono text-xs text-[#64748B]">IB-428-7285</div>
-                                    <div class="px-4 w-[160px]"><span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-[#1E3A5F]/10 text-[#1E3A5F]">In Production</span></div>
-                                    <div class="px-4 w-[140px] text-sm text-[#1E293B]">Dr. Lowe</div>
-                                    <div class="px-4 w-[100px] text-sm text-[#64748B]">Mar 8</div>
+                                    <div class="px-4 flex-1 font-semibold text-[#181D27]">Custom Abutment + Crown</div>
+                                    <div class="px-4 w-[140px]"><span class="px-2.5 py-1 rounded-md text-xs font-medium bg-[#F1F5F9] text-[#29579A]">Implant</span></div>
+                                    <div class="px-4 w-[140px] mono text-xs text-[#535862]">IB-428-7285</div>
+                                    <div class="px-4 w-[160px]"><span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-white border-r border-[#E6E8EC]/10 text-[#29579A]">In Production</span></div>
+                                    <div class="px-4 w-[140px] text-sm text-[#181D27]">Dr. Lowe</div>
+                                    <div class="px-4 w-[100px] text-sm text-[#535862]">Mar 8</div>
                                     <div class="pr-6 flex-1 text-right">
-                                        <button class="p-2 text-[#64748B] hover:text-[#1E3A5F] transition-colors"><iconify-icon icon="solar:eye-linear" width="20"></iconify-icon></button>
+                                        <button class="p-2 text-[#535862] hover:text-[#29579A] transition-colors"><iconify-icon icon="solar:eye-linear" width="20"></iconify-icon></button>
                                     </div>
                                 </div>
                                 <div class="h-[20px] px-6 flex items-center">
-                                    <div class="w-full bg-[#E2E8F0] h-[4px] rounded-full overflow-hidden">
-                                        <div class="bg-[#1E3A5F] h-full" style="width: 40%"></div>
+                                    <div class="w-full bg-[#E6E8EC] h-[4px] rounded-full overflow-hidden">
+                                        <div class="bg-white border-r border-[#E6E8EC] h-full" style="width: 40%"></div>
                                     </div>
                                 </div>
                             </td>
@@ -221,19 +221,19 @@ background-color: #FBFBFC;
                             <td colspan="8" class="p-0">
                                 <div class="flex items-center h-[56px] w-full">
                                     <div class="pl-6 w-[60px] flex items-center"><input type="checkbox" class="custom-checkbox"></div>
-                                    <div class="px-4 flex-1 font-semibold text-[#1E293B]">E.Max Veneer Set (4)</div>
-                                    <div class="px-4 w-[140px]"><span class="px-2.5 py-1 rounded-md text-xs font-medium bg-[#F1F5F9] text-[#1E3A5F]">Veneer</span></div>
-                                    <div class="px-4 w-[140px] mono text-xs text-[#64748B]">IB-428-7282</div>
-                                    <div class="px-4 w-[160px]"><span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-[#F59E0B]/10 text-[#F59E0B]">On Hold</span></div>
-                                    <div class="px-4 w-[140px] text-sm text-[#1E293B]">Dr. Wong</div>
-                                    <div class="px-4 w-[100px] text-sm text-[#64748B]">Mar 12</div>
+                                    <div class="px-4 flex-1 font-semibold text-[#181D27]">E.Max Veneer Set (4)</div>
+                                    <div class="px-4 w-[140px]"><span class="px-2.5 py-1 rounded-md text-xs font-medium bg-[#F1F5F9] text-[#29579A]">Veneer</span></div>
+                                    <div class="px-4 w-[140px] mono text-xs text-[#535862]">IB-428-7282</div>
+                                    <div class="px-4 w-[160px]"><span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-[#FFBD00]/10 text-[#FFBD00]">On Hold</span></div>
+                                    <div class="px-4 w-[140px] text-sm text-[#181D27]">Dr. Wong</div>
+                                    <div class="px-4 w-[100px] text-sm text-[#535862]">Mar 12</div>
                                     <div class="pr-6 flex-1 text-right">
-                                        <button class="p-2 text-[#64748B] hover:text-[#1E3A5F] transition-colors"><iconify-icon icon="solar:eye-linear" width="20"></iconify-icon></button>
+                                        <button class="p-2 text-[#535862] hover:text-[#29579A] transition-colors"><iconify-icon icon="solar:eye-linear" width="20"></iconify-icon></button>
                                     </div>
                                 </div>
                                 <div class="h-[20px] px-6 flex items-center">
-                                    <div class="w-full bg-[#E2E8F0] h-[4px] rounded-full overflow-hidden">
-                                        <div class="bg-[#F59E0B] h-full" style="width: 20%"></div>
+                                    <div class="w-full bg-[#E6E8EC] h-[4px] rounded-full overflow-hidden">
+                                        <div class="bg-[#FFBD00] h-full" style="width: 20%"></div>
                                     </div>
                                 </div>
                             </td>
@@ -243,19 +243,19 @@ background-color: #FBFBFC;
                             <td colspan="8" class="p-0">
                                 <div class="flex items-center h-[56px] w-full">
                                     <div class="pl-6 w-[60px] flex items-center"><input type="checkbox" class="custom-checkbox"></div>
-                                    <div class="px-4 flex-1 font-semibold text-[#1E293B]">Full Arch Implant</div>
-                                    <div class="px-4 w-[140px]"><span class="px-2.5 py-1 rounded-md text-xs font-medium bg-[#F1F5F9] text-[#1E3A5F]">Implant</span></div>
-                                    <div class="px-4 w-[140px] mono text-xs text-[#64748B]">IB-428-7279</div>
-                                    <div class="px-4 w-[160px]"><span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-[#3B82F6]/10 text-[#3B82F6]">Submitted</span></div>
-                                    <div class="px-4 w-[140px] text-sm text-[#1E293B]">Dr. Chen</div>
-                                    <div class="px-4 w-[100px] text-sm text-[#64748B]">Mar 14</div>
+                                    <div class="px-4 flex-1 font-semibold text-[#181D27]">Full Arch Implant</div>
+                                    <div class="px-4 w-[140px]"><span class="px-2.5 py-1 rounded-md text-xs font-medium bg-[#F1F5F9] text-[#29579A]">Implant</span></div>
+                                    <div class="px-4 w-[140px] mono text-xs text-[#535862]">IB-428-7279</div>
+                                    <div class="px-4 w-[160px]"><span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-[#6495ED]/10 text-[#6495ED]">Submitted</span></div>
+                                    <div class="px-4 w-[140px] text-sm text-[#181D27]">Dr. Chen</div>
+                                    <div class="px-4 w-[100px] text-sm text-[#535862]">Mar 14</div>
                                     <div class="pr-6 flex-1 text-right">
-                                        <button class="p-2 text-[#64748B] hover:text-[#1E3A5F] transition-colors"><iconify-icon icon="solar:eye-linear" width="20"></iconify-icon></button>
+                                        <button class="p-2 text-[#535862] hover:text-[#29579A] transition-colors"><iconify-icon icon="solar:eye-linear" width="20"></iconify-icon></button>
                                     </div>
                                 </div>
                                 <div class="h-[20px] px-6 flex items-center">
-                                    <div class="w-full bg-[#E2E8F0] h-[4px] rounded-full overflow-hidden">
-                                        <div class="bg-[#3B82F6] h-full" style="width: 10%"></div>
+                                    <div class="w-full bg-[#E6E8EC] h-[4px] rounded-full overflow-hidden">
+                                        <div class="bg-[#6495ED] h-full" style="width: 10%"></div>
                                     </div>
                                 </div>
                             </td>
@@ -265,19 +265,19 @@ background-color: #FBFBFC;
                             <td colspan="8" class="p-0">
                                 <div class="flex items-center h-[56px] w-full">
                                     <div class="pl-6 w-[60px] flex items-center"><input type="checkbox" class="custom-checkbox"></div>
-                                    <div class="px-4 flex-1 font-semibold text-[#1E293B]">Lower PFM Crown</div>
-                                    <div class="px-4 w-[140px]"><span class="px-2.5 py-1 rounded-md text-xs font-medium bg-[#F1F5F9] text-[#1E3A5F]">Single Crown</span></div>
-                                    <div class="px-4 w-[140px] mono text-xs text-[#64748B]">IB-428-7276</div>
-                                    <div class="px-4 w-[160px]"><span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-[#10B981]/10 text-[#10B981]">Delivered</span></div>
-                                    <div class="px-4 w-[140px] text-sm text-[#1E293B]">Dr. Mitchell</div>
-                                    <div class="px-4 w-[100px] text-sm text-[#64748B]">Feb 28</div>
+                                    <div class="px-4 flex-1 font-semibold text-[#181D27]">Lower PFM Crown</div>
+                                    <div class="px-4 w-[140px]"><span class="px-2.5 py-1 rounded-md text-xs font-medium bg-[#F1F5F9] text-[#29579A]">Single Crown</span></div>
+                                    <div class="px-4 w-[140px] mono text-xs text-[#535862]">IB-428-7276</div>
+                                    <div class="px-4 w-[160px]"><span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-[#2ABC73]/10 text-[#2ABC73]">Delivered</span></div>
+                                    <div class="px-4 w-[140px] text-sm text-[#181D27]">Dr. Mitchell</div>
+                                    <div class="px-4 w-[100px] text-sm text-[#535862]">Feb 28</div>
                                     <div class="pr-6 flex-1 text-right">
-                                        <button class="p-2 text-[#64748B] hover:text-[#1E3A5F] transition-colors"><iconify-icon icon="solar:eye-linear" width="20"></iconify-icon></button>
+                                        <button class="p-2 text-[#535862] hover:text-[#29579A] transition-colors"><iconify-icon icon="solar:eye-linear" width="20"></iconify-icon></button>
                                     </div>
                                 </div>
                                 <div class="h-[20px] px-6 flex items-center">
-                                    <div class="w-full bg-[#E2E8F0] h-[4px] rounded-full overflow-hidden">
-                                        <div class="bg-[#10B981] h-full" style="width: 100%"></div>
+                                    <div class="w-full bg-[#E6E8EC] h-[4px] rounded-full overflow-hidden">
+                                        <div class="bg-[#2ABC73] h-full" style="width: 100%"></div>
                                     </div>
                                 </div>
                             </td>
@@ -289,13 +289,13 @@ background-color: #FBFBFC;
 
         <!-- Pagination -->
         <div class="mt-6 flex flex-col md:flex-row justify-between items-center gap-4 px-2">
-            <div class="text-sm text-[#64748B]">
-                Showing <span class="font-medium text-[#1E293B]">1-10</span> of <span class="font-medium text-[#1E293B]">284</span> orders
+            <div class="text-sm text-[#535862]">
+                Showing <span class="font-medium text-[#181D27]">1-10</span> of <span class="font-medium text-[#181D27]">284</span> orders
             </div>
             
             <div class="flex items-center gap-6">
                 <div class="flex items-center gap-2">
-                    <span class="text-xs text-[#64748B]">Per page:</span>
+                    <span class="text-xs text-[#535862]">Per page:</span>
                     <select class="bg-transparent text-sm font-medium focus:outline-none cursor-pointer">
                         <option>10</option>
                         <option>25</option>
@@ -304,15 +304,15 @@ background-color: #FBFBFC;
                 </div>
                 
                 <div class="flex items-center gap-1">
-                    <button class="w-[32px] h-[32px] flex items-center justify-center rounded-md border border-[#E2E8F0] text-[#64748B] hover:bg-white hover:text-[#1E3A5F] transition-all">
+                    <button class="w-[32px] h-[32px] flex items-center justify-center rounded-md border border-[#E6E8EC] text-[#535862] hover:bg-white hover:text-[#29579A] transition-all">
                         <iconify-icon icon="solar:alt-arrow-left-linear" width="16"></iconify-icon>
                     </button>
-                    <button class="w-[32px] h-[32px] flex items-center justify-center rounded-md bg-[#1E3A5F] text-white text-xs font-semibold">1</button>
-                    <button class="w-[32px] h-[32px] flex items-center justify-center rounded-md text-[#64748B] text-xs font-medium hover:bg-white hover:text-[#1E3A5F] transition-all">2</button>
-                    <button class="w-[32px] h-[32px] flex items-center justify-center rounded-md text-[#64748B] text-xs font-medium hover:bg-white hover:text-[#1E3A5F] transition-all">3</button>
-                    <span class="px-1 text-[#64748B]">...</span>
-                    <button class="w-[32px] h-[32px] flex items-center justify-center rounded-md text-[#64748B] text-xs font-medium hover:bg-white hover:text-[#1E3A5F] transition-all">28</button>
-                    <button class="w-[32px] h-[32px] flex items-center justify-center rounded-md border border-[#E2E8F0] text-[#64748B] hover:bg-white hover:text-[#1E3A5F] transition-all">
+                    <button class="w-[32px] h-[32px] flex items-center justify-center rounded-md bg-white border-r border-[#E6E8EC] text-white text-xs font-semibold">1</button>
+                    <button class="w-[32px] h-[32px] flex items-center justify-center rounded-md text-[#535862] text-xs font-medium hover:bg-white hover:text-[#29579A] transition-all">2</button>
+                    <button class="w-[32px] h-[32px] flex items-center justify-center rounded-md text-[#535862] text-xs font-medium hover:bg-white hover:text-[#29579A] transition-all">3</button>
+                    <span class="px-1 text-[#535862]">...</span>
+                    <button class="w-[32px] h-[32px] flex items-center justify-center rounded-md text-[#535862] text-xs font-medium hover:bg-white hover:text-[#29579A] transition-all">28</button>
+                    <button class="w-[32px] h-[32px] flex items-center justify-center rounded-md border border-[#E6E8EC] text-[#535862] hover:bg-white hover:text-[#29579A] transition-all">
                         <iconify-icon icon="solar:alt-arrow-right-linear" width="16"></iconify-icon>
                     </button>
                 </div>

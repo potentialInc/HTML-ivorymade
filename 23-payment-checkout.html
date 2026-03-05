@@ -6,12 +6,12 @@
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 body {
-font-family: 'Inter', sans-serif;
+font-family: 'Manrope', sans-serif;
 -webkit-font-smoothing: antialiased;
-color: #1E293B;
+color: #181D27;
 }
 .custom-scrollbar::-webkit-scrollbar {
 width: 4px;
@@ -20,7 +20,7 @@ width: 4px;
 background: transparent;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb {
-background: #E2E8F0;
+background: #E6E8EC;
 border-radius: 10px;
 }
 input[type="radio"] {
@@ -28,7 +28,7 @@ appearance: none;
 -webkit-appearance: none;
 width: 1.125rem;
 height: 1.125rem;
-border: 1.5px solid #E2E8F0;
+border: 1.5px solid #E6E8EC;
 border-radius: 50%;
 background-color: white;
 display: inline-grid;
@@ -37,49 +37,49 @@ cursor: pointer;
 transition: all 0.2s;
 }
 input[type="radio"]:checked {
-border-color: #1E3A5F;
+border-color: #6495ED;
 border-width: 5px;
 }
 </style></head>
-<body class="bg-[#F8F9FB] flex min-h-screen overflow-hidden">
+<body class="bg-[#EEF3FD] flex min-h-screen overflow-hidden">
 
     <!-- Sidebar -->
-    <aside class="w-[280px] bg-white border-r border-[#E2E8F0] shadow-sm flex flex-col z-20 shrink-0">
+    <aside class="w-[280px] bg-white border-r border-[#E6E8EC] shadow-sm flex flex-col z-20 shrink-0">
         <div class="h-20 px-8 flex items-center">
-            <span class="text-xl font-semibold tracking-tighter text-[#1E3A5F]">IVORYMADE</span>
+            <span class="text-xl font-semibold tracking-tighter text-[#181D27]">ivorymade</span>
         </div>
         
         <nav class="flex-1 px-4 py-4 space-y-1">
-            <a href="./09-dashboard.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-all group">
-                <iconify-icon icon="solar:widget-linear" width="20" class="group-hover:text-[#1E3A5F]"></iconify-icon>
+            <a href="./09-dashboard.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#535862] hover:bg-[#EEF3FD] transition-all group">
+                <iconify-icon icon="solar:widget-linear" width="20" class="group-hover:text-[#29579A]"></iconify-icon>
                 <span class="text-sm font-medium">Dashboard</span>
             </a>
-            <a href="./10-orders-list.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-all group">
-                <iconify-icon icon="solar:box-minimalistic-linear" width="20" class="group-hover:text-[#1E3A5F]"></iconify-icon>
+            <a href="./10-orders-list.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#535862] hover:bg-[#EEF3FD] transition-all group">
+                <iconify-icon icon="solar:box-minimalistic-linear" width="20" class="group-hover:text-[#29579A]"></iconify-icon>
                 <span class="text-sm font-medium">Orders</span>
             </a>
-            <a href="./25-customer-support.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-all group">
-                <iconify-icon icon="solar:chat-round-line-linear" width="20" class="group-hover:text-[#1E3A5F]"></iconify-icon>
+            <a href="./25-customer-support.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#535862] hover:bg-[#EEF3FD] transition-all group">
+                <iconify-icon icon="solar:chat-round-line-linear" width="20" class="group-hover:text-[#29579A]"></iconify-icon>
                 <span class="text-sm font-medium">Messages</span>
             </a>
-            <a href="./22-payment-list.html" class="flex items-center h-11 px-4 gap-3 rounded-lg bg-[#1E3A5F]/5 text-[#1E3A5F] transition-all">
+            <a href="./22-payment-list.html" class="flex items-center h-11 px-4 gap-3 rounded-lg bg-[#6495ED]/5 text-[#29579A] transition-all">
                 <iconify-icon icon="solar:wallet-money-linear" width="20"></iconify-icon>
                 <span class="text-sm font-semibold">Payments</span>
             </a>
-            <a href="./27-settings.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-all group">
-                <iconify-icon icon="solar:settings-linear" width="20" class="group-hover:text-[#1E3A5F]"></iconify-icon>
+            <a href="./27-settings.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#535862] hover:bg-[#EEF3FD] transition-all group">
+                <iconify-icon icon="solar:settings-linear" width="20" class="group-hover:text-[#29579A]"></iconify-icon>
                 <span class="text-sm font-medium">Settings</span>
             </a>
         </nav>
 
-        <div class="p-6 border-t border-[#E2E8F0]">
+        <div class="p-6 border-t border-[#E6E8EC]">
             <div class="flex items-center gap-3">
-                <div class="w-9 h-9 rounded-full bg-[#C9A96E]/10 flex items-center justify-center text-[#C9A96E] text-xs font-semibold">SM</div>
+                <div class="w-9 h-9 rounded-full bg-[#6495ED]/10 flex items-center justify-center text-[#6495ED] text-xs font-semibold">SM</div>
                 <div class="flex-1 min-w-0">
-                    <p class="text-xs font-semibold text-[#1E293B] truncate">Dr. Sarah Mitchell</p>
-                    <p class="text-[10px] text-[#64748B] truncate">Premium Dental Studio</p>
+                    <p class="text-xs font-semibold text-[#181D27] truncate">Dr. Sarah Mitchell</p>
+                    <p class="text-[10px] text-[#535862] truncate">Premium Dental Studio</p>
                 </div>
-                <iconify-icon icon="solar:alt-arrow-down-linear" width="16" class="text-[#64748B]"></iconify-icon>
+                <iconify-icon icon="solar:alt-arrow-down-linear" width="16" class="text-[#535862]"></iconify-icon>
             </div>
         </div>
     </aside>
@@ -92,81 +92,81 @@ border-width: 5px;
                 
                 <!-- Left Column: Invoice Detail (60%) -->
                 <div class="lg:col-span-7 space-y-6">
-                    <div class="bg-white rounded-xl shadow-sm border border-[#E2E8F0] p-8">
+                    <div class="bg-white rounded-xl shadow-sm border border-[#E6E8EC] p-8">
                         <!-- Invoice Header: From/To -->
                         <div class="grid grid-cols-2 gap-12 mb-10">
                             <div>
-                                <p class="text-base font-semibold text-[#1E3A5F] mb-3">Ivorymade</p>
-                                <div class="text-sm text-[#64748B] space-y-1">
+                                <p class="text-base font-semibold text-[#29579A] mb-3">Ivorymade</p>
+                                <div class="text-sm text-[#535862] space-y-1">
                                     <p>123 Dental Lab Drive, Suite 400</p>
                                     <p>New York, NY 10001</p>
                                     <p>support@ivorymade.com</p>
                                 </div>
                             </div>
                             <div>
-                                <p class="text-base font-semibold text-[#1E293B] mb-3">Bill To</p>
+                                <p class="text-base font-semibold text-[#181D27] mb-3">Bill To</p>
                                 <div class="text-sm space-y-1">
-                                    <p class="font-semibold text-[#1E293B]">Dr. Sarah Mitchell</p>
-                                    <p class="text-[#64748B]">Premium Dental Studio</p>
-                                    <p class="text-[#64748B]">456 Medical Center Blvd</p>
-                                    <p class="text-[#64748B]">Los Angeles, CA 90024</p>
+                                    <p class="font-semibold text-[#181D27]">Dr. Sarah Mitchell</p>
+                                    <p class="text-[#535862]">Premium Dental Studio</p>
+                                    <p class="text-[#535862]">456 Medical Center Blvd</p>
+                                    <p class="text-[#535862]">Los Angeles, CA 90024</p>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Order Info Row -->
-                        <div class="grid grid-cols-3 gap-4 py-6 border-y border-[#E2E8F0] mb-8">
+                        <div class="grid grid-cols-3 gap-4 py-6 border-y border-[#E6E8EC] mb-8">
                             <div>
-                                <p class="text-[10px] uppercase tracking-wider font-semibold text-[#64748B] mb-1">Case</p>
+                                <p class="text-[10px] uppercase tracking-wider font-semibold text-[#535862] mb-1">Case</p>
                                 <p class="text-sm font-medium">Upper Anterior Bridge</p>
                             </div>
                             <div>
-                                <p class="text-[10px] uppercase tracking-wider font-semibold text-[#64748B] mb-1">Order ID</p>
+                                <p class="text-[10px] uppercase tracking-wider font-semibold text-[#535862] mb-1">Order ID</p>
                                 <p class="text-sm font-mono tracking-tighter">IB-428-7291</p>
                             </div>
                             <div>
-                                <p class="text-[10px] uppercase tracking-wider font-semibold text-[#64748B] mb-1">Date</p>
+                                <p class="text-[10px] uppercase tracking-wider font-semibold text-[#535862] mb-1">Date</p>
                                 <p class="text-sm font-medium">Mar 5, 2026</p>
                             </div>
                         </div>
 
                         <!-- Table -->
                         <div class="mb-8">
-                            <div class="grid grid-cols-12 gap-4 pb-3 border-b border-[#E2E8F0] px-4">
-                                <div class="col-span-6 text-[11px] uppercase tracking-wider font-semibold text-[#64748B]">Item</div>
-                                <div class="col-span-1 text-[11px] uppercase tracking-wider font-semibold text-[#64748B] text-center">Qty</div>
-                                <div class="col-span-2 text-[11px] uppercase tracking-wider font-semibold text-[#64748B] text-right">Unit Price</div>
-                                <div class="col-span-3 text-[11px] uppercase tracking-wider font-semibold text-[#64748B] text-right">Total</div>
+                            <div class="grid grid-cols-12 gap-4 pb-3 border-b border-[#E6E8EC] px-4">
+                                <div class="col-span-6 text-[11px] uppercase tracking-wider font-semibold text-[#535862]">Item</div>
+                                <div class="col-span-1 text-[11px] uppercase tracking-wider font-semibold text-[#535862] text-center">Qty</div>
+                                <div class="col-span-2 text-[11px] uppercase tracking-wider font-semibold text-[#535862] text-right">Unit Price</div>
+                                <div class="col-span-3 text-[11px] uppercase tracking-wider font-semibold text-[#535862] text-right">Total</div>
                             </div>
-                            <div class="divide-y divide-[#E2E8F0]">
+                            <div class="divide-y divide-[#E6E8EC]">
                                 <div class="grid grid-cols-12 gap-4 py-4 px-4 items-center text-sm bg-white">
-                                    <div class="col-span-6 font-medium text-[#1E293B]">Implant Bridge (5 units)</div>
-                                    <div class="col-span-1 text-center text-[#64748B]">5</div>
-                                    <div class="col-span-2 text-right text-[#64748B]">$185.00</div>
+                                    <div class="col-span-6 font-medium text-[#181D27]">Implant Bridge (5 units)</div>
+                                    <div class="col-span-1 text-center text-[#535862]">5</div>
+                                    <div class="col-span-2 text-right text-[#535862]">$185.00</div>
                                     <div class="col-span-3 text-right font-semibold">$925.00</div>
                                 </div>
-                                <div class="grid grid-cols-12 gap-4 py-4 px-4 items-center text-sm bg-[#F8F9FB]">
-                                    <div class="col-span-6 font-medium text-[#1E293B]">Custom Abutment</div>
-                                    <div class="col-span-1 text-center text-[#64748B]">1</div>
-                                    <div class="col-span-2 text-right text-[#64748B]">$95.00</div>
+                                <div class="grid grid-cols-12 gap-4 py-4 px-4 items-center text-sm bg-[#EEF3FD]">
+                                    <div class="col-span-6 font-medium text-[#181D27]">Custom Abutment</div>
+                                    <div class="col-span-1 text-center text-[#535862]">1</div>
+                                    <div class="col-span-2 text-right text-[#535862]">$95.00</div>
                                     <div class="col-span-3 text-right font-semibold">$95.00</div>
                                 </div>
                                 <div class="grid grid-cols-12 gap-4 py-4 px-4 items-center text-sm bg-white">
-                                    <div class="col-span-6 font-medium text-[#1E293B]">Custom Staining</div>
-                                    <div class="col-span-1 text-center text-[#64748B]">1</div>
-                                    <div class="col-span-2 text-right text-[#64748B]">$35.00</div>
+                                    <div class="col-span-6 font-medium text-[#181D27]">Custom Staining</div>
+                                    <div class="col-span-1 text-center text-[#535862]">1</div>
+                                    <div class="col-span-2 text-right text-[#535862]">$35.00</div>
                                     <div class="col-span-3 text-right font-semibold">$35.00</div>
                                 </div>
-                                <div class="grid grid-cols-12 gap-4 py-4 px-4 items-center text-sm bg-[#F8F9FB]">
-                                    <div class="col-span-6 font-medium text-[#1E293B]">Implant Verification Jig</div>
-                                    <div class="col-span-1 text-center text-[#64748B]">1</div>
-                                    <div class="col-span-2 text-right text-[#64748B]">$40.00</div>
+                                <div class="grid grid-cols-12 gap-4 py-4 px-4 items-center text-sm bg-[#EEF3FD]">
+                                    <div class="col-span-6 font-medium text-[#181D27]">Implant Verification Jig</div>
+                                    <div class="col-span-1 text-center text-[#535862]">1</div>
+                                    <div class="col-span-2 text-right text-[#535862]">$40.00</div>
                                     <div class="col-span-3 text-right font-semibold">$40.00</div>
                                 </div>
-                                <div class="grid grid-cols-12 gap-4 py-4 px-4 items-center text-sm bg-white border-b border-[#E2E8F0]">
-                                    <div class="col-span-6 font-medium text-[#1E293B]">Screw Access Hole Optimization</div>
-                                    <div class="col-span-1 text-center text-[#64748B]">1</div>
-                                    <div class="col-span-2 text-right text-[#64748B]">$25.00</div>
+                                <div class="grid grid-cols-12 gap-4 py-4 px-4 items-center text-sm bg-white border-b border-[#E6E8EC]">
+                                    <div class="col-span-6 font-medium text-[#181D27]">Screw Access Hole Optimization</div>
+                                    <div class="col-span-1 text-center text-[#535862]">1</div>
+                                    <div class="col-span-2 text-right text-[#535862]">$25.00</div>
                                     <div class="col-span-3 text-right font-semibold">$25.00</div>
                                 </div>
                             </div>
@@ -174,31 +174,31 @@ border-width: 5px;
 
                         <!-- Summary -->
                         <div class="flex flex-col items-end gap-3 px-4">
-                            <div class="flex justify-between w-full max-w-[240px] text-sm text-[#64748B]">
+                            <div class="flex justify-between w-full max-w-[314px] text-sm text-[#535862]">
                                 <span>Subtotal</span>
-                                <span class="font-medium text-[#1E293B]">$1,120.00</span>
+                                <span class="font-medium text-[#181D27]">$1,120.00</span>
                             </div>
-                            <div class="flex justify-between w-full max-w-[240px] text-sm text-[#64748B]">
+                            <div class="flex justify-between w-full max-w-[314px] text-sm text-[#535862]">
                                 <span>Shipping</span>
-                                <span class="font-medium text-[#1E293B]">$0.00</span>
+                                <span class="font-medium text-[#181D27]">$0.00</span>
                             </div>
-                            <div class="flex justify-between w-full max-w-[240px] text-sm text-[#10B981]">
+                            <div class="flex justify-between w-full max-w-[314px] text-sm text-[#2ABC73]">
                                 <span>Credits</span>
                                 <span class="font-semibold">-$50.00</span>
                             </div>
-                            <div class="w-full max-w-[240px] h-[2px] bg-[#E2E8F0] my-1"></div>
-                            <div class="flex justify-between w-full max-w-[240px] items-center">
-                                <span class="text-sm font-semibold text-[#1E293B]">Amount Due</span>
-                                <span class="text-xl font-semibold tracking-tight text-[#1E3A5F]">$1,070.00</span>
+                            <div class="w-full max-w-[314px] h-[2px] bg-[#E6E8EC] my-1"></div>
+                            <div class="flex justify-between w-full max-w-[314px] items-center">
+                                <span class="text-sm font-semibold text-[#181D27]">Amount Due</span>
+                                <span class="text-xl font-semibold tracking-tight text-[#29579A]">$1,070.00</span>
                             </div>
                         </div>
 
                         <!-- Mobile Contact -->
-                        <div class="mt-12 pt-8 border-t border-[#E2E8F0]">
-                            <label class="text-xs font-semibold text-[#64748B] uppercase tracking-wider mb-3 block">Primary Contact Number</label>
+                        <div class="mt-12 pt-8 border-t border-[#E6E8EC]">
+                            <label class="text-xs font-semibold text-[#535862] uppercase tracking-wider mb-3 block">Primary Contact Number</label>
                             <div class="relative max-w-[320px]">
-                                <iconify-icon icon="solar:phone-linear" width="18" class="absolute left-4 top-1/2 -translate-y-1/2 text-[#64748B]"></iconify-icon>
-                                <input type="text" value="+1 (310) 555-0142" class="w-full h-11 pl-11 pr-4 rounded-lg border border-[#E2E8F0] text-sm focus:outline-none focus:ring-2 focus:ring-[#1E3A5F]/10 focus:border-[#1E3A5F] transition-all">
+                                <iconify-icon icon="solar:phone-linear" width="18" class="absolute left-4 top-1/2 -translate-y-1/2 text-[#535862]"></iconify-icon>
+                                <input type="text" value="+1 (310) 555-0142" class="w-full h-11 pl-11 pr-4 rounded-lg border border-[#E6E8EC] text-sm focus:outline-none focus:ring-2 focus:ring-[#6495ED]/10 focus:border-[#6495ED] transition-all">
                             </div>
                         </div>
                     </div>
@@ -206,21 +206,21 @@ border-width: 5px;
 
                 <!-- Right Column: Checkout Panel (40%) -->
                 <div class="lg:col-span-5 lg:sticky lg:top-8 space-y-6">
-                    <div class="bg-white rounded-xl shadow-sm border border-[#E2E8F0] p-8">
+                    <div class="bg-white rounded-xl shadow-sm border border-[#E6E8EC] p-8">
                         
                         <!-- Shipping Address Section -->
                         <div class="mb-8">
                             <div class="flex items-center justify-between mb-4">
-                                <h3 class="text-lg font-semibold text-[#1E293B]">Shipping Address</h3>
-                                <a href="#" class="text-xs font-semibold text-[#1E3A5F] hover:underline">+ Add new address</a>
+                                <h3 class="text-lg font-semibold text-[#181D27]">Shipping Address</h3>
+                                <a href="#" class="text-xs font-semibold text-[#29579A] hover:underline">+ Add new address</a>
                             </div>
                             <div class="relative mb-3">
-                                <select class="w-full h-11 pl-4 pr-10 rounded-lg border border-[#E2E8F0] bg-[#F8F9FB] text-sm appearance-none focus:outline-none focus:border-[#1E3A5F] transition-all">
+                                <select class="w-full h-11 pl-4 pr-10 rounded-lg border border-[#E6E8EC] bg-[#EEF3FD] text-sm appearance-none focus:outline-none focus:border-[#6495ED] transition-all">
                                     <option>Premium Dental Studio — 456 Medical Center Blvd</option>
                                 </select>
-                                <iconify-icon icon="solar:alt-arrow-down-linear" width="18" class="absolute right-3 top-1/2 -translate-y-1/2 text-[#64748B] pointer-events-none"></iconify-icon>
+                                <iconify-icon icon="solar:alt-arrow-down-linear" width="18" class="absolute right-3 top-1/2 -translate-y-1/2 text-[#535862] pointer-events-none"></iconify-icon>
                             </div>
-                            <p class="text-sm text-[#64748B] leading-relaxed px-1">
+                            <p class="text-sm text-[#535862] leading-relaxed px-1">
                                 456 Medical Center Blvd, Suite 201<br>
                                 Los Angeles, CA 90024
                             </p>
@@ -228,28 +228,28 @@ border-width: 5px;
 
                         <!-- Shipping Method Section -->
                         <div class="mb-8">
-                            <h3 class="text-lg font-semibold text-[#1E293B] mb-4">Shipping Method</h3>
+                            <h3 class="text-lg font-semibold text-[#181D27] mb-4">Shipping Method</h3>
                             <div class="space-y-3">
-                                <label class="flex items-center justify-between p-4 rounded-lg border border-[#1E3A5F] bg-[#1E3A5F]/5 cursor-pointer transition-all">
+                                <label class="flex items-center justify-between p-4 rounded-lg border border-[#6495ED] bg-[#6495ED]/5 cursor-pointer transition-all">
                                     <div class="flex items-center gap-3">
                                         <input type="radio" name="shipping" checked="">
                                         <span class="text-sm font-medium">Standard Ground</span>
                                     </div>
-                                    <span class="text-sm font-semibold text-[#10B981]">Free</span>
+                                    <span class="text-sm font-semibold text-[#2ABC73]">Free</span>
                                 </label>
-                                <label class="flex items-center justify-between p-4 rounded-lg border border-[#E2E8F0] hover:border-[#CBD5E1] cursor-pointer transition-all">
+                                <label class="flex items-center justify-between p-4 rounded-lg border border-[#E6E8EC] hover:border-[#CBD5E1] cursor-pointer transition-all">
                                     <div class="flex items-center gap-3">
                                         <input type="radio" name="shipping">
                                         <span class="text-sm font-medium">2nd Day Air</span>
                                     </div>
-                                    <span class="text-sm font-medium text-[#1E293B]">$15.00</span>
+                                    <span class="text-sm font-medium text-[#181D27]">$15.00</span>
                                 </label>
-                                <label class="flex items-center justify-between p-4 rounded-lg border border-[#E2E8F0] hover:border-[#CBD5E1] cursor-pointer transition-all">
+                                <label class="flex items-center justify-between p-4 rounded-lg border border-[#E6E8EC] hover:border-[#CBD5E1] cursor-pointer transition-all">
                                     <div class="flex items-center gap-3">
                                         <input type="radio" name="shipping">
                                         <span class="text-sm font-medium">Overnight Delivery</span>
                                     </div>
-                                    <span class="text-sm font-medium text-[#1E293B]">$35.00</span>
+                                    <span class="text-sm font-medium text-[#181D27]">$35.00</span>
                                 </label>
                             </div>
                         </div>
@@ -257,45 +257,45 @@ border-width: 5px;
                         <!-- Payment Section -->
                         <div class="mb-10">
                             <div class="flex items-center justify-between mb-4">
-                                <h3 class="text-lg font-semibold text-[#1E293B]">Payment</h3>
-                                <a href="#" class="text-xs font-semibold text-[#1E3A5F] hover:underline">Use different card</a>
+                                <h3 class="text-lg font-semibold text-[#181D27]">Payment</h3>
+                                <a href="#" class="text-xs font-semibold text-[#29579A] hover:underline">Use different card</a>
                             </div>
                             
                             <!-- Saved Card Display -->
-                            <div class="flex items-center gap-4 p-4 rounded-lg border border-[#E2E8F0] mb-4 bg-white shadow-sm">
-                                <div class="w-10 h-6 bg-[#1E293B] rounded-md flex items-center justify-center shrink-0">
+                            <div class="flex items-center gap-4 p-4 rounded-lg border border-[#E6E8EC] mb-4 bg-white shadow-sm">
+                                <div class="w-10 h-6 bg-[#181D27] rounded-md flex items-center justify-center shrink-0">
                                     <iconify-icon icon="logos:visa" width="24"></iconify-icon>
                                 </div>
                                 <div class="flex-1">
-                                    <p class="text-sm font-semibold text-[#1E293B]">Visa ending in 4242</p>
-                                    <p class="text-[10px] uppercase font-medium text-[#64748B]">Expires 12/28</p>
+                                    <p class="text-sm font-semibold text-[#181D27]">Visa ending in 4242</p>
+                                    <p class="text-[10px] uppercase font-medium text-[#535862]">Expires 12/28</p>
                                 </div>
-                                <iconify-icon icon="solar:check-circle-bold" width="20" class="text-[#1E3A5F]"></iconify-icon>
+                                <iconify-icon icon="solar:check-circle-bold" width="20" class="text-[#29579A]"></iconify-icon>
                             </div>
 
                             <!-- Stripe Mock Input -->
                             <div class="space-y-3">
                                 <div class="relative">
-                                    <input type="text" placeholder="Card number" class="w-full h-11 px-4 rounded-lg border border-[#E2E8F0] text-sm placeholder:text-[#94A3B8] focus:outline-none focus:border-[#1E3A5F]">
+                                    <input type="text" placeholder="Card number" class="w-full h-11 px-4 rounded-lg border border-[#E6E8EC] text-sm placeholder:text-[#8B95A1] focus:outline-none focus:border-[#6495ED]">
                                     <div class="absolute right-3 top-1/2 -translate-y-1/2 flex gap-1">
                                         <iconify-icon icon="logos:mastercard" width="20"></iconify-icon>
                                         <iconify-icon icon="logos:amex" width="20"></iconify-icon>
                                     </div>
                                 </div>
                                 <div class="grid grid-cols-2 gap-3">
-                                    <input type="text" placeholder="MM / YY" class="w-full h-11 px-4 rounded-lg border border-[#E2E8F0] text-sm placeholder:text-[#94A3B8] focus:outline-none focus:border-[#1E3A5F]">
-                                    <input type="text" placeholder="CVC" class="w-full h-11 px-4 rounded-lg border border-[#E2E8F0] text-sm placeholder:text-[#94A3B8] focus:outline-none focus:border-[#1E3A5F]">
+                                    <input type="text" placeholder="MM / YY" class="w-full h-11 px-4 rounded-lg border border-[#E6E8EC] text-sm placeholder:text-[#8B95A1] focus:outline-none focus:border-[#6495ED]">
+                                    <input type="text" placeholder="CVC" class="w-full h-11 px-4 rounded-lg border border-[#E6E8EC] text-sm placeholder:text-[#8B95A1] focus:outline-none focus:border-[#6495ED]">
                                 </div>
                             </div>
 
-                            <div class="flex items-center gap-2 mt-4 text-[#64748B]">
+                            <div class="flex items-center gap-2 mt-4 text-[#535862]">
                                 <iconify-icon icon="solar:lock-password-linear" width="14"></iconify-icon>
                                 <span class="text-[11px] font-medium uppercase tracking-wider">Secured by Stripe</span>
                             </div>
                         </div>
 
                         <!-- Action Button -->
-                        <button class="w-full h-12 bg-[#1E3A5F] text-white font-semibold rounded-lg hover:bg-[#162a45] transition-all shadow-lg shadow-[#1E3A5F]/10 flex items-center justify-center gap-2 group">
+                        <button class="w-full h-12 bg-[#6495ED] text-white font-semibold rounded-lg hover:bg-[#162a45] transition-all shadow-lg shadow-[#6495ED]/10 flex items-center justify-center gap-2 group">
                             <span>Pay $1,070.00</span>
                             <iconify-icon icon="solar:arrow-right-linear" width="18" class="group-hover:translate-x-1 transition-transform"></iconify-icon>
                         </button>

@@ -6,41 +6,41 @@
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"></head>
-<body class="bg-[#F8F9FB] text-[#1E293B] antialiased min-h-screen flex" style="font-family: 'Inter', sans-serif;">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"></head>
+<body class="bg-[#EEF3FD] text-[#181D27] antialiased min-h-screen flex" style="font-family: 'Manrope', sans-serif;">
 
     <!-- Admin Sidebar -->
-    <aside class="w-[240px] bg-[#1E3A5F] fixed inset-y-0 left-0 flex flex-col z-50">
+    <aside class="w-[314px] bg-white border-r border-[#E6E8EC] fixed inset-y-0 left-0 flex flex-col z-50">
         <div class="h-20 flex items-center px-8">
-            <span class="text-lg font-semibold tracking-tighter text-[#C9A96E]">IVORYMADE</span>
+            <span class="text-lg font-semibold tracking-tighter text-[#181D27]">ivorymade</span>
         </div>
 
         <nav class="flex-1 flex flex-col py-2">
-            <a href="./40-admin-dashboard.html" class="flex items-center h-11 px-8 gap-3 text-white/70 hover:text-white transition-colors">
+            <a href="./40-admin-dashboard.html" class="flex items-center h-11 px-8 gap-3 text-[#535862] hover:text-[#181D27] transition-colors">
                 <iconify-icon icon="solar:widget-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Dashboard</span>
             </a>
-            <a href="./43-admin-order-list.html" class="flex items-center h-11 px-8 gap-3 text-white/70 hover:text-white transition-colors">
+            <a href="./43-admin-order-list.html" class="flex items-center h-11 px-8 gap-3 text-[#535862] hover:text-[#181D27] transition-colors">
                 <iconify-icon icon="solar:cart-large-minimalistic-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Orders</span>
             </a>
-            <a href="./41-admin-user-list.html" class="flex items-center h-11 px-8 gap-3 text-white bg-white/10 border-l-[3px] border-[#C9A96E]">
+            <a href="./41-admin-user-list.html" class="flex items-center h-11 px-8 gap-3 text-white bg-[#6495ED] border-l-[3px] border-[#6495ED]">
                 <iconify-icon icon="solar:users-group-two-rounded-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Users</span>
             </a>
-            <a href="./45-admin-crm-messages.html" class="flex items-center h-11 px-8 gap-3 text-white/70 hover:text-white transition-colors">
+            <a href="./45-admin-crm-messages.html" class="flex items-center h-11 px-8 gap-3 text-[#535862] hover:text-[#181D27] transition-colors">
                 <iconify-icon icon="solar:chat-round-dots-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Customer Support</span>
             </a>
-            <a href="./48-admin-payment-summary.html" class="flex items-center h-11 px-8 gap-3 text-white/70 hover:text-white transition-colors">
+            <a href="./48-admin-payment-summary.html" class="flex items-center h-11 px-8 gap-3 text-[#535862] hover:text-[#181D27] transition-colors">
                 <iconify-icon icon="solar:card-2-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Payment</span>
             </a>
-            <a href="./50-admin-cms-faq.html" class="flex items-center h-11 px-8 gap-3 text-white/70 hover:text-white transition-colors">
+            <a href="./50-admin-cms-faq.html" class="flex items-center h-11 px-8 gap-3 text-[#535862] hover:text-[#181D27] transition-colors">
                 <iconify-icon icon="solar:document-text-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">CMS</span>
             </a>
-            <a href="./55-admin-customer-preferences.html" class="flex items-center h-11 px-8 gap-3 text-white/70 hover:text-white transition-colors">
+            <a href="./55-admin-customer-preferences.html" class="flex items-center h-11 px-8 gap-3 text-[#535862] hover:text-[#181D27] transition-colors">
                 <iconify-icon icon="solar:settings-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Settings</span>
             </a>
@@ -48,43 +48,43 @@
     </aside>
 
     <!-- Main Content -->
-    <main class="flex-1 ml-[240px] p-8">
+    <main class="flex-1 ml-[314px] p-8">
         
         <!-- Header -->
         <header class="mb-6">
-            <h1 class="text-3xl font-semibold tracking-tight text-[#1E293B]">Customer Preferences</h1>
-            <p class="text-sm text-[#64748B] mt-1">Manage default order preferences per customer</p>
+            <h1 class="text-3xl font-semibold tracking-tight text-[#181D27]">Customer Preferences</h1>
+            <p class="text-sm text-[#535862] mt-1">Manage default order preferences per customer</p>
         </header>
 
         <!-- Customer Selector -->
         <div class="mb-6">
             <div class="relative max-w-[400px]">
-                <div class="absolute inset-y-0 left-4 flex items-center pointer-events-none text-[#64748B]">
+                <div class="absolute inset-y-0 left-4 flex items-center pointer-events-none text-[#535862]">
                     <iconify-icon icon="solar:magnifer-linear" width="20"></iconify-icon>
                 </div>
-                <input type="text" placeholder="Select customer to manage preferences..." class="h-11 w-full pl-11 pr-10 bg-white border border-[#E2E8F0] rounded-[12px] text-sm outline-none focus:border-[#1E3A5F] transition-colors shadow-sm cursor-pointer">
-                <div class="absolute inset-y-0 right-4 flex items-center pointer-events-none text-[#64748B]">
+                <input type="text" placeholder="Select customer to manage preferences..." class="h-11 w-full pl-11 pr-10 bg-white border border-[#E6E8EC] rounded-[12px] text-sm outline-none focus:border-[#6495ED] transition-colors shadow-sm cursor-pointer">
+                <div class="absolute inset-y-0 right-4 flex items-center pointer-events-none text-[#535862]">
                     <iconify-icon icon="solar:alt-arrow-down-linear" width="18"></iconify-icon>
                 </div>
             </div>
         </div>
 
         <!-- Selected Customer Card -->
-        <div class="bg-white rounded-[12px] border border-[#E2E8F0] p-5 mb-6 flex items-center justify-between">
+        <div class="bg-white rounded-[12px] border border-[#E6E8EC] p-5 mb-6 flex items-center justify-between">
             <div class="flex items-center gap-4">
-                <div class="w-12 h-12 rounded-full bg-[#1E3A5F] flex items-center justify-center text-white font-semibold text-base">
+                <div class="w-12 h-12 rounded-full bg-white border-r border-[#E6E8EC] flex items-center justify-center text-white font-semibold text-base">
                     SC
                 </div>
                 <div>
-                    <h2 class="text-base font-semibold text-[#1E293B]">Smile Dental Group — Dr. Sarah Chen</h2>
-                    <p class="text-xs text-[#64748B]">123 Main St, Suite 200, Los Angeles, CA</p>
+                    <h2 class="text-base font-semibold text-[#181D27]">Smile Dental Group — Dr. Sarah Chen</h2>
+                    <p class="text-xs text-[#535862]">123 Main St, Suite 200, Los Angeles, CA</p>
                 </div>
             </div>
             <div class="flex items-center gap-4">
-                <span class="px-3 py-1 bg-[#1E3A5F]/10 text-[#1E3A5F] text-xs font-medium rounded-full">
+                <span class="px-3 py-1 bg-white border-r border-[#E6E8EC]/10 text-[#29579A] text-xs font-medium rounded-full">
                     3 profiles
                 </span>
-                <button class="h-9 px-4 border border-[#1E3A5F] text-[#1E3A5F] rounded-lg text-sm font-medium flex items-center gap-2 hover:bg-[#1E3A5F]/5 transition-colors">
+                <button class="h-9 px-4 border border-[#6495ED] text-[#29579A] rounded-lg text-sm font-medium flex items-center gap-2 hover:bg-white border-r border-[#E6E8EC]/5 transition-colors">
                     <iconify-icon icon="solar:add-circle-linear" width="18"></iconify-icon>
                     Add Profile
                 </button>
@@ -94,124 +94,124 @@
         <!-- Preference Profiles List -->
         <div class="space-y-3">
             <!-- Profile Card 1 -->
-            <div class="bg-white rounded-[12px] border border-[#E2E8F0] p-6">
+            <div class="bg-white rounded-[12px] border border-[#E6E8EC] p-6">
                 <div class="flex items-center justify-between mb-6">
                     <div class="flex items-center gap-2">
-                        <h3 class="text-base font-semibold text-[#1E293B]">Standard Crown Prefs</h3>
+                        <h3 class="text-base font-semibold text-[#181D27]">Standard Crown Prefs</h3>
                         <div class="flex items-center gap-1.5 ml-2">
-                            <span class="w-2 h-2 rounded-full bg-[#10B981]"></span>
-                            <span class="text-xs font-medium text-[#10B981]">Active</span>
+                            <span class="w-2 h-2 rounded-full bg-[#2ABC73]"></span>
+                            <span class="text-xs font-medium text-[#2ABC73]">Active</span>
                         </div>
                     </div>
                     <div class="flex items-center gap-4 text-xs font-medium">
-                        <button class="text-[#1E3A5F] hover:underline">Edit</button>
-                        <button class="text-[#EF4444] hover:underline">Delete</button>
+                        <button class="text-[#29579A] hover:underline">Edit</button>
+                        <button class="text-[#E82E29] hover:underline">Delete</button>
                     </div>
                 </div>
                 <div class="grid grid-cols-2 gap-3">
                     <div class="space-y-1">
-                        <p class="text-xs text-[#64748B]">Material</p>
-                        <p class="text-sm text-[#1E293B]">Zirconia</p>
+                        <p class="text-xs text-[#535862]">Material</p>
+                        <p class="text-sm text-[#181D27]">Zirconia</p>
                     </div>
                     <div class="space-y-1">
-                        <p class="text-xs text-[#64748B]">Shade</p>
-                        <p class="text-sm text-[#1E293B]">A2</p>
+                        <p class="text-xs text-[#535862]">Shade</p>
+                        <p class="text-sm text-[#181D27]">A2</p>
                     </div>
                     <div class="space-y-1">
-                        <p class="text-xs text-[#64748B]">Margin</p>
-                        <p class="text-sm text-[#1E293B]">Chamfer - All Surfaces</p>
+                        <p class="text-xs text-[#535862]">Margin</p>
+                        <p class="text-sm text-[#181D27]">Chamfer - All Surfaces</p>
                     </div>
                     <div class="space-y-1">
-                        <p class="text-xs text-[#64748B]">Shipping</p>
-                        <p class="text-sm text-[#1E293B]">Standard (5-7 days)</p>
+                        <p class="text-xs text-[#535862]">Shipping</p>
+                        <p class="text-sm text-[#181D27]">Standard (5-7 days)</p>
                     </div>
                 </div>
             </div>
 
             <!-- Profile Card 2 -->
-            <div class="bg-white rounded-[12px] border border-[#E2E8F0] p-6 opacity-80 hover:opacity-100 transition-opacity">
+            <div class="bg-white rounded-[12px] border border-[#E6E8EC] p-6 opacity-80 hover:opacity-100 transition-opacity">
                 <div class="flex items-center justify-between mb-6">
                     <div class="flex items-center gap-2">
-                        <h3 class="text-base font-semibold text-[#1E293B]">Implant Defaults</h3>
+                        <h3 class="text-base font-semibold text-[#181D27]">Implant Defaults</h3>
                         <div class="flex items-center gap-1.5 ml-2">
-                            <span class="w-2 h-2 rounded-full bg-[#64748B]"></span>
+                            <span class="w-2 h-2 rounded-full bg-[#535862]"></span>
                         </div>
                     </div>
                     <div class="flex items-center gap-4 text-xs font-medium">
-                        <button class="text-[#1E3A5F] hover:underline">Edit</button>
-                        <button class="text-[#EF4444] hover:underline">Delete</button>
+                        <button class="text-[#29579A] hover:underline">Edit</button>
+                        <button class="text-[#E82E29] hover:underline">Delete</button>
                     </div>
                 </div>
                 <div class="grid grid-cols-2 gap-3">
                     <div class="space-y-1">
-                        <p class="text-xs text-[#64748B]">Material</p>
-                        <p class="text-sm text-[#1E293B]">Titanium Custom Abutment</p>
+                        <p class="text-xs text-[#535862]">Material</p>
+                        <p class="text-sm text-[#181D27]">Titanium Custom Abutment</p>
                     </div>
                     <div class="space-y-1">
-                        <p class="text-xs text-[#64748B]">Shade</p>
-                        <p class="text-sm text-[#1E293B]">BL2</p>
+                        <p class="text-xs text-[#535862]">Shade</p>
+                        <p class="text-sm text-[#181D27]">BL2</p>
                     </div>
                     <div class="space-y-1">
-                        <p class="text-xs text-[#64748B]">Margin</p>
-                        <p class="text-sm text-[#1E293B]">Knife Edge - Buccal</p>
+                        <p class="text-xs text-[#535862]">Margin</p>
+                        <p class="text-sm text-[#181D27]">Knife Edge - Buccal</p>
                     </div>
                     <div class="space-y-1">
-                        <p class="text-xs text-[#64748B]">Shipping</p>
-                        <p class="text-sm text-[#1E293B]">Rush (2-3 days)</p>
+                        <p class="text-xs text-[#535862]">Shipping</p>
+                        <p class="text-sm text-[#181D27]">Rush (2-3 days)</p>
                     </div>
                 </div>
             </div>
 
             <!-- Profile Card 3 -->
-            <div class="bg-white rounded-[12px] border border-[#E2E8F0] p-6 opacity-80 hover:opacity-100 transition-opacity">
+            <div class="bg-white rounded-[12px] border border-[#E6E8EC] p-6 opacity-80 hover:opacity-100 transition-opacity">
                 <div class="flex items-center justify-between mb-6">
                     <div class="flex items-center gap-2">
-                        <h3 class="text-base font-semibold text-[#1E293B]">Veneer Set Preferences</h3>
+                        <h3 class="text-base font-semibold text-[#181D27]">Veneer Set Preferences</h3>
                         <div class="flex items-center gap-1.5 ml-2">
-                            <span class="w-2 h-2 rounded-full bg-[#64748B]"></span>
+                            <span class="w-2 h-2 rounded-full bg-[#535862]"></span>
                         </div>
                     </div>
                     <div class="flex items-center gap-4 text-xs font-medium">
-                        <button class="text-[#1E3A5F] hover:underline">Edit</button>
-                        <button class="text-[#EF4444] hover:underline">Delete</button>
+                        <button class="text-[#29579A] hover:underline">Edit</button>
+                        <button class="text-[#E82E29] hover:underline">Delete</button>
                     </div>
                 </div>
                 <div class="grid grid-cols-2 gap-3">
                     <div class="space-y-1">
-                        <p class="text-xs text-[#64748B]">Material</p>
-                        <p class="text-sm text-[#1E293B]">E.max Lithium Disilicate</p>
+                        <p class="text-xs text-[#535862]">Material</p>
+                        <p class="text-sm text-[#181D27]">E.max Lithium Disilicate</p>
                     </div>
                     <div class="space-y-1">
-                        <p class="text-xs text-[#64748B]">Shade</p>
-                        <p class="text-sm text-[#1E293B]">B1</p>
+                        <p class="text-xs text-[#535862]">Shade</p>
+                        <p class="text-sm text-[#181D27]">B1</p>
                     </div>
                     <div class="space-y-1">
-                        <p class="text-xs text-[#64748B]">Margin</p>
-                        <p class="text-sm text-[#1E293B]">Shoulder - All Surfaces</p>
+                        <p class="text-xs text-[#535862]">Margin</p>
+                        <p class="text-sm text-[#181D27]">Shoulder - All Surfaces</p>
                     </div>
                     <div class="space-y-1">
-                        <p class="text-xs text-[#64748B]">Shipping</p>
-                        <p class="text-sm text-[#1E293B]">Standard (5-7 days)</p>
+                        <p class="text-xs text-[#535862]">Shipping</p>
+                        <p class="text-sm text-[#181D27]">Standard (5-7 days)</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Usage Note -->
-        <div class="mt-6 flex items-center gap-3 p-4 bg-[#EBF2FA] border border-[#E2E8F0] rounded-lg">
-            <iconify-icon icon="solar:info-circle-linear" width="18" class="text-[#3B82F6] flex-shrink-0"></iconify-icon>
-            <p class="text-xs text-[#64748B]">These preferences auto-fill when creating orders on behalf of this customer</p>
+        <div class="mt-6 flex items-center gap-3 p-4 bg-[#E0EAFB] border border-[#E6E8EC] rounded-lg">
+            <iconify-icon icon="solar:info-circle-linear" width="18" class="text-[#6495ED] flex-shrink-0"></iconify-icon>
+            <p class="text-xs text-[#535862]">These preferences auto-fill when creating orders on behalf of this customer</p>
         </div>
 
     </main>
 
     <!-- Modal Overlay -->
-    <div class="fixed inset-0 bg-[#1E293B]/40 backdrop-blur-sm z-[100] flex items-center justify-center p-4">
+    <div class="fixed inset-0 bg-[#181D27]/40 backdrop-blur-sm z-[100] flex items-center justify-center p-4">
         <div class="bg-white w-full max-w-[480px] rounded-[24px] shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-200">
             <!-- Modal Header -->
             <div class="px-8 pt-8 pb-4 flex items-center justify-between">
-                <h2 class="text-xl font-semibold tracking-tight text-[#1E293B]">Add Preference Profile</h2>
-                <button class="text-[#64748B] hover:text-[#1E293B] transition-colors">
+                <h2 class="text-xl font-semibold tracking-tight text-[#181D27]">Add Preference Profile</h2>
+                <button class="text-[#535862] hover:text-[#181D27] transition-colors">
                     <iconify-icon icon="solar:close-circle-linear" width="24"></iconify-icon>
                 </button>
             </div>
@@ -220,36 +220,36 @@
             <div class="px-8 pb-8 space-y-5">
                 <!-- Profile Name -->
                 <div class="space-y-2">
-                    <label class="text-xs font-semibold text-[#64748B] uppercase tracking-wider">Profile Name</label>
-                    <input type="text" placeholder="e.g., Standard Crown Prefs" class="h-11 w-full px-4 bg-white border border-[#E2E8F0] rounded-lg text-sm outline-none focus:border-[#1E3A5F] transition-colors">
+                    <label class="text-xs font-semibold text-[#535862] uppercase tracking-wider">Profile Name</label>
+                    <input type="text" placeholder="e.g., Standard Crown Prefs" class="h-11 w-full px-4 bg-white border border-[#E6E8EC] rounded-lg text-sm outline-none focus:border-[#6495ED] transition-colors">
                 </div>
 
                 <!-- Material & Shade Grid -->
                 <div class="grid grid-cols-2 gap-4">
                     <div class="space-y-2">
-                        <label class="text-xs font-semibold text-[#64748B] uppercase tracking-wider">Crown Material</label>
+                        <label class="text-xs font-semibold text-[#535862] uppercase tracking-wider">Crown Material</label>
                         <div class="relative">
-                            <select class="h-11 w-full px-4 pr-10 bg-white border border-[#E2E8F0] rounded-lg text-sm appearance-none outline-none focus:border-[#1E3A5F] transition-colors cursor-pointer">
+                            <select class="h-11 w-full px-4 pr-10 bg-white border border-[#E6E8EC] rounded-lg text-sm appearance-none outline-none focus:border-[#6495ED] transition-colors cursor-pointer">
                                 <option>Zirconia</option>
                                 <option>PFM</option>
                                 <option>E.max</option>
                                 <option>Gold</option>
                             </select>
-                            <div class="absolute inset-y-0 right-3 flex items-center pointer-events-none text-[#64748B]">
+                            <div class="absolute inset-y-0 right-3 flex items-center pointer-events-none text-[#535862]">
                                 <iconify-icon icon="solar:alt-arrow-down-linear" width="16"></iconify-icon>
                             </div>
                         </div>
                     </div>
                     <div class="space-y-2">
-                        <label class="text-xs font-semibold text-[#64748B] uppercase tracking-wider">Tooth Shade</label>
+                        <label class="text-xs font-semibold text-[#535862] uppercase tracking-wider">Tooth Shade</label>
                         <div class="relative">
-                            <select class="h-11 w-full px-4 pr-10 bg-white border border-[#E2E8F0] rounded-lg text-sm appearance-none outline-none focus:border-[#1E3A5F] transition-colors cursor-pointer">
+                            <select class="h-11 w-full px-4 pr-10 bg-white border border-[#E6E8EC] rounded-lg text-sm appearance-none outline-none focus:border-[#6495ED] transition-colors cursor-pointer">
                                 <option>A1</option>
                                 <option>A2</option>
                                 <option>B1</option>
                                 <option>BL1</option>
                             </select>
-                            <div class="absolute inset-y-0 right-3 flex items-center pointer-events-none text-[#64748B]">
+                            <div class="absolute inset-y-0 right-3 flex items-center pointer-events-none text-[#535862]">
                                 <iconify-icon icon="solar:alt-arrow-down-linear" width="16"></iconify-icon>
                             </div>
                         </div>
@@ -258,14 +258,14 @@
 
                 <!-- Margin Settings -->
                 <div class="space-y-2">
-                    <label class="text-xs font-semibold text-[#64748B] uppercase tracking-wider">Margin Settings</label>
+                    <label class="text-xs font-semibold text-[#535862] uppercase tracking-wider">Margin Settings</label>
                     <div class="relative">
-                        <select class="h-11 w-full px-4 pr-10 bg-white border border-[#E2E8F0] rounded-lg text-sm appearance-none outline-none focus:border-[#1E3A5F] transition-colors cursor-pointer">
+                        <select class="h-11 w-full px-4 pr-10 bg-white border border-[#E6E8EC] rounded-lg text-sm appearance-none outline-none focus:border-[#6495ED] transition-colors cursor-pointer">
                             <option>Chamfer</option>
                             <option>Knife Edge</option>
                             <option>Shoulder</option>
                         </select>
-                        <div class="absolute inset-y-0 right-3 flex items-center pointer-events-none text-[#64748B]">
+                        <div class="absolute inset-y-0 right-3 flex items-center pointer-events-none text-[#535862]">
                             <iconify-icon icon="solar:alt-arrow-down-linear" width="16"></iconify-icon>
                         </div>
                     </div>
@@ -273,33 +273,33 @@
 
                 <!-- Shipping Method -->
                 <div class="space-y-3">
-                    <label class="text-xs font-semibold text-[#64748B] uppercase tracking-wider">Shipping Method</label>
+                    <label class="text-xs font-semibold text-[#535862] uppercase tracking-wider">Shipping Method</label>
                     <div class="space-y-2">
                         <label class="flex items-center gap-3 cursor-pointer group">
                             <input type="radio" name="shipping" class="hidden peer" checked="">
-                            <div class="w-4 h-4 rounded-full border border-[#E2E8F0] flex items-center justify-center peer-checked:border-[#1E3A5F] peer-checked:bg-[#1E3A5F]">
+                            <div class="w-4 h-4 rounded-full border border-[#E6E8EC] flex items-center justify-center peer-checked:border-[#6495ED] peer-checked:bg-white border-r border-[#E6E8EC]">
                                 <div class="w-1.5 h-1.5 rounded-full bg-white"></div>
                             </div>
-                            <span class="text-sm text-[#1E293B]">Standard (5-7 days)</span>
+                            <span class="text-sm text-[#181D27]">Standard (5-7 days)</span>
                         </label>
                         <label class="flex items-center gap-3 cursor-pointer group">
                             <input type="radio" name="shipping" class="hidden peer">
-                            <div class="w-4 h-4 rounded-full border border-[#E2E8F0] flex items-center justify-center peer-checked:border-[#1E3A5F] peer-checked:bg-[#1E3A5F]">
+                            <div class="w-4 h-4 rounded-full border border-[#E6E8EC] flex items-center justify-center peer-checked:border-[#6495ED] peer-checked:bg-white border-r border-[#E6E8EC]">
                                 <div class="w-1.5 h-1.5 rounded-full bg-white"></div>
                             </div>
-                            <span class="text-sm text-[#1E293B]">Rush (2-3 days)</span>
+                            <span class="text-sm text-[#181D27]">Rush (2-3 days)</span>
                         </label>
                     </div>
                 </div>
 
                 <!-- Notes -->
                 <div class="space-y-2">
-                    <label class="text-xs font-semibold text-[#64748B] uppercase tracking-wider">Additional Notes</label>
-                    <textarea placeholder="Enter any specific requirements..." class="w-full min-h-[80px] p-4 border border-[#E2E8F0] rounded-lg text-sm outline-none focus:border-[#1E3A5F] transition-colors resize-none"></textarea>
+                    <label class="text-xs font-semibold text-[#535862] uppercase tracking-wider">Additional Notes</label>
+                    <textarea placeholder="Enter any specific requirements..." class="w-full min-h-[80px] p-4 border border-[#E6E8EC] rounded-lg text-sm outline-none focus:border-[#6495ED] transition-colors resize-none"></textarea>
                 </div>
 
                 <!-- Submit -->
-                <button class="h-11 w-full bg-[#1E3A5F] text-white text-sm font-semibold rounded-lg hover:bg-[#152a45] transition-all shadow-md mt-2">
+                <button class="h-11 w-full bg-white border-r border-[#E6E8EC] text-white text-sm font-semibold rounded-lg hover:bg-[#152a45] transition-all shadow-md mt-2">
                     Save Profile
                 </button>
             </div>

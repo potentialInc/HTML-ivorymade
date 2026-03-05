@@ -6,13 +6,13 @@
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 body {
-font-family: 'Inter', sans-serif;
+font-family: 'Manrope', sans-serif;
 -webkit-font-smoothing: antialiased;
-background-color: #F8F9FB;
-color: #1E293B;
+background-color: #EEF3FD;
+color: #181D27;
 }
 .custom-scrollbar::-webkit-scrollbar {
 width: 4px;
@@ -21,195 +21,195 @@ width: 4px;
 background: transparent;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb {
-background: #E2E8F0;
+background: #E6E8EC;
 border-radius: 10px;
 }
 input:focus, select:focus {
 outline: none;
-border-color: #1E3A5F;
+border-color: #6495ED;
 }
 </style></head>
 <body class="flex min-h-screen">
 
     <!-- Sidebar -->
-    <aside class="w-[240px] bg-white border-r border-[#E2E8F0] shadow-sm flex flex-col fixed h-screen z-30">
+    <aside class="w-[314px] bg-white border-r border-[#E6E8EC] shadow-sm flex flex-col fixed h-screen z-30">
         <div class="h-20 px-8 flex items-center">
-            <span class="text-xl font-bold tracking-tighter text-[#1E3A5F]">IVORYMADE</span>
+            <span class="text-xl font-bold tracking-tighter text-[#181D27]">ivorymade</span>
         </div>
         
         <nav class="flex-1 px-4 py-4 space-y-1">
-            <a href="./09-dashboard.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors group">
+            <a href="./09-dashboard.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#535862] hover:bg-[#EEF3FD] transition-colors group">
                 <iconify-icon icon="solar:widget-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Dashboard</span>
             </a>
-            <a href="./10-orders-list.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors group">
+            <a href="./10-orders-list.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#535862] hover:bg-[#EEF3FD] transition-colors group">
                 <iconify-icon icon="solar:box-minimalistic-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Orders</span>
             </a>
-            <a href="./25-customer-support.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors group">
+            <a href="./25-customer-support.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#535862] hover:bg-[#EEF3FD] transition-colors group">
                 <iconify-icon icon="solar:chat-round-line-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Messages</span>
             </a>
-            <a href="./22-payment-list.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors group">
+            <a href="./22-payment-list.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#535862] hover:bg-[#EEF3FD] transition-colors group">
                 <iconify-icon icon="solar:card-2-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Payments</span>
             </a>
-            <a href="./25-customer-support.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors group">
+            <a href="./25-customer-support.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#535862] hover:bg-[#EEF3FD] transition-colors group">
                 <iconify-icon icon="solar:help-outline-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Support</span>
             </a>
-            <a href="./27-settings.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#1E3A5F] bg-[#F8F9FB] font-semibold">
+            <a href="./27-settings.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#29579A] bg-[#EEF3FD] font-semibold">
                 <iconify-icon icon="solar:settings-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm">Settings</span>
             </a>
         </nav>
 
-        <div class="p-6 border-t border-[#E2E8F0]">
+        <div class="p-6 border-t border-[#E6E8EC]">
             <div class="flex items-center gap-3">
-                <div class="w-9 h-9 rounded-full bg-[#1E3A5F] flex items-center justify-center text-white text-xs font-semibold">MW</div>
+                <div class="w-9 h-9 rounded-full bg-[#6495ED] flex items-center justify-center text-white text-xs font-semibold">MW</div>
                 <div class="flex-1 min-w-0">
                     <p class="text-xs font-semibold truncate">Dr. Mitchell</p>
-                    <p class="text-[10px] text-[#64748B] truncate uppercase tracking-wider">Master Account</p>
+                    <p class="text-[10px] text-[#535862] truncate uppercase tracking-wider">Master Account</p>
                 </div>
             </div>
         </div>
     </aside>
 
     <!-- Main Content -->
-    <main class="flex-1 ml-[240px] p-8 lg:p-12 max-w-7xl">
+    <main class="flex-1 ml-[314px] p-8 lg:p-12 max-w-7xl">
         
         <!-- Invite Section -->
         <section class="mb-8">
-            <h2 class="text-2xl font-semibold tracking-tight text-[#1E293B] mb-4">Invite Collaborator</h2>
-            <div class="bg-white p-5 rounded-xl border border-[#E2E8F0] shadow-sm">
+            <h2 class="text-2xl font-semibold tracking-tight text-[#181D27] mb-4">Invite Collaborator</h2>
+            <div class="bg-white p-5 rounded-xl border border-[#E6E8EC] shadow-sm">
                 <div class="flex gap-3">
                     <div class="relative w-[60%]">
-                        <iconify-icon icon="solar:letter-linear" class="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#94A3B8]" width="20"></iconify-icon>
-                        <input type="email" placeholder="Enter email address" class="w-full h-[44px] pl-11 pr-4 bg-white border border-[#E2E8F0] rounded-lg text-sm">
+                        <iconify-icon icon="solar:letter-linear" class="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#8B95A1]" width="20"></iconify-icon>
+                        <input type="email" placeholder="Enter email address" class="w-full h-[44px] pl-11 pr-4 bg-white border border-[#E6E8EC] rounded-lg text-sm">
                     </div>
                     <div class="relative w-[25%]">
-                        <select class="w-full h-[44px] px-4 bg-white border border-[#E2E8F0] rounded-lg text-sm appearance-none">
+                        <select class="w-full h-[44px] px-4 bg-white border border-[#E6E8EC] rounded-lg text-sm appearance-none">
                             <option>Dentist</option>
                             <option>Office Manager</option>
                             <option>Technician</option>
                         </select>
-                        <iconify-icon icon="solar:alt-arrow-down-linear" class="absolute right-3 top-1/2 -translate-y-1/2 text-[#94A3B8] pointer-events-none" width="18"></iconify-icon>
+                        <iconify-icon icon="solar:alt-arrow-down-linear" class="absolute right-3 top-1/2 -translate-y-1/2 text-[#8B95A1] pointer-events-none" width="18"></iconify-icon>
                     </div>
-                    <button class="w-[15%] h-[44px] bg-[#1E3A5F] text-white rounded-lg flex items-center justify-center gap-2 text-sm font-medium hover:bg-[#1E3A5F]/90 transition-all">
+                    <button class="w-[15%] h-[44px] bg-[#6495ED] text-white rounded-lg flex items-center justify-center gap-2 text-sm font-medium hover:bg-[#3B76CE]/90 transition-all">
                         <iconify-icon icon="solar:send-square-linear" width="18"></iconify-icon>
                         <span>Send Invitation</span>
                     </button>
                 </div>
-                <p class="mt-3 text-xs text-[#94A3B8]">Collaborator will receive an invitation email to join your office</p>
+                <p class="mt-3 text-xs text-[#8B95A1]">Collaborator will receive an invitation email to join your office</p>
             </div>
         </section>
 
         <!-- Collaborators List -->
         <section class="mb-12">
             <div class="flex items-center gap-3 mb-6">
-                <h2 class="text-2xl font-semibold tracking-tight text-[#1E293B]">Collaborators</h2>
-                <span class="bg-[#1E3A5F] text-white text-[11px] font-bold px-2 py-0.5 rounded-full min-w-[20px] h-5 flex items-center justify-center">4</span>
+                <h2 class="text-2xl font-semibold tracking-tight text-[#181D27]">Collaborators</h2>
+                <span class="bg-[#6495ED] text-white text-[11px] font-bold px-2 py-0.5 rounded-full min-w-[20px] h-5 flex items-center justify-center">4</span>
             </div>
             
-            <div class="bg-white rounded-xl border border-[#E2E8F0] shadow-sm overflow-hidden">
+            <div class="bg-white rounded-xl border border-[#E6E8EC] shadow-sm overflow-hidden">
                 <table class="w-full text-left border-collapse">
                     <thead>
-                        <tr class="bg-[#F8F9FB] border-bottom border-[#E2E8F0] h-12">
-                            <th class="px-6 text-xs font-semibold uppercase tracking-wider text-[#64748B]">Name</th>
-                            <th class="px-6 text-xs font-semibold uppercase tracking-wider text-[#64748B]">Email</th>
-                            <th class="px-6 text-xs font-semibold uppercase tracking-wider text-[#64748B]">Role</th>
-                            <th class="px-6 text-xs font-semibold uppercase tracking-wider text-[#64748B]">Status</th>
-                            <th class="px-6 text-xs font-semibold uppercase tracking-wider text-[#64748B]">Payment</th>
-                            <th class="px-6 text-xs font-semibold uppercase tracking-wider text-[#64748B] text-right">Actions</th>
+                        <tr class="bg-[#EEF3FD] border-bottom border-[#E6E8EC] h-12">
+                            <th class="px-6 text-xs font-semibold uppercase tracking-wider text-[#535862]">Name</th>
+                            <th class="px-6 text-xs font-semibold uppercase tracking-wider text-[#535862]">Email</th>
+                            <th class="px-6 text-xs font-semibold uppercase tracking-wider text-[#535862]">Role</th>
+                            <th class="px-6 text-xs font-semibold uppercase tracking-wider text-[#535862]">Status</th>
+                            <th class="px-6 text-xs font-semibold uppercase tracking-wider text-[#535862]">Payment</th>
+                            <th class="px-6 text-xs font-semibold uppercase tracking-wider text-[#535862] text-right">Actions</th>
                         </tr>
                     </thead>
                     <tbody class="text-sm">
                         <!-- Row 1 -->
-                        <tr class="h-14 border-t border-[#E2E8F0] hover:bg-[#F8F9FB]/50 transition-colors">
-                            <td class="px-6 font-medium text-[#1E293B]">Dr. James Wilson</td>
-                            <td class="px-6 text-[#64748B]">j.wilson@dental.com</td>
+                        <tr class="h-14 border-t border-[#E6E8EC] hover:bg-[#EEF3FD]/50 transition-colors">
+                            <td class="px-6 font-medium text-[#181D27]">Dr. James Wilson</td>
+                            <td class="px-6 text-[#535862]">j.wilson@dental.com</td>
                             <td class="px-6">Dentist</td>
                             <td class="px-6">
-                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#10B981]/10 text-[#10B981]">Active</span>
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#2ABC73]/10 text-[#2ABC73]">Active</span>
                             </td>
                             <td class="px-6">
                                 <div class="flex items-center gap-3">
                                     <label class="relative inline-flex items-center cursor-pointer">
                                         <input type="checkbox" checked="" class="sr-only peer">
-                                        <div class="w-11 h-6 bg-[#E2E8F0] rounded-full peer peer-checked:bg-[#1E3A5F] transition-all"></div>
+                                        <div class="w-11 h-6 bg-[#E6E8EC] rounded-full peer peer-checked:bg-[#6495ED] transition-all"></div>
                                         <div class="absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition-all peer-checked:translate-x-5"></div>
                                     </label>
-                                    <span class="text-xs font-medium text-[#10B981]">Shared</span>
+                                    <span class="text-xs font-medium text-[#2ABC73]">Shared</span>
                                 </div>
                             </td>
                             <td class="px-6 text-right">
-                                <button class="text-[#EF4444] text-xs font-semibold hover:underline">Remove</button>
+                                <button class="text-[#E82E29] text-xs font-semibold hover:underline">Remove</button>
                             </td>
                         </tr>
                         <!-- Row 2 -->
-                        <tr class="h-14 border-t border-[#E2E8F0] bg-[#F8F9FB]/30 hover:bg-[#F8F9FB]/50 transition-colors">
-                            <td class="px-6 font-medium text-[#1E293B]">Dr. Emily Carter</td>
-                            <td class="px-6 text-[#64748B]">e.carter@dental.com</td>
+                        <tr class="h-14 border-t border-[#E6E8EC] bg-[#EEF3FD]/30 hover:bg-[#EEF3FD]/50 transition-colors">
+                            <td class="px-6 font-medium text-[#181D27]">Dr. Emily Carter</td>
+                            <td class="px-6 text-[#535862]">e.carter@dental.com</td>
                             <td class="px-6">Dentist</td>
                             <td class="px-6">
-                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#10B981]/10 text-[#10B981]">Active</span>
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#2ABC73]/10 text-[#2ABC73]">Active</span>
                             </td>
                             <td class="px-6">
                                 <div class="flex items-center gap-3">
                                     <label class="relative inline-flex items-center cursor-pointer">
                                         <input type="checkbox" class="sr-only peer">
-                                        <div class="w-11 h-6 bg-[#E2E8F0] rounded-full peer peer-checked:bg-[#1E3A5F] transition-all"></div>
+                                        <div class="w-11 h-6 bg-[#E6E8EC] rounded-full peer peer-checked:bg-[#6495ED] transition-all"></div>
                                         <div class="absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition-all peer-checked:translate-x-5"></div>
                                     </label>
-                                    <span class="text-xs font-medium text-[#64748B]">Own</span>
+                                    <span class="text-xs font-medium text-[#535862]">Own</span>
                                 </div>
                             </td>
                             <td class="px-6 text-right">
-                                <button class="text-[#EF4444] text-xs font-semibold hover:underline">Remove</button>
+                                <button class="text-[#E82E29] text-xs font-semibold hover:underline">Remove</button>
                             </td>
                         </tr>
                         <!-- Row 3 -->
-                        <tr class="h-14 border-t border-[#E2E8F0] hover:bg-[#F8F9FB]/50 transition-colors">
-                            <td class="px-6 font-medium text-[#1E293B]">Lisa Thompson</td>
-                            <td class="px-6 text-[#64748B]">l.thompson@dental.com</td>
+                        <tr class="h-14 border-t border-[#E6E8EC] hover:bg-[#EEF3FD]/50 transition-colors">
+                            <td class="px-6 font-medium text-[#181D27]">Lisa Thompson</td>
+                            <td class="px-6 text-[#535862]">l.thompson@dental.com</td>
                             <td class="px-6">Office Manager</td>
                             <td class="px-6">
-                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#F59E0B]/10 text-[#F59E0B]">Pending</span>
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#FFBD00]/10 text-[#FFBD00]">Pending</span>
                             </td>
                             <td class="px-6">
                                 <div class="flex items-center gap-3">
                                     <label class="relative inline-flex items-center cursor-pointer">
                                         <input type="checkbox" class="sr-only peer">
-                                        <div class="w-11 h-6 bg-[#E2E8F0] rounded-full peer peer-checked:bg-[#1E3A5F] transition-all"></div>
+                                        <div class="w-11 h-6 bg-[#E6E8EC] rounded-full peer peer-checked:bg-[#6495ED] transition-all"></div>
                                         <div class="absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition-all peer-checked:translate-x-5"></div>
                                     </label>
-                                    <span class="text-xs font-medium text-[#64748B]">Own</span>
+                                    <span class="text-xs font-medium text-[#535862]">Own</span>
                                 </div>
                             </td>
                             <td class="px-6 text-right">
-                                <button class="text-[#EF4444] text-xs font-semibold hover:underline">Remove</button>
+                                <button class="text-[#E82E29] text-xs font-semibold hover:underline">Remove</button>
                             </td>
                         </tr>
                         <!-- Row 4 -->
-                        <tr class="h-14 border-t border-[#E2E8F0] bg-[#F8F9FB]/30 hover:bg-[#F8F9FB]/50 transition-colors">
-                            <td class="px-6 font-medium text-[#1E293B]">Mark Stevens</td>
-                            <td class="px-6 text-[#64748B]">m.stevens@dental.com</td>
+                        <tr class="h-14 border-t border-[#E6E8EC] bg-[#EEF3FD]/30 hover:bg-[#EEF3FD]/50 transition-colors">
+                            <td class="px-6 font-medium text-[#181D27]">Mark Stevens</td>
+                            <td class="px-6 text-[#535862]">m.stevens@dental.com</td>
                             <td class="px-6">Technician</td>
                             <td class="px-6">
-                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#10B981]/10 text-[#10B981]">Active</span>
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#2ABC73]/10 text-[#2ABC73]">Active</span>
                             </td>
                             <td class="px-6">
                                 <div class="flex items-center gap-3">
                                     <label class="relative inline-flex items-center cursor-pointer">
                                         <input type="checkbox" checked="" class="sr-only peer">
-                                        <div class="w-11 h-6 bg-[#E2E8F0] rounded-full peer peer-checked:bg-[#1E3A5F] transition-all"></div>
+                                        <div class="w-11 h-6 bg-[#E6E8EC] rounded-full peer peer-checked:bg-[#6495ED] transition-all"></div>
                                         <div class="absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition-all peer-checked:translate-x-5"></div>
                                     </label>
-                                    <span class="text-xs font-medium text-[#10B981]">Shared</span>
+                                    <span class="text-xs font-medium text-[#2ABC73]">Shared</span>
                                 </div>
                             </td>
                             <td class="px-6 text-right">
-                                <button class="text-[#EF4444] text-xs font-semibold hover:underline">Remove</button>
+                                <button class="text-[#E82E29] text-xs font-semibold hover:underline">Remove</button>
                             </td>
                         </tr>
                     </tbody>
@@ -220,15 +220,15 @@ border-color: #1E3A5F;
         <!-- Office Orders -->
         <section class="mb-12">
             <div class="flex items-center justify-between mb-6">
-                <h2 class="text-2xl font-semibold tracking-tight text-[#1E293B]">All Office Orders</h2>
+                <h2 class="text-2xl font-semibold tracking-tight text-[#181D27]">All Office Orders</h2>
                 <div class="flex gap-3">
                     <div class="relative">
-                        <select class="h-[44px] pl-4 pr-10 bg-white border border-[#E2E8F0] rounded-lg text-sm appearance-none min-w-[180px]">
+                        <select class="h-[44px] pl-4 pr-10 bg-white border border-[#E6E8EC] rounded-lg text-sm appearance-none min-w-[180px]">
                             <option>All Doctors</option>
                         </select>
-                        <iconify-icon icon="solar:alt-arrow-down-linear" class="absolute right-3 top-1/2 -translate-y-1/2 text-[#94A3B8] pointer-events-none" width="18"></iconify-icon>
+                        <iconify-icon icon="solar:alt-arrow-down-linear" class="absolute right-3 top-1/2 -translate-y-1/2 text-[#8B95A1] pointer-events-none" width="18"></iconify-icon>
                     </div>
-                    <button class="h-[36px] px-4 border border-[#1E3A5F] text-[#1E3A5F] rounded-lg flex items-center gap-2 text-xs font-semibold hover:bg-[#1E3A5F]/5 transition-all self-center">
+                    <button class="h-[36px] px-4 border border-[#6495ED] text-[#29579A] rounded-lg flex items-center gap-2 text-xs font-semibold hover:bg-[#3B76CE]/5 transition-all self-center">
                         <iconify-icon icon="solar:add-circle-linear" width="16"></iconify-icon>
                         Create Order on Behalf
                     </button>
@@ -237,40 +237,40 @@ border-color: #1E3A5F;
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
                 <!-- Order Card 1 -->
-                <div class="bg-white p-5 rounded-xl border border-[#E2E8F0] shadow-sm">
+                <div class="bg-white p-5 rounded-xl border border-[#E6E8EC] shadow-sm">
                     <div class="flex justify-between items-start mb-4">
-                        <span class="text-[10px] font-bold text-[#64748B] uppercase tracking-widest">#ORD-8821</span>
-                        <span class="px-2 py-0.5 bg-[#3B82F6]/10 text-[#3B82F6] rounded text-[10px] font-bold">IN DESIGN</span>
+                        <span class="text-[10px] font-bold text-[#535862] uppercase tracking-widest">#ORD-8821</span>
+                        <span class="px-2 py-0.5 bg-[#6495ED]/10 text-[#6495ED] rounded text-[10px] font-bold">IN DESIGN</span>
                     </div>
-                    <h4 class="text-sm font-semibold text-[#1E293B] mb-1">Anterior Zirconia Crown</h4>
-                    <p class="text-xs text-[#64748B] mb-4">Dr. James Wilson</p>
-                    <div class="flex items-center gap-2 text-[11px] text-[#94A3B8]">
+                    <h4 class="text-sm font-semibold text-[#181D27] mb-1">Anterior Zirconia Crown</h4>
+                    <p class="text-xs text-[#535862] mb-4">Dr. James Wilson</p>
+                    <div class="flex items-center gap-2 text-[11px] text-[#8B95A1]">
                         <iconify-icon icon="solar:calendar-linear" width="14"></iconify-icon>
                         <span>Mar 24, 2026</span>
                     </div>
                 </div>
                 <!-- Order Card 2 -->
-                <div class="bg-white p-5 rounded-xl border border-[#E2E8F0] shadow-sm">
+                <div class="bg-white p-5 rounded-xl border border-[#E6E8EC] shadow-sm">
                     <div class="flex justify-between items-start mb-4">
-                        <span class="text-[10px] font-bold text-[#64748B] uppercase tracking-widest">#ORD-8819</span>
-                        <span class="px-2 py-0.5 bg-[#10B981]/10 text-[#10B981] rounded text-[10px] font-bold">SHIPPED</span>
+                        <span class="text-[10px] font-bold text-[#535862] uppercase tracking-widest">#ORD-8819</span>
+                        <span class="px-2 py-0.5 bg-[#2ABC73]/10 text-[#2ABC73] rounded text-[10px] font-bold">SHIPPED</span>
                     </div>
-                    <h4 class="text-sm font-semibold text-[#1E293B] mb-1">Night Guard - Upper</h4>
-                    <p class="text-xs text-[#64748B] mb-4">Dr. Emily Carter</p>
-                    <div class="flex items-center gap-2 text-[11px] text-[#94A3B8]">
+                    <h4 class="text-sm font-semibold text-[#181D27] mb-1">Night Guard - Upper</h4>
+                    <p class="text-xs text-[#535862] mb-4">Dr. Emily Carter</p>
+                    <div class="flex items-center gap-2 text-[11px] text-[#8B95A1]">
                         <iconify-icon icon="solar:calendar-linear" width="14"></iconify-icon>
                         <span>Mar 22, 2026</span>
                     </div>
                 </div>
                 <!-- Order Card 3 -->
-                <div class="bg-white p-5 rounded-xl border border-[#E2E8F0] shadow-sm">
+                <div class="bg-white p-5 rounded-xl border border-[#E6E8EC] shadow-sm">
                     <div class="flex justify-between items-start mb-4">
-                        <span class="text-[10px] font-bold text-[#64748B] uppercase tracking-widest">#ORD-8815</span>
-                        <span class="px-2 py-0.5 bg-[#F59E0B]/10 text-[#F59E0B] rounded text-[10px] font-bold">HOLD</span>
+                        <span class="text-[10px] font-bold text-[#535862] uppercase tracking-widest">#ORD-8815</span>
+                        <span class="px-2 py-0.5 bg-[#FFBD00]/10 text-[#FFBD00] rounded text-[10px] font-bold">HOLD</span>
                     </div>
-                    <h4 class="text-sm font-semibold text-[#1E293B] mb-1">Implant Bridge (3-Unit)</h4>
-                    <p class="text-xs text-[#64748B] mb-4">Dr. James Wilson</p>
-                    <div class="flex items-center gap-2 text-[11px] text-[#94A3B8]">
+                    <h4 class="text-sm font-semibold text-[#181D27] mb-1">Implant Bridge (3-Unit)</h4>
+                    <p class="text-xs text-[#535862] mb-4">Dr. James Wilson</p>
+                    <div class="flex items-center gap-2 text-[11px] text-[#8B95A1]">
                         <iconify-icon icon="solar:calendar-linear" width="14"></iconify-icon>
                         <span>Mar 20, 2026</span>
                     </div>
@@ -280,63 +280,63 @@ border-color: #1E3A5F;
 
         <!-- Open Invoices -->
         <section class="pb-32">
-            <h2 class="text-2xl font-semibold tracking-tight text-[#1E293B] mb-6">Open Invoices</h2>
+            <h2 class="text-2xl font-semibold tracking-tight text-[#181D27] mb-6">Open Invoices</h2>
             
             <div class="flex items-center gap-2 mb-4">
                 <label class="flex items-center cursor-pointer group">
-                    <div class="w-5 h-5 border-2 border-[#E2E8F0] rounded flex items-center justify-center transition-all group-hover:border-[#1E3A5F]">
+                    <div class="w-5 h-5 border-2 border-[#E6E8EC] rounded flex items-center justify-center transition-all group-hover:border-[#6495ED]">
                         <iconify-icon icon="solar:check-read-linear" class="text-white opacity-0" width="14"></iconify-icon>
                     </div>
-                    <span class="ml-3 text-sm font-semibold text-[#1E293B]">Select All</span>
+                    <span class="ml-3 text-sm font-semibold text-[#181D27]">Select All</span>
                 </label>
             </div>
 
             <div class="space-y-2">
                 <!-- Invoice Row 1 -->
-                <div class="bg-white p-4 rounded-xl border border-[#E2E8F0] flex items-center justify-between shadow-sm">
+                <div class="bg-white p-4 rounded-xl border border-[#E6E8EC] flex items-center justify-between shadow-sm">
                     <div class="flex items-center gap-4">
-                        <div class="w-5 h-5 border-2 border-[#1E3A5F] bg-[#1E3A5F] rounded flex items-center justify-center">
+                        <div class="w-5 h-5 border-2 border-[#6495ED] bg-[#6495ED] rounded flex items-center justify-center">
                             <iconify-icon icon="solar:check-read-linear" class="text-white" width="14"></iconify-icon>
                         </div>
                         <div>
-                            <p class="text-sm font-semibold text-[#1E293B]">Upper Zirconia Arch</p>
-                            <p class="text-xs text-[#64748B]">Dr. James Wilson • <span class="font-mono">ORD-7721</span></p>
+                            <p class="text-sm font-semibold text-[#181D27]">Upper Zirconia Arch</p>
+                            <p class="text-xs text-[#535862]">Dr. James Wilson • <span class="font-mono">ORD-7721</span></p>
                         </div>
                     </div>
-                    <span class="text-sm font-bold text-[#1E3A5F]">$1,120.00</span>
+                    <span class="text-sm font-bold text-[#29579A]">$1,120.00</span>
                 </div>
                 <!-- Invoice Row 2 -->
-                <div class="bg-white p-4 rounded-xl border border-[#E2E8F0] flex items-center justify-between shadow-sm">
+                <div class="bg-white p-4 rounded-xl border border-[#E6E8EC] flex items-center justify-between shadow-sm">
                     <div class="flex items-center gap-4">
-                        <div class="w-5 h-5 border-2 border-[#1E3A5F] bg-[#1E3A5F] rounded flex items-center justify-center">
+                        <div class="w-5 h-5 border-2 border-[#6495ED] bg-[#6495ED] rounded flex items-center justify-center">
                             <iconify-icon icon="solar:check-read-linear" class="text-white" width="14"></iconify-icon>
                         </div>
                         <div>
-                            <p class="text-sm font-semibold text-[#1E293B]">Custom Abutment Case</p>
-                            <p class="text-xs text-[#64748B]">Dr. James Wilson • <span class="font-mono">ORD-7718</span></p>
+                            <p class="text-sm font-semibold text-[#181D27]">Custom Abutment Case</p>
+                            <p class="text-xs text-[#535862]">Dr. James Wilson • <span class="font-mono">ORD-7718</span></p>
                         </div>
                     </div>
-                    <span class="text-sm font-bold text-[#1E3A5F]">$1,220.00</span>
+                    <span class="text-sm font-bold text-[#29579A]">$1,220.00</span>
                 </div>
                 <!-- Invoice Row 3 -->
-                <div class="bg-white p-4 rounded-xl border border-[#E2E8F0] flex items-center justify-between shadow-sm">
+                <div class="bg-white p-4 rounded-xl border border-[#E6E8EC] flex items-center justify-between shadow-sm">
                     <div class="flex items-center gap-4">
-                        <div class="w-5 h-5 border-2 border-[#E2E8F0] rounded flex items-center justify-center">
+                        <div class="w-5 h-5 border-2 border-[#E6E8EC] rounded flex items-center justify-center">
                             <iconify-icon icon="solar:check-read-linear" class="text-white opacity-0" width="14"></iconify-icon>
                         </div>
                         <div>
-                            <p class="text-sm font-semibold text-[#1E293B]">E.Max Crown Lower</p>
-                            <p class="text-xs text-[#64748B]">Dr. Emily Carter • <span class="font-mono">ORD-7715</span></p>
+                            <p class="text-sm font-semibold text-[#181D27]">E.Max Crown Lower</p>
+                            <p class="text-xs text-[#535862]">Dr. Emily Carter • <span class="font-mono">ORD-7715</span></p>
                         </div>
                     </div>
-                    <span class="text-sm font-bold text-[#1E3A5F]">$450.00</span>
+                    <span class="text-sm font-bold text-[#29579A]">$450.00</span>
                 </div>
             </div>
         </section>
 
         <!-- Floating Bottom Bar -->
         <div class="fixed bottom-8 left-[calc(240px+2rem)] right-12 z-40">
-            <div class="bg-[#1E3A5F] text-white p-4 rounded-2xl shadow-2xl border border-white/10 flex items-center justify-between backdrop-blur-md bg-opacity-95">
+            <div class="bg-[#6495ED] text-white p-4 rounded-2xl shadow-2xl border border-white/10 flex items-center justify-between backdrop-blur-md bg-opacity-95">
                 <div class="flex items-center gap-6 px-4">
                     <span class="text-sm text-white/70">2 of 3 invoices selected</span>
                     <div class="h-8 w-px bg-white/10"></div>
@@ -345,7 +345,7 @@ border-color: #1E3A5F;
                         <span class="text-xl font-bold">$2,340.00</span>
                     </div>
                 </div>
-                <button class="h-[44px] px-8 bg-[#C9A96E] hover:bg-[#B8985D] text-white rounded-xl font-semibold text-sm transition-all shadow-lg flex items-center gap-2">
+                <button class="h-[44px] px-8 bg-[#6495ED] hover:bg-[#B8985D] text-white rounded-xl font-semibold text-sm transition-all shadow-lg flex items-center gap-2">
                     <iconify-icon icon="solar:wallet-money-linear" width="20"></iconify-icon>
                     Pay Selected
                 </button>

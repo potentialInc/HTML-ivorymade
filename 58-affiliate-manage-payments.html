@@ -16,15 +16,15 @@
         </div>
 
         <nav class="flex-1 flex flex-col py-4">
-            <a href="#" class="flex items-center h-12 px-8 gap-3 text-white/70 hover:text-white transition-colors">
+            <a href="./56-affiliate-dashboard.html" class="flex items-center h-12 px-8 gap-3 text-white/70 hover:text-white transition-colors">
                 <iconify-icon icon="solar:widget-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Dashboard</span>
             </a>
-            <a href="#" class="flex items-center h-12 px-8 gap-3 text-white/70 hover:text-white transition-colors">
+            <a href="./57-affiliate-manage-users.html" class="flex items-center h-12 px-8 gap-3 text-white/70 hover:text-white transition-colors">
                 <iconify-icon icon="solar:users-group-two-rounded-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Manage Users</span>
             </a>
-            <a href="#" class="flex items-center h-12 px-8 gap-3 text-white bg-white/10 border-l-[3px] border-[#C9A96E]">
+            <a href="./58-affiliate-manage-payments.html" class="flex items-center h-12 px-8 gap-3 text-white bg-white/10 border-l-[3px] border-[#C9A96E]">
                 <iconify-icon icon="solar:card-2-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Manage Payments</span>
             </a>
@@ -319,4 +319,19 @@
     </main>
 
 
+
+<script>
+(function() {
+  var btns = document.querySelectorAll('button, a');
+  btns.forEach(function(btn) {
+    var text = btn.textContent.trim();
+    if (text === 'Log Out' || text === 'Logout' || text === 'Sign Out') {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        location.href = './index.html';
+      });
+    }
+  });
+})();
+</script>
 </body></html>

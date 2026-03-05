@@ -179,4 +179,24 @@ border-radius: 50%;
     </div>
 
 
+
+<script>
+(function() {
+  var links = document.querySelectorAll('a[href="#"], button');
+  links.forEach(function(el) {
+    var text = el.textContent.trim().toLowerCase();
+    if (text.includes('home') || text.includes('dashboard')) {
+      el.addEventListener('click', function(e) { e.preventDefault(); location.href = './33-mobile-dashboard.html'; });
+    } else if (text.includes('order')) {
+      el.addEventListener('click', function(e) { e.preventDefault(); location.href = './35-mobile-orders-list.html'; });
+    } else if (text.includes('chat') || text.includes('message')) {
+      el.addEventListener('click', function(e) { e.preventDefault(); location.href = './39-mobile-chat.html'; });
+    } else if (text.includes('notification')) {
+      el.addEventListener('click', function(e) { e.preventDefault(); location.href = './34-mobile-notifications.html'; });
+    } else if (text.includes('payment') || text.includes('pay')) {
+      el.addEventListener('click', function(e) { e.preventDefault(); location.href = './38-mobile-payment.html'; });
+    }
+  });
+})();
+</script>
 </body></html>

@@ -49,27 +49,27 @@ transform: translateX(100%);
         </div>
         
         <nav class="flex-1 px-4 py-4 space-y-1">
-            <a href="#" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors group">
+            <a href="./09-dashboard.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors group">
                 <iconify-icon icon="solar:widget-linear" width="22" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Dashboard</span>
             </a>
-            <a href="#" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors group">
+            <a href="./10-orders-list.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors group">
                 <iconify-icon icon="solar:box-minimalistic-linear" width="22" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Orders</span>
             </a>
-            <a href="#" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors group">
+            <a href="./25-customer-support.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors group">
                 <iconify-icon icon="solar:chat-round-line-linear" width="22" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Messages</span>
             </a>
-            <a href="#" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors group">
+            <a href="./22-payment-list.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors group">
                 <iconify-icon icon="solar:card-2-linear" width="22" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Payments</span>
             </a>
-            <a href="#" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors group">
+            <a href="./25-customer-support.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors group">
                 <iconify-icon icon="solar:help-outline-linear" width="22" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Support</span>
             </a>
-            <a href="#" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#1E3A5F] bg-[#F8F9FB] font-semibold">
+            <a href="./27-settings.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#1E3A5F] bg-[#F8F9FB] font-semibold">
                 <iconify-icon icon="solar:settings-linear" width="22" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm">Settings</span>
             </a>
@@ -256,4 +256,19 @@ transform: translateX(100%);
     </main>
 
 
+
+<script>
+(function() {
+  var btns = document.querySelectorAll('button, a');
+  btns.forEach(function(btn) {
+    var text = btn.textContent.trim();
+    if (text === 'Log Out' || text === 'Logout' || text === 'Sign Out') {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        location.href = './index.html';
+      });
+    }
+  });
+})();
+</script>
 </body></html>

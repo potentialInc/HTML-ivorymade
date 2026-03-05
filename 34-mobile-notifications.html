@@ -168,19 +168,19 @@ padding-bottom: env(safe-area-inset-bottom, 24px);
 
         <!-- Bottom Tab Bar -->
         <nav class="absolute bottom-0 left-0 right-0 bg-white border-t border-[#E2E8F0] h-[72px] safe-area-bottom px-4 flex items-center justify-between z-20">
-            <a href="#" class="flex flex-col items-center gap-1.5 text-[#94A3B8] flex-1">
+            <a href="./33-mobile-dashboard.html" class="flex flex-col items-center gap-1.5 text-[#94A3B8] flex-1">
                 <iconify-icon icon="solar:home-2-linear" width="22" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-[0.625rem] font-medium uppercase tracking-tight">Home</span>
             </a>
-            <a href="#" class="flex flex-col items-center gap-1.5 text-[#94A3B8] flex-1">
+            <a href="./35-mobile-orders-list.html" class="flex flex-col items-center gap-1.5 text-[#94A3B8] flex-1">
                 <iconify-icon icon="solar:box-linear" width="22" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-[0.625rem] font-medium uppercase tracking-tight">Orders</span>
             </a>
-            <a href="#" class="flex flex-col items-center gap-1.5 text-[#94A3B8] flex-1">
+            <a href="./39-mobile-chat.html" class="flex flex-col items-center gap-1.5 text-[#94A3B8] flex-1">
                 <iconify-icon icon="solar:chat-round-dots-linear" width="22" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-[0.625rem] font-medium uppercase tracking-tight">Chat</span>
             </a>
-            <a href="#" class="flex flex-col items-center gap-1.5 text-[#1E3A5F] flex-1">
+            <a href="./34-mobile-notifications.html" class="flex flex-col items-center gap-1.5 text-[#1E3A5F] flex-1">
                 <iconify-icon icon="solar:bell-bing-bold-duotone" width="22"></iconify-icon>
                 <span class="text-[0.625rem] font-semibold uppercase tracking-tight">Alerts</span>
             </a>
@@ -191,4 +191,24 @@ padding-bottom: env(safe-area-inset-bottom, 24px);
     </div>
 
 
+
+<script>
+(function() {
+  var links = document.querySelectorAll('a[href="#"], button');
+  links.forEach(function(el) {
+    var text = el.textContent.trim().toLowerCase();
+    if (text.includes('home') || text.includes('dashboard')) {
+      el.addEventListener('click', function(e) { e.preventDefault(); location.href = './33-mobile-dashboard.html'; });
+    } else if (text.includes('order')) {
+      el.addEventListener('click', function(e) { e.preventDefault(); location.href = './35-mobile-orders-list.html'; });
+    } else if (text.includes('chat') || text.includes('message')) {
+      el.addEventListener('click', function(e) { e.preventDefault(); location.href = './39-mobile-chat.html'; });
+    } else if (text.includes('notification')) {
+      el.addEventListener('click', function(e) { e.preventDefault(); location.href = './34-mobile-notifications.html'; });
+    } else if (text.includes('payment') || text.includes('pay')) {
+      el.addEventListener('click', function(e) { e.preventDefault(); location.href = './38-mobile-payment.html'; });
+    }
+  });
+})();
+</script>
 </body></html>

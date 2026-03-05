@@ -133,10 +133,22 @@ transition: all 0.3s ease;
         <div class="mt-6 text-center">
             <p class="text-sm text-[#64748B]">
                 Already registered? 
-                <a href="#" class="text-[#1E3A5F] font-medium hover:underline decoration-2 underline-offset-4 ml-1">Log In</a>
+                <a href="./02-login.html" class="text-[#1E3A5F] font-medium hover:underline decoration-2 underline-offset-4 ml-1">Log In</a>
             </p>
         </div>
     </div>
 
 
+
+<script>
+(function() {
+  var form = document.querySelector('form');
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      location.href = './04-email-verification.html';
+    });
+  }
+})();
+</script>
 </body></html>

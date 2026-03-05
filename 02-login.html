@@ -73,7 +73,7 @@ border-color: #EF4444 !important;
         <!-- Recovery Links -->
         <div class="mt-6 flex flex-col items-center space-y-3">
             <a href="#" class="text-sm font-medium text-[#1E3A5F] hover:underline decoration-2 underline-offset-4">Forgot your email?</a>
-            <a href="#" class="text-sm font-medium text-[#1E3A5F] hover:underline decoration-2 underline-offset-4">Forgot password?</a>
+            <a href="./06-forgot-password.html" class="text-sm font-medium text-[#1E3A5F] hover:underline decoration-2 underline-offset-4">Forgot password?</a>
             <a href="#" class="text-sm font-medium text-[#1E3A5F] hover:underline decoration-2 underline-offset-4">Login security link</a>
         </div>
 
@@ -81,10 +81,28 @@ border-color: #EF4444 !important;
         <div class="mt-6 pt-6 border-t border-[#E2E8F0] text-center">
             <p class="text-sm text-[#64748B]">
                 Don't have an account? 
-                <a href="#" class="text-[#1E3A5F] font-semibold hover:underline decoration-2 underline-offset-4">Sign Up</a>
+                <a href="./03-signup.html" class="text-[#1E3A5F] font-semibold hover:underline decoration-2 underline-offset-4">Sign Up</a>
             </p>
         </div>
     </div>
 
 
+
+<script>
+(function() {
+  var form = document.querySelector('form');
+  if (!form) return;
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    location.href = './09-dashboard.html';
+  });
+  var loginBtn = form.querySelector('button[type="submit"], button:not([type="button"])');
+  if (loginBtn && !loginBtn.type) {
+    loginBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      location.href = './09-dashboard.html';
+    });
+  }
+})();
+</script>
 </body></html>

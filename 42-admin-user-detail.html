@@ -44,31 +44,31 @@ border-radius: 10px;
         </div>
 
         <nav class="flex-1 space-y-1">
-            <a href="#" class="flex items-center h-[48px] px-6 gap-3 text-white/70 hover:bg-white/5 transition-colors">
+            <a href="./40-admin-dashboard.html" class="flex items-center h-[48px] px-6 gap-3 text-white/70 hover:bg-white/5 transition-colors">
                 <iconify-icon icon="solar:widget-2-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="font-medium">Dashboard</span>
             </a>
-            <a href="#" class="flex items-center h-[48px] px-6 gap-3 text-white/70 hover:bg-white/5 transition-colors">
+            <a href="./43-admin-order-list.html" class="flex items-center h-[48px] px-6 gap-3 text-white/70 hover:bg-white/5 transition-colors">
                 <iconify-icon icon="solar:cart-large-minimalistic-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="font-medium">Orders</span>
             </a>
-            <a href="#" class="flex items-center h-[48px] px-6 gap-3 text-white bg-white/10 border-r-[3px] border-[#C9A96E] transition-colors">
+            <a href="./41-admin-user-list.html" class="flex items-center h-[48px] px-6 gap-3 text-white bg-white/10 border-r-[3px] border-[#C9A96E] transition-colors">
                 <iconify-icon icon="solar:users-group-two-rounded-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="font-medium">Users</span>
             </a>
-            <a href="#" class="flex items-center h-[48px] px-6 gap-3 text-white/70 hover:bg-white/5 transition-colors">
+            <a href="./45-admin-crm-messages.html" class="flex items-center h-[48px] px-6 gap-3 text-white/70 hover:bg-white/5 transition-colors">
                 <iconify-icon icon="solar:chat-round-dots-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="font-medium">Customer Support</span>
             </a>
-            <a href="#" class="flex items-center h-[48px] px-6 gap-3 text-white/70 hover:bg-white/5 transition-colors">
+            <a href="./48-admin-payment-summary.html" class="flex items-center h-[48px] px-6 gap-3 text-white/70 hover:bg-white/5 transition-colors">
                 <iconify-icon icon="solar:card-2-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="font-medium">Payment</span>
             </a>
-            <a href="#" class="flex items-center h-[48px] px-6 gap-3 text-white/70 hover:bg-white/5 transition-colors">
+            <a href="./50-admin-cms-faq.html" class="flex items-center h-[48px] px-6 gap-3 text-white/70 hover:bg-white/5 transition-colors">
                 <iconify-icon icon="solar:document-text-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="font-medium">CMS</span>
             </a>
-            <a href="#" class="flex items-center h-[48px] px-6 gap-3 text-white/70 hover:bg-white/5 transition-colors mt-auto">
+            <a href="./55-admin-customer-preferences.html" class="flex items-center h-[48px] px-6 gap-3 text-white/70 hover:bg-white/5 transition-colors mt-auto">
                 <iconify-icon icon="solar:settings-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="font-medium">Settings</span>
             </a>
@@ -80,7 +80,7 @@ border-radius: 10px;
         
         <!-- Header Section -->
         <header class="mb-8">
-            <a href="#" class="flex items-center gap-2 text-[#1E3A5F] font-medium text-sm mb-4 group">
+            <a href="./41-admin-user-list.html" class="flex items-center gap-2 text-[#1E3A5F] font-medium text-sm mb-4 group">
                 <iconify-icon icon="solar:alt-arrow-left-linear" width="18" class="group-hover:-translate-x-1 transition-transform"></iconify-icon>
                 Users
             </a>
@@ -290,4 +290,19 @@ border-radius: 10px;
         }
     </script>
 
+
+<script>
+(function() {
+  var btns = document.querySelectorAll('button, a');
+  btns.forEach(function(btn) {
+    var text = btn.textContent.trim();
+    if (text === 'Log Out' || text === 'Logout' || text === 'Sign Out') {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        location.href = './index.html';
+      });
+    }
+  });
+})();
+</script>
 </body></html>

@@ -48,31 +48,31 @@ font-weight: 600;
         </div>
 
         <nav class="flex-1 space-y-px">
-            <a href="#" class="flex items-center h-[44px] px-4 gap-3 text-white/70 hover:bg-white/10 hover:text-white transition-colors">
+            <a href="./40-admin-dashboard.html" class="flex items-center h-[44px] px-4 gap-3 text-white/70 hover:bg-white/10 hover:text-white transition-colors">
                 <iconify-icon icon="solar:widget-2-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Dashboard</span>
             </a>
-            <a href="#" class="flex items-center h-[44px] px-4 gap-3 text-white/70 hover:bg-white/10 hover:text-white transition-colors">
+            <a href="./43-admin-order-list.html" class="flex items-center h-[44px] px-4 gap-3 text-white/70 hover:bg-white/10 hover:text-white transition-colors">
                 <iconify-icon icon="solar:cart-large-minimalistic-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Orders</span>
             </a>
-            <a href="#" class="flex items-center h-[44px] px-4 gap-3 text-white bg-white/10 border-l-[3px] border-[#C9A96E] transition-colors">
+            <a href="./41-admin-user-list.html" class="flex items-center h-[44px] px-4 gap-3 text-white bg-white/10 border-l-[3px] border-[#C9A96E] transition-colors">
                 <iconify-icon icon="solar:users-group-two-rounded-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Users</span>
             </a>
-            <a href="#" class="flex items-center h-[44px] px-4 gap-3 text-white/70 hover:bg-white/10 hover:text-white transition-colors">
+            <a href="./45-admin-crm-messages.html" class="flex items-center h-[44px] px-4 gap-3 text-white/70 hover:bg-white/10 hover:text-white transition-colors">
                 <iconify-icon icon="solar:chat-round-dots-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Customer Support</span>
             </a>
-            <a href="#" class="flex items-center h-[44px] px-4 gap-3 text-white/70 hover:bg-white/10 hover:text-white transition-colors">
+            <a href="./48-admin-payment-summary.html" class="flex items-center h-[44px] px-4 gap-3 text-white/70 hover:bg-white/10 hover:text-white transition-colors">
                 <iconify-icon icon="solar:card-2-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Payment</span>
             </a>
-            <a href="#" class="flex items-center h-[44px] px-4 gap-3 text-white/70 hover:bg-white/10 hover:text-white transition-colors">
+            <a href="./50-admin-cms-faq.html" class="flex items-center h-[44px] px-4 gap-3 text-white/70 hover:bg-white/10 hover:text-white transition-colors">
                 <iconify-icon icon="solar:document-text-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">CMS</span>
             </a>
-            <a href="#" class="flex items-center h-[44px] px-4 gap-3 text-white/70 hover:bg-white/10 hover:text-white transition-colors">
+            <a href="./55-admin-customer-preferences.html" class="flex items-center h-[44px] px-4 gap-3 text-white/70 hover:bg-white/10 hover:text-white transition-colors">
                 <iconify-icon icon="solar:settings-linear" width="20" style="stroke-width: 1.5"></iconify-icon>
                 <span class="text-sm font-medium">Settings</span>
             </a>
@@ -407,4 +407,19 @@ font-weight: 600;
     </main>
 
 
+
+<script>
+(function() {
+  var btns = document.querySelectorAll('button, a');
+  btns.forEach(function(btn) {
+    var text = btn.textContent.trim();
+    if (text === 'Log Out' || text === 'Logout' || text === 'Sign Out') {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        location.href = './index.html';
+      });
+    }
+  });
+})();
+</script>
 </body></html>

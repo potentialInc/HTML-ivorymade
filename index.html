@@ -85,4 +85,29 @@ letter-spacing: -0.05em;
     <div class="fixed bottom-12 -right-24 w-80 h-80 bg-[#1E3A5F] opacity-[0.03] rounded-full blur-3xl pointer-events-none"></div>
 
 
+
+<script>
+(function() {
+  var buttons = document.querySelectorAll('button');
+  buttons.forEach(function(btn) {
+    var text = btn.textContent.trim();
+    if (text.includes('Sign Up') || text.includes('Get Started') || text.includes('Register')) {
+      btn.addEventListener('click', function() { location.href = './03-signup.html'; });
+    } else if (text.includes('Log In') || text.includes('Login') || text.includes('Sign In')) {
+      btn.addEventListener('click', function() { location.href = './02-login.html'; });
+    }
+  });
+  var links = document.querySelectorAll('a');
+  links.forEach(function(a) {
+    var text = a.textContent.trim();
+    if (a.href.endsWith('#') || a.getAttribute('href') === '#') {
+      if (text.includes('Sign Up') || text.includes('Get Started')) {
+        a.href = './03-signup.html';
+      } else if (text.includes('Log In') || text.includes('Login')) {
+        a.href = './02-login.html';
+      }
+    }
+  });
+})();
+</script>
 </body></html>

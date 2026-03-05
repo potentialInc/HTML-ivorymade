@@ -38,31 +38,31 @@ letter-spacing: -0.05em;
         </div>
 
         <nav class="flex-1 px-3 space-y-1 overflow-y-auto custom-scrollbar">
-            <a href="#" class="flex items-center h-11 px-4 gap-3 rounded-lg bg-[#EBF2FA] text-[#1E3A5F] transition-colors">
+            <a href="./09-dashboard.html" class="flex items-center h-11 px-4 gap-3 rounded-lg bg-[#EBF2FA] text-[#1E3A5F] transition-colors">
                 <iconify-icon icon="solar:home-2-linear" width="20" height="20"></iconify-icon>
                 <span class="text-sm font-medium">Home</span>
             </a>
-            <a href="#" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors">
+            <a href="./10-orders-list.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors">
                 <iconify-icon icon="solar:box-linear" width="20" height="20"></iconify-icon>
                 <span class="text-sm font-medium">Orders</span>
             </a>
-            <a href="#" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors">
+            <a href="./22-payment-list.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors">
                 <iconify-icon icon="solar:card-transfer-linear" width="20" height="20"></iconify-icon>
                 <span class="text-sm font-medium">Payment</span>
             </a>
-            <a href="#" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors">
+            <a href="./25-customer-support.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors">
                 <iconify-icon icon="solar:chat-round-call-linear" width="20" height="20"></iconify-icon>
                 <span class="text-sm font-medium">Customer Support</span>
             </a>
-            <a href="#" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors">
+            <a href="./26-faq.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors">
                 <iconify-icon icon="solar:question-square-linear" width="20" height="20"></iconify-icon>
                 <span class="text-sm font-medium">FAQ</span>
             </a>
-            <a href="#" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors">
+            <a href="./27-settings.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors">
                 <iconify-icon icon="solar:settings-linear" width="20" height="20"></iconify-icon>
                 <span class="text-sm font-medium">Settings</span>
             </a>
-            <a href="#" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors">
+            <a href="./28-reports.html" class="flex items-center h-11 px-4 gap-3 rounded-lg text-[#64748B] hover:bg-[#F8F9FB] transition-colors">
                 <iconify-icon icon="solar:graph-linear" width="20" height="20"></iconify-icon>
                 <span class="text-sm font-medium">Reports</span>
             </a>
@@ -316,4 +316,19 @@ letter-spacing: -0.05em;
     </main>
 
 
+
+<script>
+(function() {
+  var btns = document.querySelectorAll('button, a');
+  btns.forEach(function(btn) {
+    var text = btn.textContent.trim();
+    if (text === 'Log Out' || text === 'Logout' || text === 'Sign Out') {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        location.href = './index.html';
+      });
+    }
+  });
+})();
+</script>
 </body></html>
